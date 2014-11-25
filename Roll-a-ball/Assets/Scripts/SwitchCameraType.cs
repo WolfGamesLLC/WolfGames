@@ -4,12 +4,12 @@ using System.Collections;
 
 public class SwitchCameraType : MonoBehaviour {
 
-	public Camera camera;
+	public Camera myCamera;
 	public Text text;
 
 	public void SetCameraState()
 	{
-		camera.orthographic = !camera.orthographic;
-		text.text = camera.orthographic.ToString();
+		myCamera.orthographic = !myCamera.orthographic;
+		text.text = myCamera.orthographic.ToString();
 	}
 }

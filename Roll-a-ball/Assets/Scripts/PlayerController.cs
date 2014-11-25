@@ -1,12 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour 
+public interface IMovementController
+{
+	void movePlayer(float moveHorizontal, float moveVertical);
+}
+
+public class PlayerController : MonoBehaviour, IMovementController 
 {
 	public float speed;
 	public GUIText countText;
 	public GUIText winText;
 	private int count;
+	public Controller controller;
+
+	private void OnEnable()
+	{
+		controller.SetMovementController(this);
+	}
 
 	void Start()
 	{
@@ -20,8 +31,7 @@ public class PlayerController : MonoBehaviour
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
 
-		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-		rigidbody.AddForce (movement * speed * Time.deltaTime);
+		controller.movePlayer (moveHorizontal, moveVertical);
 	}
 
 	void OnTriggerEnter(Collider other) 
@@ -36,8 +46,29 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	public void movePlayer (float moveHorizontal, float moveVertical)
+	{
+		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+		rigidbody.AddForce (movement * speed * Time.deltaTime);
+	}
+
 	void SetCountText()
 	{
 		countText.text = "Count: " + count.ToString();
+	}
+}
+
+public class Controller
+{
+	private IMovementController movementController;
+
+	public void movePlayer(float moveHorizontal, float moveVertical)
+	{
+		movementController.movePlayer(moveHorizontal, moveVertical);
+	}
+
+	public void SetMovementController(IMovementController controller)
+	{
+		this.movementController = controller;
 	}
 }
