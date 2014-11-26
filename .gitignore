@@ -1,3 +1,28 @@
+=============== 
+Unity generated
+===============
+Temp/
+Library/
+Builds/
+
+=====================================
+Visual Studio / MonoDevelop generated
+=====================================
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============================
+# Initial .gitignore follows
+# ============================
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

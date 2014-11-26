@@ -6,11 +6,9 @@ public class LogoAnimation : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		ZoomOut();
-	}
-
-	public void ZoomOut()
-	{
-//		transform.localScale += Vector3(-1,-1,-1);
+		if(transform.localScale.x > 1)
+		{
+			transform.localScale += new Vector3(-1,-1,-1);
+		}
 	}
 }
