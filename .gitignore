@@ -19,6 +19,8 @@ obj/
 *.user
 *.unityproj
 *.booproj
+*.sln
+*.csproj
 
 # ============================
 # Initial .gitignore follows
