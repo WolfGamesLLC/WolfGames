@@ -5,6 +5,8 @@ public class LogoAnimation : MonoBehaviour
 {
 	#region Members
 
+	private string url;
+
 	#endregion
 	
 	#region Properties
@@ -15,7 +17,7 @@ public class LogoAnimation : MonoBehaviour
 	/// The main camera.
 	/// </summary>
 	public Fading fadingObject; 
-	
+
 	#region Methods
 
 	/// <summary>
@@ -24,6 +26,9 @@ public class LogoAnimation : MonoBehaviour
 	void Start()
 	{
 		fadingObject = GameObject.Find("Main Camera").GetComponent<Fading>();
+		url = string.Format("http://www.wolfgamesllc.com/warefeed/services?u={0}&c={1}&v={2}", 
+		                    "test", System.Environment.MachineName, "Load%20Aseura");
+		StartCoroutine(Log());
 	}
 
 	/// <summary>
@@ -49,9 +54,17 @@ public class LogoAnimation : MonoBehaviour
 	IEnumerator ChangeLevel()
 	{
 		float fadeTime = fadingObject.BeginFade(Fading.FadeDirection.OUT);
+	
 		yield return new WaitForSeconds(3);
 
 		Application.LoadLevel(Application.loadedLevel + 1);
+	}
+
+	IEnumerator Log () 
+	{
+//		print (url.ToString());
+		WWW log = new WWW(url);
+		yield return log;
 	}
 
 	#endregion
