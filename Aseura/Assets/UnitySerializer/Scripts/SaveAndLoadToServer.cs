@@ -17,7 +17,7 @@ public class SaveAndLoadToServer : MonoBehaviour {
 			}
 			if(!targetGameObject && GUILayout.Button("Load from server JSON"))
 			{
-				JSONLevelSerializer.LoadObjectTreeFromServer("http://whydoidoit.net/testserializer/testme.json", CompletedJSONLoad);
+				JSONLevelSerializer.LoadObjectTreeFromServer("http://whydoidoit.net/testserializer/testme.json", CompletedJSONLoad, null);
 			}
 			if(targetGameObject && GUILayout.Button("Save to server Binary"))
 			{
@@ -34,7 +34,7 @@ public class SaveAndLoadToServer : MonoBehaviour {
 			}
 			if(GUILayout.Button("Load scene from server JSON"))
 			{
-				JSONLevelSerializer.LoadSavedLevelFromServer("http://whydoidoit.net/testserializer/testscene.json");
+				JSONLevelSerializer.LoadSavedLevelFromServer("http://whydoidoit.net/testserializer/testscene.json", null);
 			}
 			if(GUILayout.Button("Save scene to server Binary"))
 			{
@@ -42,7 +42,7 @@ public class SaveAndLoadToServer : MonoBehaviour {
 			}
 			if(GUILayout.Button("Load scene from server Binary"))
 			{
-				JSONLevelSerializer.LoadSavedLevelFromServer("http://whydoidoit.net/testserializer/testscene.data");
+				JSONLevelSerializer.LoadSavedLevelFromServer("http://whydoidoit.net/testserializer/testscene.data", null);
 			}
 		}
 	}

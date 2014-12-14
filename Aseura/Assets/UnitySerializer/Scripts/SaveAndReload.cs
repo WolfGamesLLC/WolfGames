@@ -29,7 +29,7 @@ public class SaveAndReload : MonoBehaviour {
 		Destroy(gameObject);
 		Loom.QueueOnMainThread(()=>{
 			Debug.Log("Downloading");
-			JSONLevelSerializer.LoadObjectTreeFromServer("http://whydoidoit.net/testserializer/SavedData" + id.ToString() +".json");
+			JSONLevelSerializer.LoadObjectTreeFromServer("http://whydoidoit.net/testserializer/SavedData" + id.ToString() +".json", null, null);
 		},6f);
 	}
 	
