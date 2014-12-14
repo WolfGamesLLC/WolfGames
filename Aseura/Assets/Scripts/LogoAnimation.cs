@@ -16,7 +16,7 @@ public class LogoAnimation : MonoBehaviour
 	/// <summary>
 	/// The main camera.
 	/// </summary>
-	public Fading fadingObject; 
+	private Fading fadingObject; 
 
 	#region Methods
 
@@ -55,7 +55,7 @@ public class LogoAnimation : MonoBehaviour
 	{
 		float fadeTime = fadingObject.BeginFade(Fading.FadeDirection.OUT);
 	
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(1);
 
 		Application.LoadLevel(Application.loadedLevel + 1);
 	}
