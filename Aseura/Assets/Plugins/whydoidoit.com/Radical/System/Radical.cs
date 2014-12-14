@@ -425,7 +425,8 @@ public static class Radical
 		
 	public static void ActivateChildren(this Component co)
 	{
-		co.gameObject.SetActiveRecursively(true);
+//		co.gameObject.SetActiveRecursively(true);
+		co.gameObject.SetActive(true);
 	}
 
 	
@@ -535,7 +536,7 @@ public static class Radical
 		gameObject.audio.Play();
 	}
 	
-	public static void FadeVolume(this GameObject component, float toLevel = 1, float time = 1f, float? fromLevel = null)
+	public static void FadeVolume(this GameObject component, float toLevel, float time, float? fromLevel)
 	{
 		component.gameObject.StartExtendedCoroutine(VolumeFader(component.audio, toLevel, time, fromLevel));
 	}
@@ -555,7 +556,8 @@ public static class Radical
 	public static void DeactivateChildren(this Component co)
 	{
 		foreach(var c in co.transform.GetComponentsInChildren<Transform>().Except(new [] {co.transform}))
-			c.gameObject.active = false;
+//			c.gameObject.active = false;
+			c.gameObject.SetActive(false);
 	}
 
 	

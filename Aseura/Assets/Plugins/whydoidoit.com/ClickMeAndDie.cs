@@ -22,7 +22,7 @@ public class ClickMeAndDie : MonoBehaviour {
 					if(e==null)
 					{
 						Loom.QueueOnMainThread(()=>{
-								JSONLevelSerializer.LoadObjectTreeFromServer("http://whydoidoit.net/testserializer/testspider" + id);
+								JSONLevelSerializer.LoadObjectTreeFromServer("http://whydoidoit.net/testserializer/testspider" + id, null, null);
 							},2f);
 					}
 					else

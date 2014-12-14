@@ -209,7 +209,8 @@ public class SaveGameManager : MonoBehaviour
 		{
 			if(child.GetComponent<UniqueIdentifier>()!=null)
 			{
-				if(!child.gameObject.active)
+//				if(!child.gameObject.active)
+				if(!child.gameObject.activeInHierarchy)
 				{
 					GetId(child.gameObject);
 				}

@@ -213,7 +213,7 @@ public static class LevelSerializer
 	/// <param name='onComplete'>
 	/// A method call to make when loading is complete
 	/// </param>
-	public static void LoadObjectTreeFromFile(string filename, Action<LevelLoader> onComplete = null)
+	public static void LoadObjectTreeFromFile(string filename, Action<LevelLoader> onComplete)
 	{
 		var x= File.Open(Application.persistentDataPath + "/" + filename, FileMode.Open);
 		var data = new byte[x.Length];
@@ -268,7 +268,7 @@ public static class LevelSerializer
 	/// <param name='onComplete'>
 	/// A function to call when the upload is complete
 	/// </param>
-	public static void SaveObjectTreeToServer(string uri, GameObject rootOfTree, string userName = "", string password = "", Action<Exception> onComplete =null)
+	public static void SaveObjectTreeToServer(string uri, GameObject rootOfTree, string userName, string password, Action<Exception> onComplete)
 	{
 		onComplete = onComplete ?? delegate {};
 		Action execute = ()=>{
@@ -311,7 +311,7 @@ public static class LevelSerializer
 	/// <param name='onComplete'>
 	/// A method to call when the load is complete
 	/// </param>
-	public static void LoadObjectTreeFromServer(string uri, Action<LevelLoader> onComplete = null)
+	public static void LoadObjectTreeFromServer(string uri, Action<LevelLoader> onComplete)
 	{
 		onComplete = onComplete ?? delegate {};
 		RadicalRoutineHelper.Current.StartCoroutine(DownloadFromServer(uri, onComplete));
@@ -334,7 +334,7 @@ public static class LevelSerializer
 	/// <param name='onComplete'>
 	/// A method to call when the serialization is complete
 	/// </param>
-	public static void SerializeLevelToServer(string uri, string userName = "", string password = "", Action<Exception> onComplete = null)
+	public static void SerializeLevelToServer(string uri, string userName, string password, Action<Exception> onComplete)
 	{
 		lock(Guard)
 		{
@@ -939,8 +939,9 @@ public static class LevelSerializer
 									                     layer = n.layer,
 									                     tag = n.tag,
 									                     setExtraData = true,
-                                                         Active = n.active,
-                                                         Components =
+//                                                         Active = n.active,
+														Active = n.activeInHierarchy,
+														Components =
                                                              n.GetComponents<Component>().Where(c=>c!=null).Select(
                                                                  c => c.GetType().FullName).Distinct()
                                                                  .ToDictionary(v => v, v => true),
@@ -1095,7 +1096,7 @@ public static class LevelSerializer
     /// </summary>
     /// <param name="data">The data for the tree to be loaded</param>
     /// <param name="onComplete">A function to call when the load is complete</param>
-    public static void LoadObjectTree(this byte[] data, Action<LevelLoader> onComplete = null)
+    public static void LoadObjectTree(this byte[] data, Action<LevelLoader> onComplete)
     {
         onComplete = onComplete ?? delegate { };
         LoadNow(data, true, false, onComplete);

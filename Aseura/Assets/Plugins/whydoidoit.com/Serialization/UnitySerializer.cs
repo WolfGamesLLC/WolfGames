@@ -458,7 +458,7 @@ namespace Serialization
 			return result;
 		}
 		
-        public static void RunDeferredActions(int count = 1, bool clear = true)
+        public static void RunDeferredActions(int count, bool clear)
         {
 			lock (FixupFunctions)
             {
@@ -493,7 +493,7 @@ namespace Serialization
 		}
 		
         
-		public static void RunDeferredActions(FinalProcess process, int count = 1, bool clear = true)
+		public static void RunDeferredActions(FinalProcess process, int count, bool clear)
         {
 			lock(FixupFunctions)
 			{
@@ -651,7 +651,7 @@ namespace Serialization
 		/// <param name='filename'>
 		/// The filename to save them to
 		/// </param>
-		public static void WriteToFile(this byte[] data, string filename = null)
+		public static void WriteToFile(this byte[] data, string filename)
 		{
 			var f = File.Create(filename ?? "test_output.data");
 			var w = new BinaryWriter(f);
@@ -670,7 +670,7 @@ namespace Serialization
 		/// <param name='filename'>
 		/// Filename for the output
 		/// </param>/
-		public static void WriteToFile(this string str, string filename  = null)
+		public static void WriteToFile(this string str, string filename)
 		{
 			var f = File.Create(filename ?? "test_output.txt");
 			var w = new StreamWriter(f);
@@ -3527,7 +3527,7 @@ namespace Serialization
                     return;
                 }
 				_hasSetPrimaryScope = false;
-                RunDeferredActions();
+                RunDeferredActions(1, true);
                 FinalDeserialization = _finalDeserialization;
                 FixupFunctions = _fixupFunctions;
 
@@ -3596,7 +3596,7 @@ namespace Serialization
                 _seenTypes = _seenTypesStack.Pop();
                 _nextId = _idStack.Pop();
 				SerializationScope._counter = _previousCounter;
-				RunDeferredActions();
+				RunDeferredActions(1, true);
                 FinalDeserialization = _finalDeserialization;
                 FixupFunctions = _fixupFunctions;
             }

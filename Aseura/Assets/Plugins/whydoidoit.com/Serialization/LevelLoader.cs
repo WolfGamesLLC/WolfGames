@@ -86,8 +86,9 @@ public class LevelLoader : MonoBehaviour
 
     private static void SetActive(GameObject go, bool activate)
     {
-        go.active = activate;
-        foreach (var c in go.transform.Cast<Transform>())
+//        go.active = activate;
+		go.SetActive(activate);
+		foreach (var c in go.transform.Cast<Transform>())
         {
             if (c.GetComponent<StoreInformation>() == null)
             {
@@ -98,12 +99,12 @@ public class LevelLoader : MonoBehaviour
 
     public IEnumerator Load()
     {
-        yield return StartCoroutine(Load(2));
+        yield return StartCoroutine(Load(2, 0));
     }
 	
 	static int loadingCount = 0;
 	
-    public IEnumerator Load(int numberOfFrames, float timeScale = 0)
+    public IEnumerator Load(int numberOfFrames, float timeScale)
     {
 		loadingCount++;
 		var oldFixedTime = Time.fixedDeltaTime;
@@ -471,7 +472,7 @@ public class LevelLoader : MonoBehaviour
 			Time.timeScale = 1;
 			yield return new WaitForFixedUpdate();
 			Time.timeScale = timeScaleAfterLoading;
-			UnitySerializer.RunDeferredActions(process);
+			UnitySerializer.RunDeferredActions(process, 1, true);
 			
 			//Finally we need to fixup any references to other game objects,
             //these have been stored in a list inside the serializer
