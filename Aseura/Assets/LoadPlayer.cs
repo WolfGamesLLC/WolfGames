@@ -8,15 +8,12 @@ public class LoadPlayer : MonoBehaviour
 {
 	public Text SaveGameText;
 	public Text LoadButtonText;
+	private List<LevelSerializer.SaveEntry> sg;
 
 	public void Start()
 	{
-		List<LevelSerializer.SaveEntry> sg = LevelSerializer.SavedGames[LevelSerializer.PlayerName];
+		SetLoadGameButtonText ();
 
-		if(sg.Count >= 1)
-			LoadButtonText.text = sg[0].Caption;
-		else
-			LoadButtonText.text = "Create New Player";
 //		foreach(var sg in LevelSerializer.SavedGames[LevelSerializer.PlayerName]) 
 //		{ 
 //			if(GUILayout.Button(sg.Caption)) 
@@ -27,9 +24,19 @@ public class LoadPlayer : MonoBehaviour
 //		}
 	}
 
+	void SetLoadGameButtonText ()
+	{
+		sg = LevelSerializer.SavedGames [LevelSerializer.PlayerName];
+		if (sg.Count >= 1) {
+			print (sg [0].Caption);
+			LoadButtonText.text = sg [0].Caption;
+		}
+		else
+			LoadButtonText.text = "Create New Player";
+	}
+
 	public void LoadPlayerData()
 	{
-		List<LevelSerializer.SaveEntry> sg = LevelSerializer.SavedGames[LevelSerializer.PlayerName];		
 		if(sg.Count >= 1)
 			LevelSerializer.LoadNow(sg[0].Data);
 		else
@@ -44,5 +51,11 @@ public class LoadPlayer : MonoBehaviour
 			LevelSerializer.SaveGame(SaveGameText.text);
 		else
 			LevelSerializer.SaveGame("Player_1");
+	}
+
+	public void DeletePlayerData()
+	{
+		sg[0].Delete();
+		SetLoadGameButtonText();
 	}
 }
