@@ -8,6 +8,7 @@ public class LoadPlayer : MonoBehaviour
 {
 	public Text SaveGameText;
 	public Text LoadButtonText;
+	public Canvas CreatePlayerCanvas;
 	private List<LevelSerializer.SaveEntry> sg;
 
 	public void Start()
@@ -27,8 +28,8 @@ public class LoadPlayer : MonoBehaviour
 	void SetLoadGameButtonText ()
 	{
 		sg = LevelSerializer.SavedGames [LevelSerializer.PlayerName];
-		if (sg.Count >= 1) {
-			print (sg [0].Caption);
+		if (sg.Count >= 1) 
+		{
 			LoadButtonText.text = sg [0].Caption;
 		}
 		else
@@ -37,10 +38,16 @@ public class LoadPlayer : MonoBehaviour
 
 	public void LoadPlayerData()
 	{
+		SaveGameText.text = "";
 		if(sg.Count >= 1)
+		{
 			LevelSerializer.LoadNow(sg[0].Data);
+			CreatePlayerCanvas.enabled = false;
+		}
 		else
-			SaveGameText.text = "Player_1";
+		{
+			CreatePlayerCanvas.enabled = true;
+		}
 
 		Time.timeScale = 1;
 	}
@@ -55,7 +62,10 @@ public class LoadPlayer : MonoBehaviour
 
 	public void DeletePlayerData()
 	{
-		sg[0].Delete();
-		SetLoadGameButtonText();
+		if(sg.Count >= 1)
+		{
+			sg[0].Delete();
+			SetLoadGameButtonText();
+		}
 	}
 }
