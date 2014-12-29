@@ -38,7 +38,6 @@ public class LoadPlayer : MonoBehaviour
 
 	public void LoadPlayerData()
 	{
-		SaveGameText.text = "";
 		if(sg.Count >= 1)
 		{
 			LevelSerializer.LoadNow(sg[0].Data);
