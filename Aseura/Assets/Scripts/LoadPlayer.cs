@@ -7,9 +7,6 @@ using System.Linq;
 public class LoadPlayer : MonoBehaviour
 {
     #region Members
-    
-    private List<LevelSerializer.SaveEntry> sg;
-    
     #endregion
 
     #region Editor Properties
@@ -41,22 +38,23 @@ public class LoadPlayer : MonoBehaviour
     /// </summary>
     public void Start()
     {
-        SetLoadGameButtonText();
+        SetLoadPlayerButtonText();
     }
     
     #endregion
 
     #region Methods
 
-    void SetLoadGameButtonText()
+    void SetLoadPlayerButtonText()
     {
-        sg = LevelSerializer.SavedGames[LevelSerializer.PlayerName];
-        if (sg.Count >= 1)
+        if (PlayerPrefs.HasKey("CharacterName"))
         {
-            LoadButtonText.text = sg[0].Caption;
+            LoadButtonText.text = PlayerPrefs.GetString("CharacterName");
         }
         else
+        {
             LoadButtonText.text = "Create New Player";
+        }
     }
 
     /// <summary>
@@ -66,9 +64,9 @@ public class LoadPlayer : MonoBehaviour
     {
         LaunchScreenPanel.SetActive(false);
 
-        if (sg.Count >= 1)
+        if(PlayerPrefs.HasKey("CharacterName"))
         {
-            LevelSerializer.LoadNow(sg[0].Data);
+            PlayerNameInputField.text = PlayerPrefs.GetString("CharacterName");
             PlayerViewPanel.SetActive(false);
             WorldSelectionPanel.SetActive(true);
         }
@@ -76,7 +74,7 @@ public class LoadPlayer : MonoBehaviour
         {
             PlayerViewPanel.SetActive(true);
         }
-
+        
         Time.timeScale = 1;
     }
 
@@ -85,10 +83,8 @@ public class LoadPlayer : MonoBehaviour
     /// </summary>
     public void SavePlayerData()
     {
-        if (PlayerNameInputField.text != "")
-            LevelSerializer.SaveGame(PlayerNameInputField.text);
-        else
-            LevelSerializer.SaveGame("Player_1");
+        PlayerPrefs.SetString("CharacterName", PlayerNameInputField.text);
+        PlayerPrefs.Save();
     }
 
     /// <summary>
@@ -96,10 +92,10 @@ public class LoadPlayer : MonoBehaviour
     /// </summary>
     public void DeletePlayerData()
     {
-        if (sg.Count >= 1)
+        if (PlayerPrefs.HasKey("CharacterName"))
         {
-            sg[0].Delete();
-            SetLoadGameButtonText();
+            PlayerPrefs.DeleteKey("CharacterName");
+            SetLoadPlayerButtonText();
         }
     }
     
