@@ -684,6 +684,8 @@ GameObject:
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400012}
+  - 114: {fileID: 11400090}
+  - 114: {fileID: 11400088}
   m_Layer: 0
   m_Name: FPSPlayer
   m_TagString: Untagged
@@ -1229,7 +1231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100082}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: -1.78809998e-07, y: 1.13049996, z: 0}
+  m_LocalPosition: {x: 0, y: 1.10000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400080}
@@ -1564,7 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 3b22559f-96b4-4b03-a619-6ec45ca4a5ce
+  _id: ba805b7f-f259-4de9-81dd-4f12e06ce074
   classId: 153c23cc-7829-4eb5-9274-8cd5c7dcd0a4
   StoreAllComponents: 1
   Components: []
@@ -1580,7 +1582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: adc62177-0a42-4e8c-8782-43a0b0cabe1a
+  _id: fa807d2f-4280-4f73-ac43-ed368a6bc9a9
   classId: f07d4065-b309-4b67-bfb4-b842e952d8f4
   StoreAllComponents: 1
   Components: []
@@ -1596,7 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: f31b0e86-ef42-4630-8322-bd0940407f9c
+  _id: 1e92de47-51bf-4271-b17a-93aaa6003096
   classId: e3ad996b-e824-4abd-95fd-8bdaa8b718fb
   StoreAllComponents: 1
   Components: []
@@ -1612,7 +1614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 5ddea757-ba91-445e-8e76-162ffaeff3c2
+  _id: 9713d972-3a48-4a13-bd38-517d4aab3852
   classId: 36609042-44d1-438a-ae83-8be51f3438ba
   StoreAllComponents: 1
   Components: []
@@ -1628,7 +1630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 4cdbd70c-356e-48cc-962b-d5864aba4493
+  _id: 92a2e26e-832c-43d3-9347-ac0d95e0e794
   classId: 81236b3b-f01d-4a16-a672-fb2a8af70977
   StoreAllComponents: 1
   Components: []
@@ -1660,7 +1662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: da1af916-00c3-489c-b3f1-fc40af48f6f1
+  _id: 40010371-d6c7-4195-862f-65d7b61fcb65
   classId: 9e96628e-2fde-4741-ad1d-dda39383be9e
   StoreAllComponents: 1
   Components: []
@@ -1676,7 +1678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: e9b9f0b6-a3bf-40a5-8ba5-542c88150640
+  _id: 8010958c-2538-43b4-9c65-c1ba37efa867
   classId: b615c5ad-921f-4bf1-805f-886d9ae27e94
   StoreAllComponents: 1
   Components: []
@@ -1692,7 +1694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 044999f5-8a54-42f8-9b19-260d2aca3174
+  _id: e7852afb-6f14-4828-99f5-c346d07919d3
   classId: d8d6ca94-f24b-4c6b-bfc8-1aad9a62a17e
   StoreAllComponents: 1
   Components: []
@@ -1708,7 +1710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 4c8e1c65-0415-4440-ae74-24e78ce17760
+  _id: 799b1d53-2842-49aa-9dae-319d7828996f
   classId: ee7ce7d5-e300-4c46-93d6-4f919ce37469
   StoreAllComponents: 1
   Components: []
@@ -1724,7 +1726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 4464dec8-e849-4b16-ad12-3ddb714a95f2
+  _id: fbca95cf-5a2a-4521-a4d4-345f0443b1dd
   classId: ac77c300-a742-4e8e-b8fb-7e641d54edad
   StoreAllComponents: 1
   Components: []
@@ -1740,7 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: a9f6f24f-7b57-429a-81bd-58579e5e33ec
+  _id: be42b14b-2937-4f1a-bf3f-588a736a3905
   classId: d4ad8867-f97e-44cc-80ad-b9b3629e6dae
   StoreAllComponents: 1
   Components: []
@@ -1756,7 +1758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: a7deeb5e-fc25-4d98-9449-0ae6af1aeaa2
+  _id: b24040b7-0e7d-49aa-914c-0fbe18d8cb9f
   classId: ac95c5e5-832c-4024-bf09-dba9ec56a7fb
   StoreAllComponents: 1
   Components: []
@@ -1772,7 +1774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 4b5f568f-3bf2-4895-ab4a-a575a581cca6
+  _id: 411d0a2a-c9fd-4828-a9b6-509dbf153c60
   classId: 81ad3c12-d1af-4d23-b408-41830b842ee1
   StoreAllComponents: 1
   Components: []
@@ -1788,7 +1790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 1bca6734-893a-4dc5-aade-868849d890f3
+  _id: 459e3b21-ef99-4237-afd7-e4586c0db2d1
   classId: 6cacb607-83f8-46a7-be2c-711eb13a181a
   StoreAllComponents: 1
   Components: []
@@ -1804,7 +1806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 9b4d3d3b-cc79-4c81-9022-de256d3deca7
+  _id: a9d0cfab-75c5-4e09-9c8e-1a9d0d3e98c7
   classId: 1efd6123-ea46-4933-b8ab-4f8d8a7f56d6
   StoreAllComponents: 1
   Components: []
@@ -1820,7 +1822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 036e2979-c908-4a2b-95c7-0db5888c7d86
+  _id: 3651798b-79aa-4104-9579-8d36c77edbf2
   classId: 81527955-8db4-4a58-af0c-7de40c0e47a2
   StoreAllComponents: 1
   Components: []
@@ -1836,7 +1838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 8460f8c3-8554-4bd4-a446-8953602bfcd0
+  _id: c4bdb313-a46f-4864-868d-7be0998790c1
   classId: cc62bbd5-7c43-4339-840a-23c4ef688b2a
   StoreAllComponents: 1
   Components: []
@@ -1852,7 +1854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: caccae72-dca6-44e3-b4c7-32428b179738
+  _id: 161f7261-fd43-40cf-aeef-308c7cc1bdf0
   classId: f95e01f4-7275-495f-aa99-7b99d52cc8d4
   StoreAllComponents: 1
   Components: []
@@ -1868,7 +1870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 1562c53e-88d7-4c4e-9555-bcd4b6f406d5
+  _id: 2e31d307-ac7e-4eda-ac03-5c7284ba8471
   classId: 0e836f2c-496a-43b2-874b-c39abff50297
   StoreAllComponents: 1
   Components: []
@@ -1884,7 +1886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 8bbba44c-ad83-4d49-925e-d734ee0678f5
+  _id: a64c9ff1-9049-49bf-a638-989d8a1a72ad
   classId: 422e3281-5a35-43bc-9b66-9c3816a77fcc
   StoreAllComponents: 1
   Components: []
@@ -1900,7 +1902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: a909e2ad-dc34-41ca-969b-15f70e0a0061
+  _id: d15841d0-a88f-4806-938b-34d7515e50cc
   classId: ea1b7690-8149-4c58-9101-a0cb112b4cf5
   StoreAllComponents: 1
   Components: []
@@ -1916,7 +1918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: e8cbf6c1-0bfb-4960-9016-139e4f0251b8
+  _id: c3bbe32c-a10a-4041-be27-491876215961
   classId: 79b87c3c-d76e-4820-a06e-1f7d82d70bf3
   StoreAllComponents: 1
   Components: []
@@ -1932,7 +1934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: eaaea64e-f8f5-4ccf-86f0-3ad532af0967
+  _id: 33ae6c90-12aa-411f-9690-4af45f4e7c2b
   classId: 8f27abb4-6824-4682-a198-832b707e8ab9
   StoreAllComponents: 1
   Components: []
@@ -1948,7 +1950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 0c4c241d-8d25-4cfb-93bc-d18424649670
+  _id: fabc2ffa-5dfc-4882-8b3d-82dd2100ab3f
   classId: 07582926-79e2-435f-a5cf-7d042bccb4e5
   StoreAllComponents: 1
   Components: []
@@ -1964,7 +1966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 691c1d11-cce4-4c49-9029-ef60625943b5
+  _id: 031eb929-63c3-4580-8ced-e92bf6df3454
   classId: 1f77d7e2-6f14-404a-a01b-25033130427c
   StoreAllComponents: 1
   Components: []
@@ -1980,7 +1982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: bbb78b7e-6105-4e3d-b230-4819819504c6
+  _id: df6f05d8-3b07-4ff4-bef2-84cd567cd294
   classId: e95e2d3e-6d92-46c2-bd12-fa064e63eec9
   StoreAllComponents: 1
   Components: []
@@ -1996,7 +1998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: fe4c4808-e8ab-4fce-a9f1-774bc025eeb1
+  _id: 5f7b0c76-de27-451f-afb6-ae621157ccdc
   classId: 282376d3-665c-4801-81ce-7d86d140f13c
   StoreAllComponents: 1
   Components: []
@@ -2012,7 +2014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 6253f281-8ebf-4e2f-9269-ff479b0a93a5
+  _id: f1f1b5c4-3f4b-498d-b4d0-dae41a0de5d0
   classId: f8dc75a1-458b-420c-b368-2b60850ffeeb
   StoreAllComponents: 1
   Components: []
@@ -2028,7 +2030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 26ecf814-db50-4b17-83f0-84564c30673e
+  _id: df16f9c4-574d-4f5c-a947-6fe8bb2e4973
   classId: 81dbcd5b-4905-4980-ab4f-079298a86b79
   StoreAllComponents: 1
   Components: []
@@ -2044,7 +2046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: f6d15320-5f40-4275-b6ae-99825f75042e
+  _id: 816f1e5b-69bf-4e7f-90a8-5be621bcb46d
   classId: c45eb031-97a3-46cc-95ef-6a9e8966085c
   StoreAllComponents: 1
   Components: []
@@ -2060,7 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: aa931f33-87f8-44bd-89ab-955bc733b855
+  _id: bbc77d88-223a-49a9-a808-92d9e3b674df
   classId: a3c3db31-def8-4f5e-b03e-03058335f7ab
   StoreAllComponents: 1
   Components: []
@@ -2076,7 +2078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: b485bd62-5c4c-45cf-876b-6b123bf45197
+  _id: ae09083e-2e27-42e2-97a6-772f77dbb102
   classId: 4ca18f7a-d09c-46ea-845e-dec8832c9820
   StoreAllComponents: 1
   Components: []
@@ -2092,7 +2094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 7402992b-bc56-4b72-a9a6-f32a359d77f9
+  _id: 7271e746-d121-4b72-b56a-84381bba07f5
   classId: eaee157e-9b74-467a-a571-4f832a371654
   StoreAllComponents: 1
   Components: []
@@ -2108,7 +2110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 459f7b83-88b5-4261-a216-1dc852afde9f
+  _id: a68da0a0-494e-4f86-850e-a4517771f4d0
   classId: b2e81e4b-fd30-4f7d-b2de-7514a05ad3fb
   StoreAllComponents: 1
   Components: []
@@ -2124,7 +2126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: b22253f4-4770-41f3-b892-3fef39e6ef07
+  _id: c4812663-d3de-4db9-b4a1-ec799416a256
   classId: d8ad1d85-9dc9-47c2-ab40-4c388f59dfcb
   StoreAllComponents: 1
   Components: []
@@ -2140,7 +2142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 3be54413-e842-428c-8850-910c50e4ff7c
+  _id: a50c72df-c441-4561-9eea-142b362bfd7c
   classId: 2e6d5d38-7140-4401-b3a8-a6cadfa3cea4
   StoreAllComponents: 1
   Components: []
@@ -2156,7 +2158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: f93ac10e-6de0-4687-97a7-1f25ad551ac5
+  _id: 7c0b152d-1e48-4c55-b41d-a697125f2661
   classId: d9945154-42fe-40dc-82b5-afe84f5c831d
   StoreAllComponents: 1
   Components: []
@@ -2172,7 +2174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 0aba60a8-f287-4007-9d1b-a38ed150865e
+  _id: 30b95df2-cc97-4ffe-aad9-c4363bfccc1c
   classId: 44df1772-74a6-425f-8855-cf362d5d0d7e
   StoreAllComponents: 1
   Components: []
@@ -2188,7 +2190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 4bdbc83e-fbe3-4b5b-b882-cba8dd29e25c
+  _id: 2c7850cd-6eb5-41d6-98ad-1bcedd8b87e9
   classId: 29aa423d-94f8-48d2-bc40-cb10cf7e19a0
   StoreAllComponents: 1
   Components: []
@@ -2204,7 +2206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 07e8b13b-543f-48ff-b2fd-0dfd638f5423
+  _id: 771a5ce5-6bf7-4ad0-81e8-3c673c16fd93
   classId: a4b7c74a-4729-479c-bf95-456cfe149103
   StoreAllComponents: 1
   Components: []
@@ -2220,7 +2222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: abeb8d84-490f-459b-a1e5-933afe02aac2
+  _id: c47593bb-8bff-4866-bbc1-18d652e9a604
   classId: 7913d9fd-dd20-458a-b9e8-f06c1f640939
   StoreAllComponents: 1
   Components: []
@@ -2236,10 +2238,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 13d2a852-ca7b-47b6-bbe6-d35d942da7af
+  _id: d0f54a68-5fe2-4ac9-801c-84d91ac8e602
   classId: b6728ef9-aad4-4887-8ea7-cb6d3d44943a
   StoreAllComponents: 1
   Components: []
+--- !u!114 &11400088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbddc078c73cf4b7eacbc1407856e9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d17d65ff14be4e0085128cfd4a34e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preserveThisObjectWhenLoading: 1
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
