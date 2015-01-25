@@ -67,6 +67,7 @@ public class LoadPlayer : MonoBehaviour
         if(PlayerPrefs.HasKey("CharacterName"))
         {
             PlayerNameInputField.text = PlayerPrefs.GetString("CharacterName");
+            LevelSerializer.PlayerName = PlayerNameInputField.text;
             PlayerViewPanel.SetActive(false);
             WorldSelectionPanel.SetActive(true);
         }

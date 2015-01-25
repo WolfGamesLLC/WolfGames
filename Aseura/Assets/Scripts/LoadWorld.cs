@@ -15,10 +15,7 @@ public class LoadWorld : MonoBehaviour
     #region Editor Properties
 
     [SerializeField]
-    private InputField WorldNameInputField;
-
-    [SerializeField]
-    private Text LoadButtonText;
+    private Text WorldNameInputFieldText;
 
     [SerializeField]
     private GameObject WorldSelectionPanel;
@@ -30,27 +27,29 @@ public class LoadWorld : MonoBehaviour
 
     #region Initialization
 
-    /// <summary>
-    /// Initialize the LoadWorld componenet
-    /// </summary>
-    public void Start()
-    {
-        SetLoadWorldButtonText();
-    }
-
     #endregion
 
     #region Methods
 
+    /// <summary>
+    /// Enable the LoadWorld componenet
+    /// </summary>
+    public void OnEnable()
+    {
+        SetLoadWorldButtonText();
+    }
+
     void SetLoadWorldButtonText()
     {
-        sg = LevelSerializer.SavedGames["World_"];
+        sg = LevelSerializer.SavedGames[LevelSerializer.PlayerName];
+        Debug.Log("Saved Games count for " + LevelSerializer.PlayerName + ": " + sg.Count.ToString());
         if (sg.Count >= 1)
         {
-            LoadButtonText.text = sg[0].Caption;
+            WorldNameInputFieldText.text = sg[0].Caption;
+            Debug.Log("WorldNameInputField.text: " + WorldNameInputFieldText);
         }
         else
-            LoadButtonText.text = "Create New World";
+            WorldNameInputFieldText.text = "Create New World";
     }
 
     /// <summary>
@@ -77,8 +76,8 @@ public class LoadWorld : MonoBehaviour
     /// </summary>
     public void SaveWorldData()
     {
-        if (WorldNameInputField.text != "")
-            LevelSerializer.SaveGame("World_" + WorldNameInputField.text);
+        if (WorldNameInputFieldText.text != "")
+            LevelSerializer.SaveGame(WorldNameInputFieldText.text);
         else
             LevelSerializer.SaveGame("World_1");
 
