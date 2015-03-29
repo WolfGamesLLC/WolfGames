@@ -10,6 +10,10 @@ public class LoadWorld : MonoBehaviour
 
     private List<LevelSerializer.SaveEntry> sg;
 
+    private int localWorldButtonIndex;
+
+    private const int MaxSaves = 5;
+
     #endregion
 
     #region Editor Properties
@@ -19,6 +23,9 @@ public class LoadWorld : MonoBehaviour
 
     [SerializeField]
     private GameObject WorldSelectionPanel;
+
+    [SerializeField]
+    private WorldSaveManager WorldSaveManagerPrefab;
 
     #endregion
 
@@ -39,17 +46,23 @@ public class LoadWorld : MonoBehaviour
         SetLoadWorldButtonText();
     }
 
-    void SetLoadWorldButtonText()
+    public void SetLoadWorldButtonText()
     {
         sg = LevelSerializer.SavedGames[LevelSerializer.PlayerName];
         Debug.Log("Saved Games count for " + LevelSerializer.PlayerName + ": " + sg.Count.ToString());
-        if (sg.Count >= 1)
-        {
-            WorldNameInputFieldText.text = sg[0].Caption;
-            Debug.Log("WorldNameInputField.text: " + WorldNameInputFieldText);
-        }
-        else
-            WorldNameInputFieldText.text = "Create New World";
+
+        for (int i = 0; i < sg.Count; i++)
+            CreateButton(sg[sg.Count - i - 1].Caption, i);
+
+        WorldNameInputFieldText.text = "world_1";
+    }
+
+    private void CreateButton(string buttonText, int instance)
+    {
+        WorldSaveManager newButton = (WorldSaveManager)Instantiate(WorldSaveManagerPrefab);
+        newButton.name = "localWorldButton_" + localWorldButtonIndex++;
+        newButton.transform.SetParent(WorldSelectionPanel.transform, false);
+        newButton.Setup(buttonText, instance);
     }
 
     /// <summary>
@@ -76,6 +89,8 @@ public class LoadWorld : MonoBehaviour
     /// </summary>
     public void SaveWorldData()
     {
+        if (sg.Count >= MaxSaves) return;
+
         if (WorldNameInputFieldText.text != "")
             LevelSerializer.SaveGame(WorldNameInputFieldText.text);
         else

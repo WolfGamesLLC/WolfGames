@@ -38,7 +38,7 @@ public class NetworkManager : MonoBehaviour
         photonView = GetComponent<PhotonView>();
         messages = new Queue<string>(MAX_MESSAGE_COUNT);
 
-        PhotonNetwork.logLevel = PhotonLogLevel.Full; 	// allow us to see every thing photon does
+//        PhotonNetwork.logLevel = PhotonLogLevel.Full; 	// allow us to see every thing photon does
         PhotonNetwork.ConnectUsingSettings("0.8");		// connect us to a room 
 
         StartCoroutine("UpdateConnectionString");		// log connection information to the screen
