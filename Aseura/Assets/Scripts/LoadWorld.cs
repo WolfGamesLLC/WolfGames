@@ -12,7 +12,7 @@ public class LoadWorld : MonoBehaviour
 
     private int localWorldButtonIndex;
 
-    private const int MaxSaves = 5;
+    private const int MaxSaves = 3;
 
     #endregion
 
@@ -89,7 +89,7 @@ public class LoadWorld : MonoBehaviour
     /// </summary>
     public void SaveWorldData()
     {
-        if (sg.Count >= MaxSaves) return;
+        if (sg.Count > MaxSaves) return;
 
         if (WorldNameInputFieldText.text != "")
             LevelSerializer.SaveGame(WorldNameInputFieldText.text);
