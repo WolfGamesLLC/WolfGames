@@ -89,7 +89,11 @@ public class LoadWorld : MonoBehaviour
     /// </summary>
     public void SaveWorldData()
     {
-        if (sg.Count > MaxSaves) return;
+        if (sg.Count > MaxSaves)
+        {
+            // popup info message here
+            return;
+        }
 
         if (WorldNameInputFieldText.text != "")
             LevelSerializer.SaveGame(WorldNameInputFieldText.text);
