@@ -78,7 +78,7 @@ public class ModalPanelData
     private string text;
     private Sprite icon;
     private Sprite background;
-    private List<EventButtonData> buttonDetails;
+    private List<EventButtonData> buttons;
 
     #endregion
     #region Properties
@@ -131,10 +131,10 @@ public class ModalPanelData
     /// <summary>
     /// The list of buttons to be displayed on the panel
     /// </summary>
-    public List<EventButtonData> ButtonDetails
+    public List<EventButtonData> Buttons
     {
-        get { return buttonDetails; }
-        set { buttonDetails = value; }
+        get { return buttons; }
+        set { buttons = value; }
     }
 
     #endregion
@@ -150,7 +150,7 @@ public class ModalPanelData
     {
         Text = text;
         Icon = icon;
-        buttonDetails = new List<EventButtonData>();
+        buttons = new List<EventButtonData>();
     }
 
     #endregion
@@ -160,6 +160,7 @@ public class ModalPanel : MonoBehaviour
 {
 
     private int ButtonIndex;
+    private List<Button> buttons;
 
     /// <summary>
     /// Unity Text object that display the text of the panel
@@ -170,9 +171,21 @@ public class ModalPanel : MonoBehaviour
     /// Unity Image object that will display the optional dialog box icon
     /// </summary>
     public Image icon;
+
+    /// <summary>
+    /// Unity button to be instantiated for each button requested
+    /// </summary>
+    public Button buttonTemplate;
  
-    public List<Button> buttons;
+    /// <summary>
+    /// The panel that contains the text, icon and instantiated buttons
+    /// </summary>
     public GameObject modalPanelObject;
+
+    /// <summary>
+    /// The panel that will become the parent of the buttons
+    /// </summary>
+    public GameObject buttonPanelObject;
 
     /// <summary>
     /// Singleton for access to the modal panel object
@@ -192,66 +205,48 @@ public class ModalPanel : MonoBehaviour
 
     public void Awake()
     {
+        buttons = new List<Button>();
         ClosePanel();
     }
 
-    public void Start()
+   public void ShowPanel(ModalPanelData data)
     {
-        ClosePanel();
-    }
-
-    public void SetSelection(string buttonText, UnityAction buttonEvent)
-    {
-        if (ButtonIndex >= buttons.Count)
+        foreach (EventButtonData button in data.Buttons)
         {
-            Debug.LogError("You asked to create button #" + ButtonIndex.ToString() + " only " + buttons.Count.ToString() + " are allowed");
+            Button newButton = Instantiate(buttonTemplate) as Button;
+            newButton.name = button.Title;
+            newButton.onClick.RemoveAllListeners();
+            newButton.onClick.AddListener(button.Action);
+            newButton.onClick.AddListener(ClosePanel);
+            newButton.gameObject.SetActive(true);
+            newButton.transform.FindChild("Text").GetComponent<Text>().text = button.Title;
+            newButton.transform.SetParent(buttonPanelObject.transform);
+            buttons.Add(newButton);
         }
-        
-        buttons[ButtonIndex].name = buttonText;
-        buttons[ButtonIndex].onClick.RemoveAllListeners();
-        buttons[ButtonIndex].onClick.AddListener(buttonEvent);
-        buttons[ButtonIndex].onClick.AddListener(ClosePanel);
-        buttons[ButtonIndex].gameObject.SetActive(true);
 
-        ButtonIndex++;
-    }
-
-    public void ShowPanel(string text, Sprite imageIcon = null)
-    {
         modalPanelObject.SetActive(true);
 
-        this.text.gameObject.SetActive(true);
-        this.text.text = text;
+        text.gameObject.SetActive(true);
+        text.text = data.Text;
 
-        if (imageIcon)
+        if (data.Icon)
         {
-            icon.sprite = imageIcon;
+            icon.sprite = data.Icon;
             icon.gameObject.SetActive(true);
         }
     }
 
-    public void ShowPanel(ModalPanelData details)
-    {
-        foreach (EventButtonData buttonDetails in details.ButtonDetails)
-        {
-            SetSelection(buttonDetails.Title, buttonDetails.Action);
-        }
-
-        ShowPanel(details.Text, details.Icon);
-    }
-
     private void ClosePanel()
     {
-        modalPanelObject.SetActive(false);
-
-        icon.gameObject.SetActive(false);
-        text.gameObject.SetActive(false);
-
         foreach (Button button in buttons)
         {
-            button.gameObject.SetActive(false);
+            Destroy(button.gameObject);
         }
-
-        ButtonIndex = 0;
+ 
+        buttons.Clear();
+        
+        modalPanelObject.SetActive(false);
+        icon.gameObject.SetActive(false);
+        text.gameObject.SetActive(false); 
     }
 }

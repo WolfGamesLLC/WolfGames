@@ -36,26 +36,28 @@ public class TestModalPanel : MonoBehaviour {
 
     public void TestYNCWindow()
     {
-        ModalPanelData details = new ModalPanelData("Test the YNC dialog box");
-        details.ButtonDetails.Add(new EventButtonData("YES", ButtonOneFunction));
-        details.ButtonDetails.Add(new EventButtonData("NO", ButtonTwoFunction));
-        details.ButtonDetails.Add(new EventButtonData("CANCEL", ButtonThreeFunction));
+        ModalPanelData data = new ModalPanelData("Test the YNC dialog box");
+        data.Buttons.Add(new EventButtonData("YES", ButtonOneFunction));
+        data.Buttons.Add(new EventButtonData("NO", ButtonTwoFunction));
+        data.Buttons.Add(new EventButtonData("CANCEL", ButtonThreeFunction));
 
-        modalPanel.ShowPanel(details);
+        modalPanel.ShowPanel(data);
     }
 
     public void TestErrorWindow()
     {
-        modalPanel.SetSelection("OK", ButtonOneFunction);
-
-        modalPanel.ShowPanel("You have encountered an error", icon);
+        ModalPanelData data = new ModalPanelData("You have encountered an error", icon);
+        data.Buttons.Add(new EventButtonData("OK", ButtonOneFunction));
+        modalPanel.ShowPanel(data);
     }
 
     public void TestLambda()
     {
-        modalPanel.SetSelection("YES", () => { InstantiateObject(thingToSpawn); });
-        modalPanel.SetSelection("NO", () => {  });
-        modalPanel.ShowPanel("Do you wish to instantiate a cube with a Lambda function?");
+        ModalPanelData data = new ModalPanelData("Do you wish to instantiate a cube with a Lambda function?");
+        data.Buttons.Add(new EventButtonData("YES", () => { InstantiateObject(thingToSpawn); }));
+        data.Buttons.Add(new EventButtonData("NO", () => { }));
+
+        modalPanel.ShowPanel(data);
     }
 
     private void InstantiateObject(GameObject thingToInstantiate)

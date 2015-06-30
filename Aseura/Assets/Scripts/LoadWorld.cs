@@ -14,6 +14,8 @@ public class LoadWorld : MonoBehaviour
 
     private const int MaxSaves = 3;
 
+    ModalPanel modalPanel;
+
     #endregion
 
     #region Editor Properties
@@ -37,6 +39,11 @@ public class LoadWorld : MonoBehaviour
     #endregion
 
     #region Methods
+
+    public void Awake()
+    {
+        modalPanel = ModalPanel.Instance();
+    }
 
     /// <summary>
     /// Enable the LoadWorld componenet
@@ -91,7 +98,10 @@ public class LoadWorld : MonoBehaviour
     {
         if (sg.Count > MaxSaves)
         {
-            // popup info message here
+            ModalPanelData data = new ModalPanelData("The maximum number of saved worlds has been reached\nYou must delete a previous save before creating another");
+            data.ButtonDetails.Add(new EventButtonData("OK", () => { }));
+
+            modalPanel.ShowPanel(data);
             return;
         }
 
