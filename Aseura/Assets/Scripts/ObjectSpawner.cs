@@ -24,19 +24,28 @@ public class ObjectSpawner : MonoBehaviour {
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.tag == "ClickableObject")
+                Debug.Log(hit.collider.tag.ToString());
+                if (hit.collider.tag == "ClickableTerrainObject" || hit.collider.tag == "ClickableBuildingObject")
                 {
-                    Quaternion newBrickRotation = Camera.main.transform.rotation;
-                    newBrickRotation.x = 0;
-                    newBrickRotation.z = 0;
-                    GameObject brick = (GameObject)Instantiate(brickTemplate, hit.point + new Vector3(0, brickTemplate.transform.localScale.y, 0), newBrickRotation);
+                    GameObject brick;
+
+                    if (hit.collider.tag == "ClickableBuildingObject")
+                    {
+                        brick = (GameObject)Instantiate(brickTemplate, hit.collider.transform.position + new Vector3(0, hit.collider.transform.localScale.y, 0), Camera.main.transform.rotation);
+                    }
+                    else
+                    {
+                        brick = (GameObject)Instantiate(brickTemplate, hit.point + new Vector3(0, 0.1f, 0), Camera.main.transform.rotation);
+                    }
+
                     brick.transform.LookAt(Camera.main.transform);
                     brick.transform.rotation = new Quaternion(0, brick.transform.rotation.y, 0, brick.transform.rotation.w);
-                    Debug.Log("Brick created at " + brick.transform);
                     bricks.Add(brick);
-                    //hit.collider.gameObject now refers to the 
-                    //cube under the mouse cursor if present
                 }
+
+                Collider[] hitColliders= Physics.OverlapSphere(hit.point, 1);
+                foreach(Collider collider in hitColliders)
+                    Debug.Log(collider.GetType().ToString());
             }
         }
     } 

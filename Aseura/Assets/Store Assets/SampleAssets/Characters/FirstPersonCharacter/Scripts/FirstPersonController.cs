@@ -63,6 +63,11 @@ namespace UnitySampleAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            if (CrossPlatformInputManager.GetButtonDown("Cancel"))
+            {
+               Application.Quit();
+            }
+
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!_jump)
