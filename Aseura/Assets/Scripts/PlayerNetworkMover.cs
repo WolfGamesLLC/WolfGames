@@ -5,10 +5,10 @@ public class PlayerNetworkMover : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("Loading player");
+//        Debug.Log("Loading player");
         foreach (Camera cam in GetComponentsInChildren<Camera>())
         {
-            Debug.Log("Player camera enabled");
+//            Debug.Log("Player camera enabled");
             cam.enabled = true;
         }
 	}

@@ -7,7 +7,8 @@ TagManager:
   - Dangerous
   - Smelly
   - Fire
-  - ClickableObject
+  - ClickableTerrainObject
+  - ClickableBuildingObject
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
