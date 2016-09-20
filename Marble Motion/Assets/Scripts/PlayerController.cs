@@ -20,4 +20,11 @@ public class PlayerController : MonoBehaviour
 
         rB.AddForce(new Vector3(moveHorizontal, 0.0f, moveVertical) * speed);
     }
+
+    // OnTriggerEnter is called when the Collider other enters the trigger
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("PickUp"))
+            other.gameObject.SetActive(false);
+    }
 }
