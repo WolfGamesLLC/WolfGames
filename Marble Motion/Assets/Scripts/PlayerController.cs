@@ -22,10 +22,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        SetScore();
+    }
 
+    private void Move(float moveHorizontal, float moveVertical)
+    {
         rB.AddForce(new Vector3(moveHorizontal, 0.0f, moveVertical) * speed);
+    }
+
+    private void SetScore()
+    {
         if (rB.IsSleeping() == false)
         {
             score += scoreModifier * speed;
