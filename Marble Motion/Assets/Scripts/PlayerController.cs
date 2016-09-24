@@ -1,15 +1,33 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
-public class PlayerController : MonoBehaviour
+public interface IMovementController
 {
-    public float speed;
-    public float scoreModifier;
+    void Move(Vector3 force);
+}
+
+public interface IScoreController
+{
+    void Set(float score);
+}
+
+public class PlayerController : MonoBehaviour, IMovementController, IScoreController
+{
+    public BallController ballController;
     public Text scoreText;
 
     private Rigidbody rB;
     private float score;
+
+    // Run when the enable event is fired
+    public void OnEnable()
+    {
+        ballController = new BallController();
+        ballController.SetMovementController(this);
+        ballController.SetScoreController(this);
+    }
 
     // Initialize the object
     public void Start()
@@ -22,28 +40,35 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        SetScore();
+        ballController.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        ballController.SetScore();
     }
 
-    private void Move(float moveHorizontal, float moveVertical)
-    {
-        rB.AddForce(new Vector3(moveHorizontal, 0.0f, moveVertical) * speed);
-    }
-
-    private void SetScore()
-    {
-        if (rB.IsSleeping() == false)
-        {
-            score += scoreModifier * speed;
-            scoreText.text = score.ToString();
-        }
-    }
 
     // OnTriggerEnter is called when the Collider other enters the trigger
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag("PickUp"))
             other.gameObject.SetActive(false);
     }
+
+    #region IMovementController implementation
+
+    public void Move(Vector3 force)
+    {
+        rB.AddForce(force);
+    }
+
+    #endregion
+
+    #region IScoreController implementation
+    public void Set(float score)
+    {
+        if (rB.IsSleeping() == false)
+        {
+            score += score;
+            scoreText.text = score.ToString();
+        }
+    }
+    #endregion
 }
