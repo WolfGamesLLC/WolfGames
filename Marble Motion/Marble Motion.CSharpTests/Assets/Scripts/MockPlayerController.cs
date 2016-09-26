@@ -9,16 +9,19 @@ namespace Tests
 {
     class MockPlayerController : IMovementController, IScoreController
     {
-        public Vector3 MovedForce;
+        public Vector3 Force;
+        public float Score;
+        public string ScoreText;
 
         public void Move(Vector3 force)
         {
-            MovedForce = force;
+            Force = force;
         }
 
-        public void Set(float score)
+        public void SetScore(float score)
         {
-            throw new NotImplementedException();
+//            ScoreText = score.ToString();
+//            Score = score;
         }
     }
 }

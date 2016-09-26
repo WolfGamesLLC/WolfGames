@@ -19,7 +19,7 @@ public class BallController
 
     public void SetScore()
     {
-        scoreController.Set(scoreModifier * speed);
+        scoreController.SetScore(scoreModifier * speed);
     }
 
     public void SetMovementController(IMovementController movementController)

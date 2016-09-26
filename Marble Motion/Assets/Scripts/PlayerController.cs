@@ -10,7 +10,7 @@ public interface IMovementController
 
 public interface IScoreController
 {
-    void Set(float score);
+    void SetScore(float score);
 }
 
 public class PlayerController : MonoBehaviour, IMovementController, IScoreController
@@ -41,7 +41,11 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
     void FixedUpdate()
     {
         ballController.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        ballController.SetScore();
+
+        if (rB.IsSleeping() == false)
+        {
+            ballController.SetScore();
+        }
     }
 
 
@@ -62,13 +66,10 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
     #endregion
 
     #region IScoreController implementation
-    public void Set(float score)
+    public void SetScore(float score)
     {
-        if (rB.IsSleeping() == false)
-        {
-            score += score;
-            scoreText.text = score.ToString();
-        }
+        score += score;
+        scoreText.text = score.ToString();
     }
     #endregion
 }
