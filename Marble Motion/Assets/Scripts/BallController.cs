@@ -22,6 +22,11 @@ public class BallController
         scoreController.SetObjectScore(scoreModifier * speed);
     }
 
+    public void SetSpeed(float moveHorizontal, float moveVertical)
+    {
+        scoreController.SetObjectScore(scoreModifier * speed);
+    }
+
     public void SetMovementController(IMovementController movementController)
     {
         this.movementController = movementController;

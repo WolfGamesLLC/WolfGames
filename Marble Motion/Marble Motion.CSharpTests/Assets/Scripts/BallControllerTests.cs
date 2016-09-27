@@ -13,12 +13,15 @@ namespace Tests
     {
         MockPlayerController testPlayer = new MockPlayerController();
         BallController testBallController = new BallController();
+        PrivateObject pObject;
 
         [TestInitialize()]
         public void SetControllers()
         {
             testBallController.SetMovementController(testPlayer);
             testBallController.SetScoreController(testPlayer);
+
+            pObject = new PrivateObject(testBallController);
         }
 
         [TestMethod()]
@@ -33,11 +36,10 @@ namespace Tests
         [TestMethod()]
         public void SetScoreTest()
         {
-            testBallController.SetScore();
-
-            PrivateObject pObject = new PrivateObject(testBallController);
-            float expectedScore = Convert.ToSingle(pObject.GetFieldOrProperty("speed")) * 
+            float expectedScore = Convert.ToSingle(pObject.GetFieldOrProperty("speed")) *
                                     Convert.ToSingle(pObject.GetFieldOrProperty("scoreModifier"));
+
+            testBallController.SetScore();
 
             Assert.AreEqual(expectedScore, testPlayer.Score);
             Assert.AreEqual(expectedScore.ToString(), testPlayer.ScoreText);
@@ -46,14 +48,11 @@ namespace Tests
         [TestMethod()]
         public void SetSpeedTest()
         {
-            testBallController.SetScore();
+            float expectedSpeed = Convert.ToSingle(pObject.GetFieldOrProperty("speed"));
 
-            PrivateObject pObject = new PrivateObject(testBallController);
-            float expectedScore = Convert.ToSingle(pObject.GetFieldOrProperty("speed")) *
-                                    Convert.ToSingle(pObject.GetFieldOrProperty("scoreModifier"));
+            testBallController.SetSpeed(0, 0);
 
-            Assert.AreEqual(expectedScore, testPlayer.Score);
-            Assert.AreEqual(expectedScore.ToString(), testPlayer.ScoreText);
+            Assert.AreEqual(expectedSpeed, testPlayer.Speed);
         }
     }
 }

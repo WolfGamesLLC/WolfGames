@@ -12,6 +12,7 @@ namespace Tests
         public Vector3 Force;
         public float Score;
         public string ScoreText;
+        public float Speed;
 
         public void MoveObject(Vector3 force)
         {
