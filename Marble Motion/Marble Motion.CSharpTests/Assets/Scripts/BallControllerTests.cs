@@ -14,12 +14,16 @@ namespace Tests
         MockPlayerController testPlayer = new MockPlayerController();
         BallController testBallController = new BallController();
 
-        [TestMethod()]
-        public void MoveTest()
+        [TestInitialize()]
+        public void SetControllers()
         {
             testBallController.SetMovementController(testPlayer);
             testBallController.SetScoreController(testPlayer);
+        }
 
+        [TestMethod()]
+        public void MoveTest()
+        {
             Vector3 appliedForce = new Vector3(10, 0 , 10);
 
             testBallController.Move(1, 1);
@@ -29,31 +33,27 @@ namespace Tests
         [TestMethod()]
         public void SetScoreTest()
         {
-            float score = 1.0f;
-            testBallController.SetMovementController(testPlayer);
-            testBallController.SetScoreController(testPlayer);
-
             testBallController.SetScore();
-            Assert.AreEqual(score, testPlayer.Score);
-            Assert.AreEqual(score.ToString(), testPlayer.ScoreText);
+
+            PrivateObject pObject = new PrivateObject(testBallController);
+            float expectedScore = Convert.ToSingle(pObject.GetFieldOrProperty("speed")) * 
+                                    Convert.ToSingle(pObject.GetFieldOrProperty("scoreModifier"));
+
+            Assert.AreEqual(expectedScore, testPlayer.Score);
+            Assert.AreEqual(expectedScore.ToString(), testPlayer.ScoreText);
         }
 
         [TestMethod()]
-        public void SetMovementControllerTest()
+        public void SetSpeedTest()
         {
-            testBallController.SetMovementController(testPlayer);
+            testBallController.SetScore();
 
             PrivateObject pObject = new PrivateObject(testBallController);
-            Assert.AreSame(testPlayer, pObject.GetFieldOrProperty("movementController"));
-        }
+            float expectedScore = Convert.ToSingle(pObject.GetFieldOrProperty("speed")) *
+                                    Convert.ToSingle(pObject.GetFieldOrProperty("scoreModifier"));
 
-        [TestMethod()]
-        public void SetScoreControllerTest()
-        {
-            testBallController.SetScoreController(testPlayer);
-
-            PrivateObject pObject = new PrivateObject(testBallController);
-            Assert.AreSame(testPlayer, pObject.GetFieldOrProperty("scoreController"));
+            Assert.AreEqual(expectedScore, testPlayer.Score);
+            Assert.AreEqual(expectedScore.ToString(), testPlayer.ScoreText);
         }
     }
 }

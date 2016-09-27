@@ -14,12 +14,12 @@ public class BallController
 
     public void Move(float moveHorizontal, float moveVertical)
     {
-        movementController.Move(new Vector3(moveHorizontal, 0.0f, moveVertical) * speed);
+        movementController.MoveObject(new Vector3(moveHorizontal, 0.0f, moveVertical) * speed);
     }
 
     public void SetScore()
     {
-        scoreController.SetScore(scoreModifier * speed);
+        scoreController.SetObjectScore(scoreModifier * speed);
     }
 
     public void SetMovementController(IMovementController movementController)

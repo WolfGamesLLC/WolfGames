@@ -13,15 +13,15 @@ namespace Tests
         public float Score;
         public string ScoreText;
 
-        public void Move(Vector3 force)
+        public void MoveObject(Vector3 force)
         {
             Force = force;
         }
 
-        public void SetScore(float score)
+        public void SetObjectScore(float score)
         {
-//            ScoreText = score.ToString();
-//            Score = score;
+            ScoreText = score.ToString();
+            Score = score;
         }
     }
 }

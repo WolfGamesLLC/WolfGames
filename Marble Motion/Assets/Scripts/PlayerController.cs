@@ -5,12 +5,12 @@ using System;
 
 public interface IMovementController
 {
-    void Move(Vector3 force);
+    void MoveObject(Vector3 force);
 }
 
 public interface IScoreController
 {
-    void SetScore(float score);
+    void SetObjectScore(float score);
 }
 
 public class PlayerController : MonoBehaviour, IMovementController, IScoreController
@@ -41,11 +41,7 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
     void FixedUpdate()
     {
         ballController.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
-        if (rB.IsSleeping() == false)
-        {
-            ballController.SetScore();
-        }
+        ballController.SetScore();
     }
 
 
@@ -58,7 +54,7 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
 
     #region IMovementController implementation
 
-    public void Move(Vector3 force)
+    public void MoveObject(Vector3 force)
     {
         rB.AddForce(force);
     }
@@ -66,10 +62,12 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
     #endregion
 
     #region IScoreController implementation
-    public void SetScore(float score)
+
+    public void SetObjectScore(float score)
     {
         score += score;
         scoreText.text = score.ToString();
     }
+
     #endregion
 }
