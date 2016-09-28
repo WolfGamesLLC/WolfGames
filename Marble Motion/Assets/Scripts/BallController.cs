@@ -24,7 +24,11 @@ public class BallController
 
     public void SetSpeed(float moveHorizontal, float moveVertical)
     {
-        scoreController.SetObjectScore(scoreModifier * speed);
+        if (moveHorizontal > 0 || moveVertical > 0)
+            speed++;
+        else speed--;
+
+        if (speed < 1) speed = 1;
     }
 
     public void SetMovementController(IMovementController movementController)

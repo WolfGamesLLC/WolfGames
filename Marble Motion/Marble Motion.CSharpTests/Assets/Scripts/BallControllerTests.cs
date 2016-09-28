@@ -14,6 +14,7 @@ namespace Tests
         MockPlayerController testPlayer = new MockPlayerController();
         BallController testBallController = new BallController();
         PrivateObject pObject;
+        float expectedSpeed;
 
         [TestInitialize()]
         public void SetControllers()
@@ -22,6 +23,7 @@ namespace Tests
             testBallController.SetScoreController(testPlayer);
 
             pObject = new PrivateObject(testBallController);
+            expectedSpeed = Convert.ToSingle(pObject.GetFieldOrProperty("speed"));
         }
 
         [TestMethod()]
@@ -46,13 +48,51 @@ namespace Tests
         }
 
         [TestMethod()]
-        public void SetSpeedTest()
+        public void SetSpeedNoInputTest()
         {
-            float expectedSpeed = Convert.ToSingle(pObject.GetFieldOrProperty("speed"));
+            testBallController.SetSpeed(0, 0);
+            Assert.AreEqual(expectedSpeed - 1, Convert.ToSingle(pObject.GetFieldOrProperty("speed")));
+        }
+
+        [TestMethod()]
+        public void SetSpeedHorizontalInputTest()
+        {
+            testBallController.SetSpeed(0.1f, 0);
+            Assert.AreEqual(expectedSpeed + 1, Convert.ToSingle(pObject.GetFieldOrProperty("speed")));
+        }
+
+        [TestMethod()]
+        public void SetSpeedVerticalInputTest()
+        {
+            testBallController.SetSpeed(0, 0.1f);
+            Assert.AreEqual(expectedSpeed + 1, Convert.ToSingle(pObject.GetFieldOrProperty("speed")));
+        }
+
+        [TestMethod()]
+        public void SetSpeedBothAxisInputTest()
+        {
+            testBallController.SetSpeed(0.1f, 0.1f);
+            Assert.AreEqual(expectedSpeed + 1, Convert.ToSingle(pObject.GetFieldOrProperty("speed")));
+        }
+
+        [TestMethod()]
+        public void ReduceSpeedAtMinValue()
+        {
+            expectedSpeed = 1.0f;
+            pObject.SetFieldOrProperty("speed", expectedSpeed);
 
             testBallController.SetSpeed(0, 0);
+            Assert.AreEqual(expectedSpeed, Convert.ToSingle(pObject.GetFieldOrProperty("speed")));
+        }
 
-            Assert.AreEqual(expectedSpeed, testPlayer.Speed);
+        [TestMethod()]
+        public void IncreaseSpeedAtMaxValue()
+        {
+            expectedSpeed = 10.0f;
+            pObject.SetFieldOrProperty("speed", expectedSpeed);
+
+            testBallController.SetSpeed(0, 0);
+            Assert.AreEqual(expectedSpeed, Convert.ToSingle(pObject.GetFieldOrProperty("speed")));
         }
     }
 }
