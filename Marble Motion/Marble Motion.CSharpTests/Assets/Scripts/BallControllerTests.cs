@@ -78,7 +78,7 @@ namespace Tests
         [TestMethod()]
         public void ReduceSpeedAtMinValue()
         {
-            expectedSpeed = 1.0f;
+            expectedSpeed = BallController.MIN_SPEED;
             pObject.SetFieldOrProperty("speed", expectedSpeed);
 
             testBallController.SetSpeed(0, 0);
@@ -88,10 +88,10 @@ namespace Tests
         [TestMethod()]
         public void IncreaseSpeedAtMaxValue()
         {
-            expectedSpeed = 10.0f;
+            expectedSpeed = BallController.MAX_SPEED;
             pObject.SetFieldOrProperty("speed", expectedSpeed);
 
-            testBallController.SetSpeed(0, 0);
+            testBallController.SetSpeed(0.1f, 0);
             Assert.AreEqual(expectedSpeed, Convert.ToSingle(pObject.GetFieldOrProperty("speed")));
         }
     }

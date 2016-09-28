@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class BallController
 {
+    public const float MAX_SPEED = 10.0f;
+    public const float MIN_SPEED = 1.0f;
+
     public float speed = 10;
     public float scoreModifier = 100;
 
@@ -14,6 +17,7 @@ public class BallController
 
     public void Move(float moveHorizontal, float moveVertical)
     {
+        SetSpeed(moveHorizontal, moveVertical);
         movementController.MoveObject(new Vector3(moveHorizontal, 0.0f, moveVertical) * speed);
     }
 
@@ -28,7 +32,8 @@ public class BallController
             speed++;
         else speed--;
 
-        if (speed < 1) speed = 1;
+        if (speed < MIN_SPEED) speed = MIN_SPEED;
+        if (speed > MAX_SPEED) speed = MAX_SPEED;
     }
 
     public void SetMovementController(IMovementController movementController)
