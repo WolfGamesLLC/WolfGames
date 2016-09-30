@@ -28,6 +28,21 @@ namespace Tests
             return Convert.ToSingle(pObject.GetFieldOrProperty("speed"));
         }
 
+        private void RunMoveTest(float hMove, float vMove)
+        {
+            Vector3 appliedForce = new Vector3(hMove, 0, vMove) * GetBallControllerSpeed();
+
+            testBallController.Move(hMove, vMove);
+
+            Assert.AreEqual(appliedForce, testPlayer.Force);
+        }
+
+        private void RunSetSpeedTest(float hMove, float vMove, float expSpeed)
+        {
+            testBallController.SetSpeed(hMove, vMove);
+            Assert.AreEqual(expSpeed, GetBallControllerSpeed());
+        }
+
         #endregion
 
         [TestInitialize()]
@@ -41,13 +56,15 @@ namespace Tests
         }
 
         [TestMethod()]
-        public void MoveTest()
+        public void PositiveMoveTest()
         {
-            Vector3 appliedForce = new Vector3(1, 0, 1) * GetBallControllerSpeed();
+            RunMoveTest(1,1);
+        }
 
-            testBallController.Move(1, 1);
-
-            Assert.AreEqual(appliedForce, testPlayer.Force);
+        [TestMethod()]
+        public void NegativeMoveTest()
+        {
+            RunMoveTest(-1, -1);
         }
 
         [TestMethod()]
@@ -65,29 +82,31 @@ namespace Tests
         [TestMethod()]
         public void SetSpeedNoInputTest()
         {
-            testBallController.SetSpeed(0, 0);
-            Assert.AreEqual(BallController.MIN_SPEED, GetBallControllerSpeed());
+            RunSetSpeedTest(0, 0, BallController.MIN_SPEED);
         }
 
         [TestMethod()]
         public void SetSpeedHorizontalInputTest()
         {
-            testBallController.SetSpeed(0.1f, 0);
-            Assert.AreEqual(expectedSpeed + 1, GetBallControllerSpeed());
+            RunSetSpeedTest(0.1f, 0, expectedSpeed + 1);
+        }
+
+        [TestMethod()]
+        public void SetSpeedNegativeHorizontalInputTest()
+        {
+            RunSetSpeedTest(-0.1f, 0, expectedSpeed + 1);
         }
 
         [TestMethod()]
         public void SetSpeedVerticalInputTest()
         {
-            testBallController.SetSpeed(0, 0.1f);
-            Assert.AreEqual(expectedSpeed + 1, GetBallControllerSpeed());
+            RunSetSpeedTest(0, 0.1f, expectedSpeed + 1);
         }
 
         [TestMethod()]
         public void SetSpeedBothAxisInputTest()
         {
-            testBallController.SetSpeed(0.1f, 0.1f);
-            Assert.AreEqual(expectedSpeed + 1, GetBallControllerSpeed());
+            RunSetSpeedTest(0.1f, 0.1f, expectedSpeed + 1);
         }
 
         [TestMethod()]
@@ -96,8 +115,7 @@ namespace Tests
             expectedSpeed = BallController.MIN_SPEED;
             pObject.SetFieldOrProperty("speed", expectedSpeed);
 
-            testBallController.SetSpeed(0, 0);
-            Assert.AreEqual(expectedSpeed, GetBallControllerSpeed());
+            RunSetSpeedTest(0, 0, expectedSpeed);
         }
 
         [TestMethod()]
@@ -106,8 +124,7 @@ namespace Tests
             expectedSpeed = BallController.MAX_SPEED;
             pObject.SetFieldOrProperty("speed", expectedSpeed);
 
-            testBallController.SetSpeed(0.1f, 0);
-            Assert.AreEqual(expectedSpeed, GetBallControllerSpeed());
+            RunSetSpeedTest(0.1f, 0, expectedSpeed);
         }
 
         [TestMethod()]
