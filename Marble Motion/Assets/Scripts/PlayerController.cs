@@ -40,7 +40,11 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
     // Update is called once per frame
     void FixedUpdate()
     {
-        ballController.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        float hMove = Input.GetAxis("Horizontal");
+        float vMove = Input.GetAxis("Vertical");
+
+        ballController.SetSpeed(hMove, vMove);
+        ballController.Move(hMove, vMove);
         ballController.SetScore();
     }
 
@@ -65,7 +69,7 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
 
     public void SetObjectScore(float score)
     {
-        score += score;
+        this.score += score;
         scoreText.text = score.ToString();
     }
 

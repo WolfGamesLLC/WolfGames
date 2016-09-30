@@ -9,15 +9,20 @@ public class BallController
     public const float MAX_SPEED = 10.0f;
     public const float MIN_SPEED = 1.0f;
 
-    public float speed = 10;
-    public float scoreModifier = 100;
+    private float speed = 10;
+    private float scoreModifier;
 
     private IMovementController movementController;
     private IScoreController scoreController;
 
+    public BallController()
+    {
+        speed = MIN_SPEED;
+        scoreModifier = 100;
+    }
+
     public void Move(float moveHorizontal, float moveVertical)
     {
-        SetSpeed(moveHorizontal, moveVertical);
         movementController.MoveObject(new Vector3(moveHorizontal, 0.0f, moveVertical) * speed);
     }
 
