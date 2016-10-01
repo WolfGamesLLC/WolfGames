@@ -18,7 +18,7 @@ public class BallController
     public BallController()
     {
         speed = MIN_SPEED;
-        scoreModifier = 100;
+        scoreModifier = 10000;
     }
 
     public void Move(float moveHorizontal, float moveVertical)
