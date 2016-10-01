@@ -96,7 +96,6 @@ namespace Tests
         {
             RunSetSpeedTest(-0.1f, 0, expectedSpeed + 1);
         }
-
         [TestMethod()]
         public void SetSpeedVerticalInputTest()
         {
@@ -104,9 +103,21 @@ namespace Tests
         }
 
         [TestMethod()]
+        public void SetSpeedNegativeVerticalInputTest()
+        {
+            RunSetSpeedTest(0, -0.1f, expectedSpeed + 1);
+        }
+
+        [TestMethod()]
         public void SetSpeedBothAxisInputTest()
         {
             RunSetSpeedTest(0.1f, 0.1f, expectedSpeed + 1);
+        }
+
+        [TestMethod()]
+        public void SetSpeedNegativeBothAxisInputTest()
+        {
+            RunSetSpeedTest(-0.1f, -0.1f, expectedSpeed + 1);
         }
 
         [TestMethod()]

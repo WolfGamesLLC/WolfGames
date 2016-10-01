@@ -33,7 +33,7 @@ public class BallController
 
     public void SetSpeed(float moveHorizontal, float moveVertical)
     {
-        if (moveHorizontal > 0 || moveVertical > 0)
+        if (moveHorizontal != 0 || moveVertical != 0)
             speed++;
         else speed--;
 

@@ -70,6 +70,11 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
     public void SetObjectScore(float score)
     {
         this.score += score;
+        SetScoreText();
+    }
+
+    private void SetScoreText()
+    {
         scoreText.text = score.ToString();
     }
 
