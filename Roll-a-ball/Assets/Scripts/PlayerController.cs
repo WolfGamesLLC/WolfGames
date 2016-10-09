@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour, IMovementController
 	public void movePlayer (float moveHorizontal, float moveVertical)
 	{
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-		rigidbody.AddForce (movement * speed * Time.deltaTime);
+		GetComponent<Rigidbody>().AddForce (movement * speed * Time.deltaTime);
 	}
 
 	void SetCountText()
