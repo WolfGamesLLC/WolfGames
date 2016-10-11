@@ -70,10 +70,11 @@ namespace Tests
         [TestMethod()]
         public void SetScoreTest()
         {
-            float expectedScore = GetBallControllerSpeed() *
+            float velocity = 10;
+            float expectedScore = velocity *
                                     GetBallControllerScoreModifier();
 
-            testBallController.SetScore();
+            testBallController.SetScore(velocity);
 
             Assert.AreEqual(expectedScore, testPlayer.Score);
             Assert.AreEqual(expectedScore.ToString(), testPlayer.ScoreText);

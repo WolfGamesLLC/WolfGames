@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
 
         ballController.SetSpeed(hMove, vMove);
         ballController.Move(hMove, vMove);
-        ballController.SetScore();
+        ballController.SetScore(rB.velocity.x + rB.velocity.z);
     }
 
 
