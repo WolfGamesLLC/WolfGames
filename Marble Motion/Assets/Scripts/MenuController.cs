@@ -1,26 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
-public interface IGameController
-{
-    void StartPlayer();
-    void SetScoreText();
-}
-
-public class MenuController : MonoBehaviour, IGameController
+public class MenuController : MonoBehaviour, IScoreController
 {
     MainMenuController mainMenuController;
+    public Text scoreText;
 
     // Run when the enable event is fired
     public void OnEnable()
     {
         mainMenuController = new MainMenuController();
-        mainMenuController.SetGameController(this);
-    }
-
-    public void Update()
-    {
-        mainMenuController.StartGame();
     }
 
     public void Quit()
@@ -32,14 +22,11 @@ public class MenuController : MonoBehaviour, IGameController
 #endif
     }
 
-    #region IGameController implementation
+    #region IScoreController implementation
 
-    public void StartPlayer()
+    public void SetScoreText(string score)
     {
-    }
-
-    public void SetScoreText()
-    {
+        scoreText.text = score;
     }
 
     #endregion

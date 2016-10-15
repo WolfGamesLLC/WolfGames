@@ -49,7 +49,6 @@ namespace Tests
         public void SetControllers()
         {
             testBallController.SetMovementController(testPlayer);
-            testBallController.SetScoreController(testPlayer);
 
             pObject = new PrivateObject(testBallController);
             expectedSpeed = GetBallControllerSpeed();
@@ -65,19 +64,6 @@ namespace Tests
         public void NegativeMoveTest()
         {
             RunMoveTest(-1, -1);
-        }
-
-        [TestMethod()]
-        public void SetScoreTest()
-        {
-            float velocity = 10;
-            float expectedScore = velocity *
-                                    GetBallControllerScoreModifier();
-
-            testBallController.SetScore(velocity);
-
-            Assert.AreEqual(expectedScore, testPlayer.Score);
-            Assert.AreEqual(expectedScore.ToString(), testPlayer.ScoreText);
         }
 
         [TestMethod()]

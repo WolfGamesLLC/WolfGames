@@ -17,16 +17,17 @@ namespace Tests
         [TestInitialize()]
         public void SetControllers()
         {
-            testMainMenuController.SetGameController(testMenu);
-
+            testMainMenuController.SetScoreController(testMenu);
             pObject = new PrivateObject(testMainMenuController);
         }
 
         [TestMethod()]
-        public void StartGameTest()
+        public void SetScoreTextTest()
         {
-            testMainMenuController.StartGame();
-            Assert.Fail();
+            int expectedScore = 1;
+
+            testMainMenuController.SetScoreText(expectedScore);
+            Assert.AreEqual(expectedScore, testMenu.Score);
         }
     }
 }

@@ -7,22 +7,13 @@ using UnityEngine;
 
 namespace Tests
 {
-    class MockPlayerController : IMovementController, IScoreController
+    class MockPlayerController : IMovementController
     {
         public Vector3 Force;
-        public float Score;
-        public string ScoreText;
-        public float Speed;
 
         public void MoveObject(Vector3 force)
         {
             Force = force;
-        }
-
-        public void SetObjectScore(float score)
-        {
-            ScoreText = score.ToString();
-            Score = score;
         }
     }
 }

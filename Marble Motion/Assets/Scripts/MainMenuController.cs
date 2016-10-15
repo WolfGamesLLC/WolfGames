@@ -5,17 +5,16 @@ using System.Text;
 
 public class MainMenuController
 {
-    private IGameController gameController;
+    private IScoreController scoreController;
 
-    // Start the game
-    public void StartGame()
+    public void SetScoreController(IScoreController controller)
     {
-        gameController.SetScoreText
+        scoreController = controller;
     }
 
-    // Set the Menu's game controller
-    public void SetGameController(IGameController gameController)
+    // Set the score text
+    public void SetScoreText(int score)
     {
-        this.gameController = gameController;
+        scoreController.SetScoreText(score.ToString());
     }
 }

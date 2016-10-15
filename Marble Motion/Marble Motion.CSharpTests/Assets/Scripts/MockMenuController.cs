@@ -6,16 +6,24 @@ using System.Threading.Tasks;
 
 namespace Tests
 {
-    class MockMenuController : IGameController
+    class MockMenuController : IPlayerController, IScoreController
     {
+        public string Score;
+
         #region IGameController implementation
 
         public void StartPlayer()
         {
+            throw new NotImplementedException();
         }
 
-        public void SetScoreText()
+        #endregion
+
+        #region IScoreController implementation
+
+        public void SetScoreText(string score)
         {
+            Score = score;
         }
 
         #endregion
