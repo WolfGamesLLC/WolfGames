@@ -9,6 +9,20 @@ public interface IGameController
 
 public class MenuController : MonoBehaviour, IGameController
 {
+    MainMenuController mainMenuController;
+
+    // Run when the enable event is fired
+    public void OnEnable()
+    {
+        mainMenuController = new MainMenuController();
+        mainMenuController.SetGameController(this);
+    }
+
+    public void Update()
+    {
+        mainMenuController.StartGame();
+    }
+
     public void Quit()
     {
 #if UNITY_EDITOR

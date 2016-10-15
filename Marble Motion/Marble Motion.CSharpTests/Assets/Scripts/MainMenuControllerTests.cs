@@ -10,16 +10,23 @@ namespace Tests
     [TestClass()]
     public class MainMenuControllerTests
     {
-        MockMenuController mockMenuController = new MockMenuController();
+        MockMenuController testMenu = new MockMenuController();
         MainMenuController testMainMenuController = new MainMenuController();
         PrivateObject pObject;
 
-        [TestMethod()]
-        public void SetGameControllerTest()
+        [TestInitialize()]
+        public void SetControllers()
         {
-            testMainMenuController.SetGameController(mockMenuController);
+            testMainMenuController.SetGameController(testMenu);
+
             pObject = new PrivateObject(testMainMenuController);
-            Assert.AreSame(mockMenuController, pObject.GetFieldOrProperty("gameController"));
+        }
+
+        [TestMethod()]
+        public void StartGameTest()
+        {
+            testMainMenuController.StartGame();
+            Assert.Fail();
         }
     }
 }
