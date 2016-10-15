@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
 {
     public BallController ballController;
     public Text scoreText;
+    public GameObject mainMenu;
 
     private Rigidbody rB;
     private float score;
@@ -46,6 +47,12 @@ public class PlayerController : MonoBehaviour, IMovementController, IScoreContro
         ballController.SetSpeed(hMove, vMove);
         ballController.Move(hMove, vMove);
         ballController.SetScore(rB.velocity.x + rB.velocity.z);
+    }
+
+    // Update is called every frame, if the MonoBehaviour is enabled
+    public void Update()
+    {
+        if (Input.GetButtonUp("Cancel")) mainMenu.SetActive(true);
     }
 
 
