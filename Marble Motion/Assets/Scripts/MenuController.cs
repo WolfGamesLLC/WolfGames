@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MenuController : MonoBehaviour
+public interface IGameController
+{
+    void StartPlayer();
+    void SetScoreText();
+}
+
+public class MenuController : MonoBehaviour, IGameController
 {
     public void Quit()
     {
@@ -11,4 +17,16 @@ public class MenuController : MonoBehaviour
         Application.Quit();
 #endif
     }
+
+    #region IGameController implementation
+
+    public void StartPlayer()
+    {
+    }
+
+    public void SetScoreText()
+    {
+    }
+
+    #endregion
 }
