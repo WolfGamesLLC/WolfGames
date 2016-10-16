@@ -15,9 +15,9 @@ namespace Tests
 
         #region Helper methods
 
-        private int GetGameScore()
+        private long GetGameScore()
         {
-            return (int)pObject.GetFieldOrProperty("score");
+            return (long)pObject.GetFieldOrProperty("score");
         }
 
         private Object GetMainMenu()
@@ -51,8 +51,15 @@ namespace Tests
         [TestMethod()]
         public void StartGameTest()
         {
-            testGame.StartGame();
+            testGame.Start();
             Assert.AreEqual(0, GetGameScore());
+        }
+
+        [TestMethod()]
+        public void UpdateTest()
+        {
+            testGame.Update();
+            Assert.AreEqual(1l, pObject.GetFieldOrProperty("score"));
         }
     }
 }

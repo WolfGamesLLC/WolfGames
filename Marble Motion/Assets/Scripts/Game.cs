@@ -23,8 +23,19 @@ public class Game
 {
     MainMenuController mainMenu;
     BallController player;
-    int score;
+    long score;
     Vector3 playerPreviousPosition;
+
+    public long Score
+    {
+        get { return score; }
+
+        set
+        {
+            score = value;
+            mainMenu.SetScoreText(Score);
+        }
+    }
 
     public Game(MainMenuController menu, BallController ball)
     {
@@ -32,14 +43,13 @@ public class Game
         player = ball;
     }
 
-    public void StartGame()
+    public void Start()
     {
-        score = 0;
-        mainMenu.SetScoreText(score);
+        Score = 0;
     }
 
     public void Update()
     {
-
+        Score = 1;
     }
 }
