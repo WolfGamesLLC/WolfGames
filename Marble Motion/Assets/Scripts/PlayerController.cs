@@ -46,5 +46,9 @@ public class PlayerController : MonoBehaviour, IMovementController
         rB.AddForce(force);
     }
 
+    public Vector3 Position()
+    {
+        return rB.position;
+    }
     #endregion
 }

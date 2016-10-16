@@ -57,7 +57,7 @@ namespace Tests
         [TestMethod()]
         public void PositiveMoveTest()
         {
-            RunMoveTest(1,1);
+            RunMoveTest(1, 1);
         }
 
         [TestMethod()]
@@ -129,6 +129,12 @@ namespace Tests
         public void BallControllerTest()
         {
             Assert.AreEqual(BallController.MIN_SPEED, GetBallControllerSpeed());
+        }
+
+        [TestMethod()]
+        public void Position()
+        {
+            Assert.AreEqual(Vector3.one, testBallController.Position());
         }
     }
 }

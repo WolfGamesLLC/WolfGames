@@ -37,4 +37,9 @@ public class BallController
     {
         this.movementController = movementController;
     }
+
+    public Vector3 Position()
+    {
+        return movementController.Position();
+    }
 }

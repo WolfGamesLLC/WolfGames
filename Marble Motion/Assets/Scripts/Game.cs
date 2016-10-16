@@ -16,6 +16,7 @@ public interface IScoreController
 
 public interface IMovementController
 {
+    Vector3 Position();
     void MoveObject(Vector3 force);
 }
 
@@ -46,10 +47,12 @@ public class Game
     public void Start()
     {
         Score = 0;
+        playerPreviousPosition = player.Position();
     }
 
     public void Update()
     {
         Score = 1;
+        playerPreviousPosition = player.Position();
     }
 }

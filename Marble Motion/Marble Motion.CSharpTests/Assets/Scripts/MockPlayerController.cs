@@ -15,5 +15,10 @@ namespace Tests
         {
             Force = force;
         }
+
+        public Vector3 Position()
+        {
+            return Vector3.one;
+        }
     }
 }
