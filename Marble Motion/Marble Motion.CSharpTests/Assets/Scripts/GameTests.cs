@@ -35,7 +35,9 @@ namespace Tests
         [TestInitialize]
         public void InitializeGame()
         {
-            testGame = new Game(new MainMenuController(), new BallController());
+            MainMenuController menu = new MainMenuController();
+            menu.SetScoreController(new MockMenuController());
+            testGame = new Game(menu, new BallController());
             pObject = new PrivateObject(testGame);
         }
 

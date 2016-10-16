@@ -6,7 +6,6 @@ using System;
 public class PlayerController : MonoBehaviour, IMovementController
 {
     public BallController ballController;
-    public GameObject mainMenu;
 
     private Rigidbody rB;
 
@@ -32,13 +31,6 @@ public class PlayerController : MonoBehaviour, IMovementController
         ballController.SetSpeed(hMove, vMove);
         ballController.Move(hMove, vMove);
     }
-
-    // Update is called every frame, if the MonoBehaviour is enabled
-    public void Update()
-    {
-        if (Input.GetButtonUp("Cancel")) mainMenu.SetActive(true);
-    }
-
 
     // OnTriggerEnter is called when the Collider other enters the trigger
     public void OnTriggerEnter(Collider other)

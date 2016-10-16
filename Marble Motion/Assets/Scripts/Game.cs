@@ -37,4 +37,9 @@ public class Game
         score = 0;
         mainMenu.SetScoreText(score);
     }
+
+    public void Update()
+    {
+
+    }
 }

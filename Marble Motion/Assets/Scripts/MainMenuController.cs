@@ -13,7 +13,7 @@ public class MainMenuController
     }
 
     // Set the score text
-    public void SetScoreText(int score)
+    public void SetScoreText(long score)
     {
         scoreController.SetScoreText(score.ToString());
     }

@@ -24,10 +24,10 @@ namespace Tests
         [TestMethod()]
         public void SetScoreTextTest()
         {
-            int expectedScore = 1;
+            long expectedScore = 100000000000;
 
             testMainMenuController.SetScoreText(expectedScore);
-            Assert.AreEqual(expectedScore, testMenu.Score);
+            Assert.AreEqual("100000000000", testMenu.Score);
         }
     }
 }
