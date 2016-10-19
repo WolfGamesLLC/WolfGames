@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.Analytics;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
@@ -9,8 +11,8 @@ public class GameController : MonoBehaviour
 
     Game game;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         MainMenuController mainMenu = new MainMenuController();
         mainMenu.SetScoreController(this.menu);
@@ -19,12 +21,27 @@ public class GameController : MonoBehaviour
         ball.SetMovementController(player);
 
         game = new Game(mainMenu, ball);
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetButtonUp("Cancel")) mainMenu.SetActive(true);
         game.Update();
+    }
+
+    public void OnDestroy()
+    {
+        //  Use this call for wherever a player triggers a custom event
+        Analytics.CustomEvent("gameOver", new Dictionary< string, object >
+        {
+            { "score", game.Score }
+        });
+
+        // Use this call for each and every place that a player triggers a monetization event
+//        Analytics.Transaction("MarbleMotion", 0.99m, "USD", null, null);
+
+//        Analytics.SetUserGender(Gender.Male);
+//        Analytics.SetUserBirthYear(2014);
     }
 }
