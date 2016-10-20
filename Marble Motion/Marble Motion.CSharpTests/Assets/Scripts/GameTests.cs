@@ -97,5 +97,11 @@ namespace Tests
         {
             RunMotionTest(new Vector3(0.1f, 0.1f, 0.1f), 18L);
         }
+
+        [TestMethod()]
+        public void MotionOnNegativeAxisUpdateTest()
+        {
+            RunMotionTest(new Vector3(-1.0f, -1.0f, -1.0f), 40L);
+        }
     }
 }
