@@ -52,8 +52,9 @@ public class Game
 
     public void Update()
     {
+        Vector3 pp = player.Position();
         Vector3 delta = playerPreviousPosition - player.Position();
-        Score += (long)(Math.Abs(delta.x) + Math.Abs(delta.y));
+        Score += (long)(Math.Abs(delta.x * 10) + Math.Abs(delta.y * 10));
         playerPreviousPosition = player.Position();
     }
 }

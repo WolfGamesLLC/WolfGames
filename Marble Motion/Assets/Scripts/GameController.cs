@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonUp("Cancel")) mainMenu.SetActive(true);
+
         game.Update();
     }
 

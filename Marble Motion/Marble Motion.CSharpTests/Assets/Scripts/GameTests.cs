@@ -36,7 +36,7 @@ namespace Tests
             return pObject.GetFieldOrProperty("player");
         }
 
-        private void SetPlayerPosition(Vector3 position)
+        private void SetPlayerPreviousPosition(Vector3 position)
         {
             pObject.SetFieldOrProperty("playerPreviousPosition", position);
         }
@@ -75,7 +75,7 @@ namespace Tests
         public void NoMotionUpdateTest()
         {
             // players current position is Vector3.One
-            SetPlayerPosition(Vector3.one);
+            SetPlayerPreviousPosition(Vector3.one);
             Assert.AreEqual(0L, GetGameScore());
             Assert.AreEqual(UnityEngine.Vector3.one, GetPlayerPreviousPosition());
         }
@@ -84,7 +84,7 @@ namespace Tests
         public void NegativeMotionUpdateTest()
         {
             // players current position is Vector3.One
-            SetPlayerPosition(new Vector3(10, 10, 10));
+            SetPlayerPreviousPosition(new Vector3(1.9f, 1.9f, 1.9f));
             testGame.Update();
             Assert.AreEqual(18L, GetGameScore());
             Assert.AreEqual(UnityEngine.Vector3.one, GetPlayerPreviousPosition());
@@ -94,7 +94,7 @@ namespace Tests
         public void PositiveMotionUpdateTest()
         {
             // players current position is Vector3.One
-            SetPlayerPosition(new Vector3(-8, -8, -8));
+            SetPlayerPreviousPosition(new Vector3(0.1f, 0.1f, 0.1f));
             testGame.Update();
             Assert.AreEqual(18L, GetGameScore());
             Assert.AreEqual(UnityEngine.Vector3.one, GetPlayerPreviousPosition());
