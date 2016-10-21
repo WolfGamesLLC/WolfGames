@@ -44,12 +44,12 @@ namespace Tests
             pObject.SetFieldOrProperty("playerPreviousPosition", position);
         }
 
-        private void RunMotionTest(Vector3 prevPlayerPosition, long exp)
+        private void RunMotionTest(Vector3 prevPlayerPosition, float exp)
         {
             // players current position is Vector3.One
             SetPlayerPreviousPosition(prevPlayerPosition);
             testGame.Update();
-            Assert.AreEqual(exp, GetGameScore());
+            Assert.AreEqual(exp * Game.SCORE_MULTIPLIER, GetGameScore());
             Assert.AreEqual(UnityEngine.Vector3.one, GetPlayerPreviousPosition());
         }
 
@@ -92,43 +92,43 @@ namespace Tests
         [TestMethod()]
         public void NegativeXMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(1.9f, Y_OFFSET, CURRENT_OFFSET), 9L);
+            RunMotionTest(new Vector3(1.9f, Y_OFFSET, CURRENT_OFFSET), 0.9f);
         }
 
         [TestMethod()]
         public void PositiveXMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(0.1f, Y_OFFSET, CURRENT_OFFSET), 9L);
+            RunMotionTest(new Vector3(0.1f, Y_OFFSET, CURRENT_OFFSET), 0.9f);
         }
 
         [TestMethod()]
         public void NegativeYMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(CURRENT_OFFSET, Y_OFFSET, 1.9f), 9L);
+            RunMotionTest(new Vector3(CURRENT_OFFSET, Y_OFFSET, 1.9f), 0.9f);
         }
 
         [TestMethod()]
         public void PositiveYMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(CURRENT_OFFSET, Y_OFFSET, 0.1f), 9L);
+            RunMotionTest(new Vector3(CURRENT_OFFSET, Y_OFFSET, 0.1f), 0.9f);
         }
 
         [TestMethod()]
         public void NegativeMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(1.9f, Y_OFFSET, 1.9f), 18L);
+            RunMotionTest(new Vector3(1.9f, Y_OFFSET, 1.9f), 1.8f);
         }
 
         [TestMethod()]
         public void PositiveMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(0.1f, Y_OFFSET, 0.1f), 18L);
+            RunMotionTest(new Vector3(0.1f, Y_OFFSET, 0.1f), 1.8f);
         }
 
         [TestMethod()]
         public void MotionOnNegativeAxisUpdateTest()
         {
-            RunMotionTest(new Vector3(-1.0f, Y_OFFSET, -1.0f), 40L);
+            RunMotionTest(new Vector3(-1.0f, Y_OFFSET, -1.0f), 4.0f);
         }
     }
 }

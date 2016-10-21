@@ -22,6 +22,8 @@ public interface IMovementController
 
 public class Game
 {
+    public const float SCORE_MULTIPLIER = 1000.0f;
+
     MainMenuController mainMenu;
     BallController player;
     long score;
@@ -54,7 +56,7 @@ public class Game
     {
         Vector3 pp = player.Position();
         Vector3 delta = playerPreviousPosition - player.Position();
-        Score += (long)(Math.Abs(delta.x * 10) + Math.Abs(delta.z * 10));
+        Score += (long)(Math.Abs(delta.x * SCORE_MULTIPLIER) + Math.Abs(delta.z * SCORE_MULTIPLIER));
         playerPreviousPosition = player.Position();
     }
 }
