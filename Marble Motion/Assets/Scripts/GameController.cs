@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetButtonUp("Cancel")) mainMenu.SetActive(true);
 
-        game.Update();
+        game.Update(Time.deltaTime);
     }
 
     public void OnDestroy()

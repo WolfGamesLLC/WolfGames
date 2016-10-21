@@ -52,10 +52,10 @@ public class Game
         playerPreviousPosition = player.Position();
     }
 
-    public void Update()
+    public void Update(float elapsedTime)
     {
         Vector3 pp = player.Position();
-        Vector3 delta = playerPreviousPosition - player.Position();
+        Vector3 delta = (playerPreviousPosition - player.Position()) / elapsedTime;
         Score += (long)(Math.Abs(delta.x * SCORE_MULTIPLIER) + Math.Abs(delta.z * SCORE_MULTIPLIER));
         playerPreviousPosition = player.Position();
     }

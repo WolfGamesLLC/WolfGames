@@ -13,6 +13,7 @@ namespace Tests
     {
         public const float Y_OFFSET = 100.0f;
         public const float CURRENT_OFFSET = 1.0f;
+        public const float ELAPSED_TIME = 1.0f;
 
         Game testGame;
         PrivateObject pObject;
@@ -48,7 +49,7 @@ namespace Tests
         {
             // players current position is Vector3.One
             SetPlayerPreviousPosition(prevPlayerPosition);
-            testGame.Update();
+            testGame.Update(ELAPSED_TIME);
             Assert.AreEqual(exp * Game.SCORE_MULTIPLIER, GetGameScore());
             Assert.AreEqual(UnityEngine.Vector3.one, GetPlayerPreviousPosition());
         }
