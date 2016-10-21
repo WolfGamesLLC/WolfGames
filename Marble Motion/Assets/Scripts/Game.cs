@@ -22,7 +22,7 @@ public interface IMovementController
 
 public class Game
 {
-    public const float SCORE_MULTIPLIER = 1000.0f;
+    public const float SCORE_MULTIPLIER = 0.75f;
 
     MainMenuController mainMenu;
     BallController player;
@@ -54,7 +54,6 @@ public class Game
 
     public void Update(float elapsedTime)
     {
-        Vector3 pp = player.Position();
         Vector3 delta = (playerPreviousPosition - player.Position()) / elapsedTime;
         Score += (long)(Math.Abs(delta.x * SCORE_MULTIPLIER) + Math.Abs(delta.z * SCORE_MULTIPLIER));
         playerPreviousPosition = player.Position();
