@@ -11,6 +11,9 @@ namespace Tests
     [TestClass()]
     public class GameTests
     {
+        public const float Y_OFFSET = 100.0f;
+        public const float CURRENT_OFFSET = 1.0f;
+
         Game testGame;
         PrivateObject pObject;
 
@@ -87,21 +90,45 @@ namespace Tests
         }
 
         [TestMethod()]
+        public void NegativeXMotionUpdateTest()
+        {
+            RunMotionTest(new Vector3(1.9f, Y_OFFSET, CURRENT_OFFSET), 9L);
+        }
+
+        [TestMethod()]
+        public void PositiveXMotionUpdateTest()
+        {
+            RunMotionTest(new Vector3(0.1f, Y_OFFSET, CURRENT_OFFSET), 9L);
+        }
+
+        [TestMethod()]
+        public void NegativeYMotionUpdateTest()
+        {
+            RunMotionTest(new Vector3(CURRENT_OFFSET, Y_OFFSET, 1.9f), 9L);
+        }
+
+        [TestMethod()]
+        public void PositiveYMotionUpdateTest()
+        {
+            RunMotionTest(new Vector3(CURRENT_OFFSET, Y_OFFSET, 0.1f), 9L);
+        }
+
+        [TestMethod()]
         public void NegativeMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(1.9f, 1.9f, 1.9f), 18L);
+            RunMotionTest(new Vector3(1.9f, Y_OFFSET, 1.9f), 18L);
         }
 
         [TestMethod()]
         public void PositiveMotionUpdateTest()
         {
-            RunMotionTest(new Vector3(0.1f, 0.1f, 0.1f), 18L);
+            RunMotionTest(new Vector3(0.1f, Y_OFFSET, 0.1f), 18L);
         }
 
         [TestMethod()]
         public void MotionOnNegativeAxisUpdateTest()
         {
-            RunMotionTest(new Vector3(-1.0f, -1.0f, -1.0f), 40L);
+            RunMotionTest(new Vector3(-1.0f, Y_OFFSET, -1.0f), 40L);
         }
     }
 }
