@@ -1,0 +1,1590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="c0607567-4f47-48fc-9f21-3300769194d8" Title="TestWGCamera Namespace" Url="html/ea0b7eef-c471-cb92-cb3f-4f136fd0ed57.htm">
+    <HelpTOCNode Id="d32bcc15-25a8-484f-acb2-0f4e1835a606" Title="BaseTestWGCamera Class" Url="html/4b0dd4d9-f9ae-2738-c7f4-412ab2e6993d.htm">
+      <HelpTOCNode Title="BaseTestWGCamera Members" Url="html/bdba1c87-3a76-49be-25bf-162c474e93d7.htm" />
+      <HelpTOCNode Title="BaseTestWGCamera Constructor " Url="html/d209e0a0-284e-24b3-2607-864767e13d9e.htm" />
+      <HelpTOCNode Id="9bebee74-f5bc-48fe-9d11-a0742aa9af5a" Title="BaseTestWGCamera Fields" Url="html/0eb539d6-7494-d2a0-d1fd-f1c8cee9afc4.htm">
+        <HelpTOCNode Title="camera Field" Url="html/4151831c-3b56-c9f4-a31f-213a1e108c5f.htm" />
+        <HelpTOCNode Title="expectedOrientation Field" Url="html/89d4763e-cae2-5e29-e192-ec3006e71e60.htm" />
+        <HelpTOCNode Title="expectedPosition Field" Url="html/1250c305-e330-871e-937b-95a9c7f42712.htm" />
+        <HelpTOCNode Title="expectedProjection Field" Url="html/99d2a309-8781-a7f7-8e8d-8f092861eb5b.htm" />
+        <HelpTOCNode Title="expectedTarget Field" Url="html/83fabc6c-a816-cf44-77e8-805e9e8085e8.htm" />
+        <HelpTOCNode Title="expectedView Field" Url="html/6b9d7ff9-b6d2-ff0b-1487-0e5681090ffb.htm" />
+        <HelpTOCNode Title="expectedViewport Field" Url="html/bcbd6b89-9a9e-8551-470e-4c1dfa1096e8.htm" />
+        <HelpTOCNode Title="farPlaneDistance Field" Url="html/919d505d-8789-afaa-9fd6-4d8a9f841018.htm" />
+        <HelpTOCNode Title="nearPlaneDistance Field" Url="html/c00be493-0fed-14c1-4b96-e2cde3854bc3.htm" />
+        <HelpTOCNode Title="viewAngleRadians Field" Url="html/9f7a5a4c-092a-d9a5-b09a-5aad31921f55.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="af34ac2b-604f-43ed-b167-67afd8452078" Title="BaseTestWGCamera Methods" Url="html/9c9b88fa-f591-42a1-ef7a-85723a6f768c.htm">
+        <HelpTOCNode Title="AssertCamera Method " Url="html/a80bfcbb-711b-f514-1a22-c3eaa4470f4c.htm" />
+        <HelpTOCNode Title="Constructor Method " Url="html/51decf1a-de0d-1fb6-af9b-df2f29dcb77e.htm" />
+        <HelpTOCNode Title="CreateCamera Method " Url="html/256e0366-9e30-4ac5-dabb-a9887ec82d34.htm" />
+        <HelpTOCNode Title="DefaultConstructor Method " Url="html/f974d4fe-ac43-eb36-6c01-d1197f0cd188.htm" />
+        <HelpTOCNode Title="MoveHorizontal Method " Url="html/66b1602e-4a25-0790-ebe8-510b1a1e1dc3.htm" />
+        <HelpTOCNode Title="MoveWithVector3 Method " Url="html/a74a15fa-cbcc-2f02-7259-fe99b7b9b8de.htm" />
+        <HelpTOCNode Title="Projection Method " Url="html/5f25af57-655d-5aec-8e0d-d34723b121f8.htm" />
+        <HelpTOCNode Title="RotateWithVector3 Method " Url="html/60c5248e-c511-c04f-4158-19cf3ddda19a.htm" />
+        <HelpTOCNode Title="RotateWithVector3ByDegrees Method " Url="html/31f9152e-bef3-e229-4c74-795777b23103.htm" />
+        <HelpTOCNode Title="RotateWithYawPitch Method " Url="html/147f065e-1ff4-ce1f-59a5-180bca6134a1.htm" />
+        <HelpTOCNode Title="RotateWithYawPitchByDegrees Method " Url="html/da6ee9cc-e656-f6be-63ca-0557a46487db.htm" />
+        <HelpTOCNode Title="View Method " Url="html/fe92ad8e-d808-6a22-bfd2-52ce3ff9598b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6109daca-ad11-41c6-89c3-15315256d69b" Title="TestFreeCamera Class" Url="html/67691ad6-5092-8de8-dc3a-a116e98c003b.htm">
+      <HelpTOCNode Title="TestFreeCamera Members" Url="html/89253fd9-ecca-3eac-bb32-6cf20dd1193d.htm" />
+      <HelpTOCNode Title="TestFreeCamera Constructor " Url="html/a26121b9-3f43-96b0-f02a-0ecdd7e3a059.htm" />
+      <HelpTOCNode Title="TestFreeCamera Fields" Url="html/1493e324-0e18-63e4-52c9-ce272db9233a.htm" />
+      <HelpTOCNode Id="eef16c69-aed3-490a-a3d4-4af6d3df3f04" Title="TestFreeCamera Methods" Url="html/4c6911a0-97a9-0aba-4dff-c7f2c5cfa4c1.htm">
+        <HelpTOCNode Title="Constructor Method " Url="html/70eb91c0-0c15-5655-05f4-22ce263018f8.htm" />
+        <HelpTOCNode Title="CreateCamera Method " Url="html/2b3bddb2-5617-16b4-9735-3b7fb04a33e5.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="188d3c76-1772-4c82-aef0-28cb5484b3e2" Title="TestTargetCamera Class" Url="html/8b0585c4-3f07-43a6-fc5a-dbf661708f00.htm">
+      <HelpTOCNode Title="TestTargetCamera Members" Url="html/f35a84ca-5667-ff5a-a5fc-a0d68f553f25.htm" />
+      <HelpTOCNode Title="TestTargetCamera Constructor " Url="html/0db8fbd4-b08c-ec04-cf84-038dab2986b2.htm" />
+      <HelpTOCNode Title="TestTargetCamera Fields" Url="html/c8419861-81ea-fb20-798a-adc1212045e5.htm" />
+      <HelpTOCNode Id="9024f5b6-fe68-4079-aa86-2149ba85b97e" Title="TestTargetCamera Methods" Url="html/9182215d-4f16-3887-2b96-fcaad383e257.htm">
+        <HelpTOCNode Title="Constructor Method " Url="html/9ea6ed30-6cc8-5b50-f6ec-10b0b576ce6f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8b3078be-f925-41d7-bafe-d291d2416c59" Title="TestWGCameraLoader Namespace" Url="html/feb4a3f6-b199-23b8-157d-ff588c3d93a7.htm">
+    <HelpTOCNode Id="9f9a724a-80b7-4dfa-a00c-fe3dee65aec4" Title="TestFreeCameraLoader Class" Url="html/57f98a6d-fa2a-cce5-8031-ea352a04fec8.htm">
+      <HelpTOCNode Title="TestFreeCameraLoader Members" Url="html/3c541303-85cc-377b-2a4d-b691c2ae4be1.htm" />
+      <HelpTOCNode Title="TestFreeCameraLoader Constructor " Url="html/cfac6217-238b-75b5-420c-3d879bb037a1.htm" />
+      <HelpTOCNode Id="7ca3f30c-00bf-467d-9a05-e8fa556a9aee" Title="TestFreeCameraLoader Methods" Url="html/38e19f63-524e-3fd9-db95-e5a46b20b64b.htm">
+        <HelpTOCNode Title="CreateBaseModel Method " Url="html/84e3062e-5a72-d910-268a-9b01fb0c6f62.htm" />
+        <HelpTOCNode Title="TestInitialization Method " Url="html/8af58ce8-c3ff-1c70-b036-d10967a9a122.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7bcffe11-5c19-4c5b-98a7-76425e05a3b4" Title="TestTargetCameraLoader Class" Url="html/97e2800e-af3e-0bb0-9a84-b49b8ac0e219.htm">
+      <HelpTOCNode Title="TestTargetCameraLoader Members" Url="html/3e137057-c50c-91ed-9930-6dbfa16aef30.htm" />
+      <HelpTOCNode Title="TestTargetCameraLoader Constructor " Url="html/162d6e54-993f-ad79-322b-9664d7e1f50b.htm" />
+      <HelpTOCNode Id="ef5b1bd3-811a-4bae-b5a7-f016dd5991a7" Title="TestTargetCameraLoader Methods" Url="html/c544b510-9be9-b3d7-4af8-e2d070a43d93.htm">
+        <HelpTOCNode Title="CreateBaseModel Method " Url="html/74e596b6-f21b-ace2-3d3c-bce4ad715750.htm" />
+        <HelpTOCNode Title="TestInitialization Method " Url="html/0f105194-cf12-f246-5255-c8a327327111.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="e1443e26-a754-45b7-b686-2fe0bd1948b2" Title="WG2DGraphics Namespace" Url="html/c453b0a1-9894-3a63-326d-5aa1b5cf8e84.htm">
+    <HelpTOCNode Id="4d49e11a-f0d0-4a15-a934-c21a140109ba" Title="Image Class" Url="html/2dfb1881-a4b7-78f9-02a5-0f06bd0e7442.htm">
+      <HelpTOCNode Title="Image Members" Url="html/594fe51d-2f98-35c7-47f2-f922829995cb.htm" />
+      <HelpTOCNode Id="159fcc62-8037-468f-9730-5990eccf7bba" Title="Image Constructor " Url="html/3d0e8b79-14a1-39e7-c186-d79f5f1e9502.htm">
+        <HelpTOCNode Title="Image Constructor " Url="html/38b4e9dc-71a6-fbc9-45a5-30da7992817d.htm" />
+        <HelpTOCNode Title="Image Constructor (Texture2D, Rectangle)" Url="html/b076a564-800e-bdce-6fef-9d38ac3cd2d4.htm" />
+        <HelpTOCNode Title="Image Constructor (Texture2D, Rectangle, Color)" Url="html/6bfb1113-8adc-08ed-6845-ee0c52cf1672.htm" />
+        <HelpTOCNode Title="Image Constructor (Texture2D, Rectangle, Color, Boolean, Single)" Url="html/46d80a8d-b597-200d-dafb-6a498acc4859.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4a5ccf2d-215e-43ed-91a5-a3125ac6119f" Title="Image Fields" Url="html/77599fab-3af8-205e-2dd0-dc15359354ef.htm">
+        <HelpTOCNode Title="texture Field" Url="html/122658ec-0d76-28b3-f119-ba3e7c0649b9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b83391d3-2dde-4eeb-9180-04e01a4ada76" Title="Image Methods" Url="html/1a297002-b5a4-0e1f-6011-d62b21c0b105.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/8565313f-a47e-d86c-0b4c-b99df992adc4.htm" />
+        <HelpTOCNode Title="Draw Method " Url="html/cc044800-42f1-a6da-86ba-de28d99992ec.htm" />
+        <HelpTOCNode Title="Equals Method " Url="html/360f57cd-44e3-38e2-e0be-6c30a72007a3.htm" />
+        <HelpTOCNode Title="OnTextureChanged Method " Url="html/864dad66-1e53-bb44-ae32-45794fbf0a59.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/c9a12f36-a86a-086c-8240-8a8f5f4250c1.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/006cd2a8-0578-9ee6-d3c4-20b681504801.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fbd2b8f0-0e92-4ca6-bae3-e21ce7f054ac" Title="Image Properties" Url="html/e62ed0bd-dfc8-02b2-58e3-4e99b40287b1.htm">
+        <HelpTOCNode Title="Texture Property " Url="html/35a32eb9-b383-c4a4-5274-b4515b6414a0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="72245270-020e-403f-aef0-70485510cc40" Title="Image Events" Url="html/c110e1a2-3474-8e49-b5d0-aa6719b8065a.htm">
+        <HelpTOCNode Title="ChangeTexture Event" Url="html/9c526473-51ce-ad1d-dfa3-3b0257f9a1dc.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4facf81a-c9d9-470e-ad2b-b0c92aa5027f" Title="Label Class" Url="html/f8838679-3332-37de-3719-3948bb7d8198.htm">
+      <HelpTOCNode Title="Label Members" Url="html/7015b907-409e-8fba-d333-cca8d69a528c.htm" />
+      <HelpTOCNode Id="4c8b0a27-7bde-4516-b752-9941257eaced" Title="Label Constructor " Url="html/09383cf4-da59-c833-2a76-1fb2dbae828a.htm">
+        <HelpTOCNode Title="Label Constructor " Url="html/06fa8834-4a25-615b-d76c-116e8a4ce514.htm" />
+        <HelpTOCNode Title="Label Constructor (SpriteFont, String, Vector2)" Url="html/9c4484e4-6bdd-eb18-0a61-dd8968c86dfe.htm" />
+        <HelpTOCNode Title="Label Constructor (SpriteFont, String, Vector2, Color)" Url="html/94f9db7f-7f6d-31a9-b2fc-5b1077acebd5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="69b95f7b-016b-4de6-a3a3-d2c69c10da5c" Title="Label Fields" Url="html/7f288066-ddc3-f578-0fbc-7fcf8b2d3299.htm">
+        <HelpTOCNode Title="font Field" Url="html/e5c52153-434c-3f07-9437-8727a319a3f1.htm" />
+        <HelpTOCNode Title="text Field" Url="html/b14866f7-0abe-73c8-1dae-7c3052276f84.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3ebc158d-59bd-4dea-bfcc-5af76c7a6b9a" Title="Label Methods" Url="html/481d56ec-2cbc-5381-a369-b7ce3f6306ea.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/eef4c6a0-5106-2719-cd79-855bc9d38a4d.htm" />
+        <HelpTOCNode Title="Draw Method " Url="html/dacf98b3-9f5f-6f0e-daed-645b9645ba9c.htm" />
+        <HelpTOCNode Title="Equals Method " Url="html/d88b453c-e03e-2eb3-5e09-2a98eba09ab0.htm" />
+        <HelpTOCNode Title="OnFontChanged Method " Url="html/5bfcf9e2-0df0-0755-d161-076b01b77668.htm" />
+        <HelpTOCNode Title="OnTextChanged Method " Url="html/647dd409-8359-a804-a221-381baa1bccc3.htm" />
+        <HelpTOCNode Title="SetBoundingBox Method " Url="html/36f6a62f-ef1e-b0e6-7965-bd2e6e402476.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/20ebcb2f-1f4c-44d1-39e1-29817f6c763f.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/59edb951-df8b-3f0f-312a-9401f631b903.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="019f6eeb-a4fa-4803-a462-ce7dc4d467f0" Title="Label Properties" Url="html/c68b5702-a57f-839d-da08-01f40323f7da.htm">
+        <HelpTOCNode Title="Font Property " Url="html/1950428b-ccfd-d566-6efd-b94d4725d048.htm" />
+        <HelpTOCNode Title="Text Property " Url="html/3bce7775-497c-cce4-6360-2e5af3cef593.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a8f61fae-565e-47d4-b588-30fcdac25fb5" Title="Label Events" Url="html/6112f856-de92-5386-6783-795426ea57e6.htm">
+        <HelpTOCNode Title="FontChanged Event" Url="html/610beae7-d4d4-9b48-99ea-1c022d163ade.htm" />
+        <HelpTOCNode Title="TextChanged Event" Url="html/6ea3faa9-c7e7-a971-7d54-102cb0b83e16.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5d8af475-31fe-4ccb-8719-e2017317a57a" Title="MenuItem Class" Url="html/1298fa6e-fada-8105-f8d3-369b7a06dcce.htm">
+      <HelpTOCNode Title="MenuItem Members" Url="html/93c320b8-c7d8-248f-22e5-749494474828.htm" />
+      <HelpTOCNode Title="MenuItem Constructor " Url="html/4708a5e3-fc5e-d9dd-1986-78c1dd92bde4.htm" />
+      <HelpTOCNode Id="15322959-efb4-4e37-a650-0123a1eec119" Title="MenuItem Fields" Url="html/5eb34b20-b53a-4b8d-292c-c8de70924529.htm">
+        <HelpTOCNode Title="disabled Field" Url="html/a3d85638-2325-3fb6-7f3e-28ea22fc5f43.htm" />
+        <HelpTOCNode Title="disabledColor Field" Url="html/d16920e5-8987-74f0-cdbb-f33d043d5630.htm" />
+        <HelpTOCNode Title="highLighted Field" Url="html/2a077091-aba4-dc09-9393-e1ec445c946b.htm" />
+        <HelpTOCNode Title="highLightedColor Field" Url="html/63ca7d98-a571-6458-995d-31e40e09d649.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c8bd29ca-6d1e-47a3-bb1b-c8836d1d9a7b" Title="MenuItem Methods" Url="html/9d08114a-5f7e-75d9-5185-ae1f382deb5c.htm">
+        <HelpTOCNode Title="Draw Method " Url="html/1b4fa157-ca80-ee98-717e-cdc80d42f2f1.htm" />
+        <HelpTOCNode Title="OnSelected Method " Url="html/053ae8cd-683e-2939-74af-3c7c27e2e065.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cc68ff10-625d-4cbe-9445-b5973120b861" Title="MenuItem Properties" Url="html/7fc23a46-7041-ba79-ed98-558d8e551670.htm">
+        <HelpTOCNode Title="Disabled Property " Url="html/82046e5d-d4a9-5104-3c27-dfd6ad4720c0.htm" />
+        <HelpTOCNode Title="DisabledColor Property " Url="html/0928f4a5-f316-d106-9850-a28e132759d1.htm" />
+        <HelpTOCNode Title="HighLighted Property " Url="html/83c2b7e2-7c89-9d70-2323-7ec893a6148c.htm" />
+        <HelpTOCNode Title="HighLightedColor Property " Url="html/523de97d-fb36-2b3d-221b-5f85b0cd4c71.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="179cb10c-beac-4bf3-aae2-822e3b24e5a6" Title="MenuItem Events" Url="html/a859abab-b88f-35f1-1737-3ba87c665c7a.htm">
+        <HelpTOCNode Title="SelectedEventHandler Event" Url="html/c11ea47c-2011-7f5a-d7b7-ba09ead1a62e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="84313784-1b46-4942-9442-884c42f738b4" Title="MenuScreen Class" Url="html/036ac34e-eb09-3649-1185-52c03beae522.htm">
+      <HelpTOCNode Title="MenuScreen Members" Url="html/990b153b-45dc-0e71-4893-17781dbe4a51.htm" />
+      <HelpTOCNode Title="MenuScreen Constructor " Url="html/5ea06c29-e143-064a-9e2a-237c0bc85f17.htm" />
+      <HelpTOCNode Id="f6db7900-1e5c-44ad-8784-321170239d8f" Title="MenuScreen Fields" Url="html/8369dff1-9663-4f87-d4d4-08aca6b1d385.htm">
+        <HelpTOCNode Title="highLightedItemIndex Field" Url="html/ff1dffad-410b-b356-c54f-fd2213842701.htm" />
+        <HelpTOCNode Title="menuItems Field" Url="html/84115ef6-428b-e280-e37c-89737e09d93b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e249d857-d429-47f4-971d-2dd7006d6f53" Title="MenuScreen Methods" Url="html/81804700-8497-d8e8-0555-4b7be3538a25.htm">
+        <HelpTOCNode Title="Draw Method " Url="html/31a90cb7-326c-34db-f53c-573cdae25ef0.htm" />
+        <HelpTOCNode Title="SelectItem Method " Url="html/0645e3f9-8501-6395-82c8-372e49ee8f51.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/379f38e0-17be-3b39-e245-b8ab05025b53.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="069ccc1f-101b-4521-b52b-726d800f9d37" Title="MenuScreen Properties" Url="html/d6dc67f3-bd04-aab5-fb51-dd13c0e1db9c.htm">
+        <HelpTOCNode Title="HighLightedItemIndex Property " Url="html/786ce797-a13d-1507-8d64-a76b41e408dd.htm" />
+        <HelpTOCNode Title="MenuItems Property " Url="html/d91d081d-65a8-81b7-2ed6-feb31dd3947b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MenuScreen Events" Url="html/be6f46f0-b639-6fe8-fb17-745f748a5566.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a95b6796-969f-4595-b9ab-efc183c29e34" Title="Screen Class" Url="html/66954456-3ea7-4c0f-af68-3985e3651895.htm">
+      <HelpTOCNode Title="Screen Members" Url="html/3dc58dc3-32c4-cfd2-7841-de3f98d4c518.htm" />
+      <HelpTOCNode Id="caad2759-86aa-4184-8b41-cb7afe5dd9ff" Title="Screen Constructor " Url="html/2ed4faab-3e01-b7d5-b4b8-695e2f0ff6d8.htm">
+        <HelpTOCNode Title="Screen Constructor " Url="html/67ca3b39-af95-cde5-9f36-12a579547ca1.htm" />
+        <HelpTOCNode Title="Screen Constructor (GraphicsDevice)" Url="html/465e3df4-c1fd-0b8a-94c7-db36e55a118d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8fa4c41b-c074-4ac2-9311-6312129c8b6b" Title="Screen Fields" Url="html/165d26d3-86c8-3277-fca7-4cfed9d1c4ec.htm">
+        <HelpTOCNode Title="active Field" Url="html/5ffff1ff-1020-bcbe-c201-584485a33bcc.htm" />
+        <HelpTOCNode Title="device Field" Url="html/d6a17a7d-b0d9-3602-8c32-e79b67251f26.htm" />
+        <HelpTOCNode Title="dynamicScreenElements Field" Url="html/07bab661-8c3e-b140-50ac-74fbdc06f1df.htm" />
+        <HelpTOCNode Title="staticScreenElements Field" Url="html/2e8b5b41-c57b-a53a-fa2f-7e81dcadad4b.htm" />
+        <HelpTOCNode Title="viewport Field" Url="html/6cf45977-7e90-6322-a051-9584eed7aad4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ed3e583-0663-47de-a150-c4b909f4f171" Title="Screen Methods" Url="html/5ba464b6-26af-2d60-60e0-f8c0c3e6cdef.htm">
+        <HelpTOCNode Title="AddDynamicElement Method " Url="html/8dcbd72e-dc1b-5706-2d09-8ad973309abe.htm" />
+        <HelpTOCNode Title="AddStaticElement Method " Url="html/d16cf05a-2df6-09d5-e1af-8db16f2c2116.htm" />
+        <HelpTOCNode Title="Draw Method " Url="html/8de9cb70-c6b0-647a-26a3-c40fede40cb9.htm" />
+        <HelpTOCNode Title="DrawScreenElements Method " Url="html/83f9e057-30b8-203e-4cfc-bebe3a74c571.htm" />
+        <HelpTOCNode Title="OnActiveChanged Method " Url="html/0e92a3a9-40d8-6802-c22a-e5975a1ab6b0.htm" />
+        <HelpTOCNode Title="OnExit Method " Url="html/fcdfadab-2ca6-3929-92a1-fd44c626f80e.htm" />
+        <HelpTOCNode Title="PercentageToScreenPosition Method " Url="html/f5be20f0-ec6f-e812-898a-2734e50f4c27.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/3d14f054-0e8a-42c0-078f-e761c292a373.htm" />
+        <HelpTOCNode Title="UpdateDynamicScreenElements Method " Url="html/fb6390d1-6416-01b1-47e1-46d4a8a33ad3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c447a781-f662-43fa-a132-09225d787ab4" Title="Screen Properties" Url="html/aac09160-c8b2-6cab-2168-89ca59fcd2b3.htm">
+        <HelpTOCNode Title="Active Property " Url="html/7271b8c9-1581-61e8-cd34-9422aff49519.htm" />
+        <HelpTOCNode Title="Device Property " Url="html/fee9bb75-af34-54e9-ac98-06f4ddc12000.htm" />
+        <HelpTOCNode Title="DynamicScreenElements Property " Url="html/6e98df34-d089-b54a-abd6-8f6e4902d297.htm" />
+        <HelpTOCNode Title="StaticScreenElements Property " Url="html/601482b5-39e5-034c-8ccf-db0f153a449d.htm" />
+        <HelpTOCNode Title="Viewport Property " Url="html/4f155e46-2125-18a0-579b-d687b0269ab3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="11cfeaa2-1df5-4f51-a59e-6d0d2d8e007d" Title="Screen Events" Url="html/0fd376a6-a6ca-dded-123e-792f0d0bda93.htm">
+        <HelpTOCNode Title="ActiveChanged Event" Url="html/9950bcbf-1cd4-925b-3426-9580a8067aee.htm" />
+        <HelpTOCNode Title="ExitEventHandler Event" Url="html/9162077a-5b86-17ae-fb2b-1e002c9caac4.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dc79c7a5-c373-4aab-8b0f-222cebaaf81c" Title="ScreenElement Class" Url="html/8d89237f-1bf6-7ad2-818a-b6caaaf475c4.htm">
+      <HelpTOCNode Title="ScreenElement Members" Url="html/c22a9cf0-2996-47a1-f16d-f14db403c0e0.htm" />
+      <HelpTOCNode Id="a856a98b-cc49-4861-81d0-9915f8caaf0e" Title="ScreenElement Constructor " Url="html/e2afcbf3-9c9b-c001-f58b-9360b82086f8.htm">
+        <HelpTOCNode Title="ScreenElement Constructor " Url="html/c9084f84-0872-6bcf-f498-694ca60d5a3c.htm" />
+        <HelpTOCNode Title="ScreenElement Constructor (Rectangle, Color, Boolean, Single)" Url="html/9bbe425a-b389-5e6c-baff-8e7dc45de913.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="66d50922-4675-4c8b-96c6-b9e9e72cc4e5" Title="ScreenElement Fields" Url="html/532e78f5-09ca-b1de-30e5-38dda358797d.htm">
+        <HelpTOCNode Title="area Field" Url="html/7d86b603-e13f-eaab-9c61-6a1385e02130.htm" />
+        <HelpTOCNode Title="color Field" Url="html/4cf1a47d-82cb-7201-1245-b2382f8b019c.htm" />
+        <HelpTOCNode Title="rotation Field" Url="html/633cc163-11f8-bc1e-101d-e3ac64b4c3b7.htm" />
+        <HelpTOCNode Title="visible Field" Url="html/08729529-eb7f-d6a6-b014-65b80091c76e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c893e367-f40e-4125-8565-3fdff150b26e" Title="ScreenElement Methods" Url="html/dec320fc-8822-4a18-4e86-35df1a9bb884.htm">
+        <HelpTOCNode Title="Click Method " Url="html/a0f50e87-1ee2-bac4-1b00-34f44daca57e.htm" />
+        <HelpTOCNode Title="Clone Method " Url="html/dd3efc7f-7842-8863-208c-4268a33c76ad.htm" />
+        <HelpTOCNode Title="Draw Method " Url="html/81783566-e402-5f3b-fa34-a8935e341479.htm" />
+        <HelpTOCNode Title="Equals Method " Url="html/d9a36509-f187-c50d-99ca-71278bb2ab5e.htm" />
+        <HelpTOCNode Title="GetHashCode Method " Url="html/102fc055-f749-00ae-df02-58ad66256eeb.htm" />
+        <HelpTOCNode Title="OnAreaChanged Method " Url="html/38304924-7588-dcc4-f6ba-1303ba17a58d.htm" />
+        <HelpTOCNode Title="OnClick Method " Url="html/e4c3d4a0-3779-9a2f-0174-075b8c570922.htm" />
+        <HelpTOCNode Title="OnColorChanged Method " Url="html/38d9a77d-9c34-ada5-ecf8-20c5e9612990.htm" />
+        <HelpTOCNode Title="OnRollOver Method " Url="html/cb3b8411-5b63-f8c7-4da6-84b46578980d.htm" />
+        <HelpTOCNode Title="OnRotationChanged Method " Url="html/885589e8-bd5a-74b7-1fa1-cc59cd1e4607.htm" />
+        <HelpTOCNode Title="OnVisibleChanged Method " Url="html/da43e9ec-6a06-b644-592c-d5b7baf7bf9b.htm" />
+        <HelpTOCNode Title="RollOver Method " Url="html/15eda096-e05b-4b79-4538-83e326a02f47.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/559f329a-179b-22f4-cacd-685c5615738f.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/70bfa420-b868-638e-cd8f-2b57850649b8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="869a160b-7f77-4ba1-beda-61ce0332d330" Title="ScreenElement Operators" Url="html/3fa1f261-2622-98df-4a92-0c1f4ffd8cb3.htm">
+        <HelpTOCNode Title="Equality Operator " Url="html/f11f14dc-447c-70b3-804f-0b0f9add3895.htm" />
+        <HelpTOCNode Title="Inequality Operator " Url="html/84b83df6-7e8c-1731-bcde-27df330ebda7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2f9e2b93-f552-4cc8-a784-7f03387b2d1a" Title="ScreenElement Properties" Url="html/f4334a31-ea37-058a-7b8f-d84c4c05d8d5.htm">
+        <HelpTOCNode Title="Area Property " Url="html/689db352-9376-7494-bbea-1fd14d63dbc8.htm" />
+        <HelpTOCNode Title="BoundingBox Property " Url="html/0c61d75a-7b1d-1cd0-ae51-87a8004405ca.htm" />
+        <HelpTOCNode Title="Color Property " Url="html/715b8daa-d0dd-25b2-b86c-ed659ed8b392.htm" />
+        <HelpTOCNode Title="Height Property " Url="html/c511b960-5715-acd8-4f1d-b96b0606a0d1.htm" />
+        <HelpTOCNode Title="Position Property " Url="html/effb78be-6db4-0849-fd70-f147aaebeda1.htm" />
+        <HelpTOCNode Title="Rotation Property " Url="html/5b94040d-7c38-8d00-7394-2899175ed2a4.htm" />
+        <HelpTOCNode Title="Size Property " Url="html/88f0063f-6a7d-8041-8073-075316976859.htm" />
+        <HelpTOCNode Title="Visible Property " Url="html/992aa1cb-14e5-2711-50ec-e0cf163c63f6.htm" />
+        <HelpTOCNode Title="Width Property " Url="html/94efd2d3-2cad-2ab8-ad4c-c4c1f28679f3.htm" />
+        <HelpTOCNode Title="X Property " Url="html/d9db9d75-bf13-a03b-f161-394a0aec76aa.htm" />
+        <HelpTOCNode Title="Y Property " Url="html/17c16b8b-655f-1a92-0b3d-bd7be50e50c3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cbc51abb-b18d-4aa1-81ea-21feca1b9758" Title="ScreenElement Events" Url="html/a603714b-1611-18ac-cdb8-30d4ba82d600.htm">
+        <HelpTOCNode Title="AreaChanged Event" Url="html/84d71556-597d-8a44-3eb4-27fbf1df00a8.htm" />
+        <HelpTOCNode Title="Clicked Event" Url="html/3c5a60a3-ea84-f634-7d61-0dcebf166b33.htm" />
+        <HelpTOCNode Title="ColorChanged Event" Url="html/a103af09-d4ae-60f0-f2e0-919875e60652.htm" />
+        <HelpTOCNode Title="RolledOver Event" Url="html/0f2a424a-352d-a278-9840-db912bec004b.htm" />
+        <HelpTOCNode Title="RotationChanged Event" Url="html/1b331aa9-92e7-997d-9b19-6242b2d628ba.htm" />
+        <HelpTOCNode Title="VisibilityChanged Event" Url="html/eddf3400-4dfa-f038-f7b3-99e83b8b6556.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="26737626-931d-4ff6-958d-7c42d86fdb7d" Title="Sprite Class" Url="html/72e20343-3948-c51f-b11f-1d090ac7f2c2.htm">
+      <HelpTOCNode Title="Sprite Members" Url="html/5bc0579e-f6dc-55b0-db4f-9c184f071d0a.htm" />
+      <HelpTOCNode Id="0695b4ba-e104-4879-808d-a75009c23162" Title="Sprite Constructor " Url="html/d195b27c-8c89-d1c5-5a07-86694c4fd8b8.htm">
+        <HelpTOCNode Title="Sprite Constructor " Url="html/664b6270-fa5b-e236-7d4e-8d4389757a93.htm" />
+        <HelpTOCNode Title="Sprite Constructor (Texture2D, Rectangle, Vector2, Rectangle)" Url="html/3dd4af14-b94d-dacd-29a2-f3473a631b0c.htm" />
+        <HelpTOCNode Title="Sprite Constructor (Texture2D, Rectangle, Vector2, Rectangle, Int32, Single)" Url="html/ee9e62fd-8284-572d-ddaa-b3a4e55b1b8f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0415a209-1612-4edb-8c1c-5beb447174d1" Title="Sprite Fields" Url="html/47df630a-fb78-9acd-b1ee-5eae17b2d14a.htm">
+        <HelpTOCNode Title="boundingPadding Field" Url="html/50424a36-1e7f-40ca-7e45-f4709df63aff.htm" />
+        <HelpTOCNode Title="collisionRadius Field" Url="html/1bdd368c-2fae-6d63-d30c-a6dc5fefbb1d.htm" />
+        <HelpTOCNode Title="currentFrame Field" Url="html/87becfbc-91aa-6d06-c28d-5daef39c5b6a.htm" />
+        <HelpTOCNode Title="firstFrame Field" Url="html/a212b0dd-4642-299b-c236-516e9e8b4b78.htm" />
+        <HelpTOCNode Title="frameOrigin Field" Url="html/f8b75583-37f7-e57d-2afc-949f0ce7b1af.htm" />
+        <HelpTOCNode Title="frames Field" Url="html/ccbe45b6-308a-ae42-59bd-9852289e0311.htm" />
+        <HelpTOCNode Title="frameTime Field" Url="html/f7df3aec-3f83-f255-58d5-f2bd99827846.htm" />
+        <HelpTOCNode Title="initialFrame Field" Url="html/b9ea0fc7-13cc-6be5-e11e-5e761f1376a5.htm" />
+        <HelpTOCNode Title="numberOfFrames Field" Url="html/8fe706b4-bfb1-326f-e2d5-0f0699e56be2.htm" />
+        <HelpTOCNode Title="timeForCurrentFrame Field" Url="html/c98ba24e-5135-35b5-87e0-7d8dfdf302ea.htm" />
+        <HelpTOCNode Title="velocity Field" Url="html/feb10e91-e538-1ea6-25fb-6ecbf5c32977.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="18b3a5b2-85fe-47e9-b25e-ac297542638f" Title="Sprite Methods" Url="html/35069c0b-f953-0da7-c5ea-e735d9f5e49a.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/5e810fee-0d1b-e58e-f08d-4285cc899cf1.htm" />
+        <HelpTOCNode Title="CreateFrame Method " Url="html/7c936e5e-f6e3-4608-a68f-5fcdda103ab6.htm" />
+        <HelpTOCNode Title="CreateFrameList Method " Url="html/cdb16fb7-87e9-3a5a-a782-805950a14013.htm" />
+        <HelpTOCNode Title="Draw Method " Url="html/44b15fb1-4bf9-0080-3439-c046853b3c3e.htm" />
+        <HelpTOCNode Title="Equals Method " Url="html/75a49ad8-9537-6e7a-db21-4e6d74bd15ea.htm" />
+        <HelpTOCNode Title="IsBoxColliding Method " Url="html/a4ee71e9-ed01-5a99-9f45-aad8c15757d5.htm" />
+        <HelpTOCNode Title="IsCircleColliding Method " Url="html/114d9f46-60c7-b89e-b0af-0b5a6c4150a8.htm" />
+        <HelpTOCNode Title="NextFrame Method " Url="html/4d05a0f2-efca-4cac-18fc-43aa1a038c97.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/9ca55ba9-2504-3dc4-9503-796e3e9049a8.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/674878a7-04f3-77dd-8df7-4e9bf8a675f9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8144e564-e2b9-43f3-a835-4e0e5e9fbe1a" Title="Sprite Properties" Url="html/0b9c2f00-c612-d99c-b9ea-21be379fe4f8.htm">
+        <HelpTOCNode Title="BoundingBox Property " Url="html/31dee65d-612b-bf2d-740c-da36cecf4301.htm" />
+        <HelpTOCNode Title="BoundingPadding Property " Url="html/05c42e99-a71c-8e77-e5e4-d7b30cb12691.htm" />
+        <HelpTOCNode Title="Center Property " Url="html/044fa54a-4c34-c518-8c7e-5f3920d8bf40.htm" />
+        <HelpTOCNode Title="CollisionRadius Property " Url="html/d24324e5-1bb9-c53b-ac1a-a5c8939cbb06.htm" />
+        <HelpTOCNode Title="CurrentFrame Property " Url="html/55f2abd5-1e56-880e-49b7-149be1d9bf57.htm" />
+        <HelpTOCNode Title="ElapsedFrameTime Property " Url="html/f6f7f76d-40db-e3fb-1ad4-02ad49e2830c.htm" />
+        <HelpTOCNode Title="FirstFrame Property " Url="html/5022816a-b4e5-074e-53f4-6f9b7219635c.htm" />
+        <HelpTOCNode Title="FrameCount Property " Url="html/eff101ca-338e-e8cb-2be7-68fd0b40562c.htm" />
+        <HelpTOCNode Title="FrameOrigin Property " Url="html/2b1689fe-91fb-cdde-90b9-bb364857a6b7.htm" />
+        <HelpTOCNode Title="Frames Property " Url="html/b8303e7f-eb22-4b73-3eeb-01d0e66a8d75.htm" />
+        <HelpTOCNode Title="FrameTime Property " Url="html/170fda27-8917-1acf-bd16-9dc465770ef1.htm" />
+        <HelpTOCNode Title="InitialFrame Property " Url="html/7ff2b18e-e22c-4cf5-7a7d-4e1ba40dd7e7.htm" />
+        <HelpTOCNode Title="Location Property " Url="html/353e5d70-470a-b645-b444-f9312dcccdd4.htm" />
+        <HelpTOCNode Title="NumberOfFrames Property " Url="html/5a625169-818d-eb09-61bd-497ca59d7937.htm" />
+        <HelpTOCNode Title="Source Property " Url="html/82dcceda-a8aa-2205-e861-3d790cb1ff77.htm" />
+        <HelpTOCNode Title="Velocity Property " Url="html/a76c6a10-464f-eadf-9fc7-e755fc613a8c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Sprite Events" Url="html/49b0bcff-8267-0aca-6752-6a1a95732c7a.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="65d9fdb8-a8dc-4331-9cae-b36ca1dab2f7" Title="WG2DGraphicsLoader Namespace" Url="html/d008b09f-3eab-0896-4de2-dfd82592854f.htm">
+    <HelpTOCNode Id="56db1a2f-8a4f-4f4a-a42f-a8f60bfa8945" Title="ImageLoader Class" Url="html/fdac2872-d790-7b27-72be-287fb23df3cc.htm">
+      <HelpTOCNode Title="ImageLoader Members" Url="html/970f2316-1f86-76c8-d5d4-f9a4c4b8ec87.htm" />
+      <HelpTOCNode Title="ImageLoader Constructor " Url="html/7df5d149-43e3-ef2c-55f9-6d309a917ea6.htm" />
+      <HelpTOCNode Id="0b6aaac9-dbdf-4d98-9546-4b47a8f86849" Title="ImageLoader Fields" Url="html/f7835d2a-2fd8-77f0-3239-c2562a959161.htm">
+        <HelpTOCNode Title="area Field" Url="html/8e47058e-2005-36b5-f6b5-6839efbc9444.htm" />
+        <HelpTOCNode Title="areaVector Field" Url="html/340fcbfb-5c13-f30e-771a-a582de9540b0.htm" />
+        <HelpTOCNode Title="color Field" Url="html/26c38257-2f19-5e97-e048-9686bcf6b917.htm" />
+        <HelpTOCNode Title="texture Field" Url="html/01087d68-5539-8bc7-324f-0d234cb5c34d.htm" />
+        <HelpTOCNode Title="textureName Field" Url="html/9d14a482-6270-069e-332d-d419d98c322d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="27c86b8c-0017-41bc-be92-c1f5995781d1" Title="ImageLoader Methods" Url="html/eb958bec-f2e7-40df-000e-ed7a1155e507.htm">
+        <HelpTOCNode Title="InitializeImage Method " Url="html/2b5b0b1d-15e6-440b-e47f-1f8f7c9226d0.htm" />
+        <HelpTOCNode Title="InitializePositions Method " Url="html/e60dc801-3691-3eab-5345-d6c3bf6cb30a.htm" />
+        <HelpTOCNode Title="LoadImage Method " Url="html/f802ddcc-037d-03c4-8f94-d317c8f8583d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="54330646-ed97-448d-bd2e-13d8616d4838" Title="ImageLoader Properties" Url="html/b3c67c08-9297-3073-4bc3-bf6df7b61546.htm">
+        <HelpTOCNode Title="AreaVector Property " Url="html/ea0fd0b8-7700-3f17-10bc-91caf19b9872.htm" />
+        <HelpTOCNode Title="Color Property " Url="html/8254b7eb-a6ed-1da2-25cd-c18218d4d8ba.htm" />
+        <HelpTOCNode Title="TextureName Property " Url="html/c001ec1a-b65a-b923-4ec5-82af8eaa7bdd.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6bb0ba40-e848-498b-b462-1ffd2359a281" Title="LabelLoader Class" Url="html/6552b4e5-43b7-1bab-bedf-d50180cd169a.htm">
+      <HelpTOCNode Title="LabelLoader Members" Url="html/cd5097c2-fc08-2533-e07d-3884fb5c460f.htm" />
+      <HelpTOCNode Title="LabelLoader Constructor " Url="html/e16a2164-0b34-7ee1-5f66-43d40ce49340.htm" />
+      <HelpTOCNode Id="acd05f6b-5f7b-4810-8871-b758a6bcf46f" Title="LabelLoader Fields" Url="html/319978c7-32a1-fe17-b9a9-985648678984.htm">
+        <HelpTOCNode Title="labelColor Field" Url="html/2b2ef8dd-0a98-4508-f291-b4c42c0e35f3.htm" />
+        <HelpTOCNode Title="labelFont Field" Url="html/98a24bf4-6ea1-7b59-82e7-415cee75ee11.htm" />
+        <HelpTOCNode Title="labelFontName Field" Url="html/312fd230-988d-03ac-ad2d-8ce5d085bee5.htm" />
+        <HelpTOCNode Title="labelPosition Field" Url="html/76960718-4a59-2f42-fdf7-6806b8d4b394.htm" />
+        <HelpTOCNode Title="labelPositionVector Field" Url="html/b89ac3cf-509a-a05c-24b0-0e8c6d461871.htm" />
+        <HelpTOCNode Title="labelText Field" Url="html/569687ad-bca1-2af1-c6f7-66ad389dfdca.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cd359265-6b35-4752-8781-b32bffd9e09e" Title="LabelLoader Methods" Url="html/46b925c7-7ccb-5946-8c25-49031690d9cd.htm">
+        <HelpTOCNode Title="InitializeLabel Method " Url="html/4fbaa724-3123-c732-ab12-6c05bf302f8e.htm" />
+        <HelpTOCNode Title="InitializePositions Method " Url="html/0982fc08-fa8b-3204-2ffa-444242aadf8c.htm" />
+        <HelpTOCNode Title="LoadLabel Method " Url="html/d9fd8979-726c-d4a6-d814-f51eeaa1fc85.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3e2d762b-a0aa-45a1-b13b-d5831262489e" Title="LabelLoader Properties" Url="html/018cb58e-4fa5-ac1d-b07c-4550842a5551.htm">
+        <HelpTOCNode Title="LabelColor Property " Url="html/f949a14e-f3f7-0286-058e-1bed0e958450.htm" />
+        <HelpTOCNode Title="LabelFont Property " Url="html/217c19c2-d271-f67a-1850-a784da24beca.htm" />
+        <HelpTOCNode Title="LabelFontName Property " Url="html/c38aab4f-debb-288c-1835-d7c9f1120bbb.htm" />
+        <HelpTOCNode Title="LabelPosition Property " Url="html/ecac5917-a16b-e5be-a25c-74c424b40d97.htm" />
+        <HelpTOCNode Title="LabelPositionVector Property " Url="html/265d388c-2ab3-716b-af0d-e49fb5e58714.htm" />
+        <HelpTOCNode Title="LabelText Property " Url="html/8f0fe79e-71be-6e47-1577-99be212c1596.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2286a9d4-71cb-4e83-9aef-0e50dea12c55" Title="MenuItemLoader Class" Url="html/1466950c-d08b-dec2-15eb-fca9a2f67ff1.htm">
+      <HelpTOCNode Title="MenuItemLoader Members" Url="html/5074e149-00c8-be94-b3b9-8706eef94522.htm" />
+      <HelpTOCNode Title="MenuItemLoader Constructor " Url="html/9c5bb9ff-c92f-3efe-914b-f94b688f17f9.htm" />
+      <HelpTOCNode Id="5d6a05e0-42aa-4da5-9275-3e6d8152244c" Title="MenuItemLoader Fields" Url="html/1e3f7abb-761c-b225-396d-cc9ec0d0b80c.htm">
+        <HelpTOCNode Title="highLighted Field" Url="html/0dad4124-6430-4cd2-09f4-a64c5c35c367.htm" />
+        <HelpTOCNode Title="highLightedColor Field" Url="html/4b2357ad-7df0-8738-27bc-64dc824d9efb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0ea92342-694e-4595-911c-a23c9acdff6e" Title="MenuItemLoader Methods" Url="html/ab3f2d8a-9852-59ac-67a9-d33aca679159.htm">
+        <HelpTOCNode Title="CreateMenuItem Method " Url="html/56b28606-e51a-f236-308f-d869eb68856d.htm" />
+        <HelpTOCNode Title="InitializeMenuItem Method " Url="html/2d0e7b14-8fda-23f7-4528-8b35c619403b.htm" />
+        <HelpTOCNode Title="LoadMenuItem Method " Url="html/832d202f-9f83-6ae8-e393-c0b5b79b8363.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="43fc6698-f13c-4e6d-9f07-33fd35137081" Title="MenuItemLoader Properties" Url="html/13de66c0-4317-0b5c-33fb-e3c9fa2522bc.htm">
+        <HelpTOCNode Title="HighLighted Property " Url="html/bf36533c-62fb-402b-bd92-8562461a0952.htm" />
+        <HelpTOCNode Title="HighLightedColor Property " Url="html/1540cc3e-b486-c773-915b-de1d1a92cad1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="35bf7289-6d8b-4976-a5e8-0ab6abde3c22" Title="SpriteLoader Class" Url="html/f569bbf4-5a32-fb89-969b-d7fbe931b2c9.htm">
+      <HelpTOCNode Title="SpriteLoader Members" Url="html/e2574562-762d-0feb-7109-ea6b94db4049.htm" />
+      <HelpTOCNode Title="SpriteLoader Constructor " Url="html/99bed9ab-4324-96dc-42e1-eef90265e20b.htm" />
+      <HelpTOCNode Id="a0ce5e6a-20c6-4e9c-8620-e30364f70db5" Title="SpriteLoader Fields" Url="html/735d29ab-b1c5-7294-8254-0f98c3de7aa7.htm">
+        <HelpTOCNode Title="boundingPadding Field" Url="html/171ccf0e-3df1-744c-a5ad-8c56250af5b3.htm" />
+        <HelpTOCNode Title="collisionRadius Field" Url="html/6b2eab5e-5bbf-7893-fe56-1cc939f4c09b.htm" />
+        <HelpTOCNode Title="firstFrame Field" Url="html/909a9a2b-aa49-fe97-c875-12448319cf61.htm" />
+        <HelpTOCNode Title="frameOrigin Field" Url="html/6ab59682-ce01-7f83-01fd-b3e22621f514.htm" />
+        <HelpTOCNode Title="frameTime Field" Url="html/b9c79374-379e-8b6b-5a49-e9f515bbfae0.htm" />
+        <HelpTOCNode Title="initialFrame Field" Url="html/799fd852-4504-e6c4-557f-eea2b12d6510.htm" />
+        <HelpTOCNode Title="location Field" Url="html/66d8c6ff-b2bf-5529-5d32-ba727b714e98.htm" />
+        <HelpTOCNode Title="numberOfFrames Field" Url="html/ad87a94b-2d43-dfc4-65e3-7f1c883d66fd.htm" />
+        <HelpTOCNode Title="rotaion Field" Url="html/ca2d8dd2-2a4d-3171-ee1b-bac89f1037ea.htm" />
+        <HelpTOCNode Title="textureName Field" Url="html/00b39c55-d3eb-3de2-14fc-adb35f594e1e.htm" />
+        <HelpTOCNode Title="timeForCurrentFrame Field" Url="html/745ea3d6-680a-217f-a08d-1356116f509d.htm" />
+        <HelpTOCNode Title="tintColor Field" Url="html/ce5a29c8-c109-c1e9-0726-8440ef9eac46.htm" />
+        <HelpTOCNode Title="velocity Field" Url="html/4664d07b-27fb-0290-bdf2-843b9467146e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d5709c36-4ebf-47b0-adba-a231bc50546e" Title="SpriteLoader Methods" Url="html/4bad7ae5-2f29-9054-4d3c-930719cb7bbf.htm">
+        <HelpTOCNode Title="InitializeSprite Method " Url="html/85d2d663-e29a-7c70-b57f-259c71b62f35.htm" />
+        <HelpTOCNode Title="LoadSprite Method " Url="html/e06f53f1-6d46-c27e-4404-f2a0403e95bd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6ce79c55-f8cc-47a0-a2cb-8705964d5361" Title="SpriteLoader Properties" Url="html/aef5b940-e0a3-06f9-4e5a-5fdee51c4524.htm">
+        <HelpTOCNode Title="BoundingPadding Property " Url="html/098db354-899c-fe58-022c-449ca9499a03.htm" />
+        <HelpTOCNode Title="CollisionRadius Property " Url="html/784af054-2e64-4ab6-360a-2012be67731d.htm" />
+        <HelpTOCNode Title="FirstFrame Property " Url="html/560cf4a2-64ec-6a67-25a5-0117a068f6a4.htm" />
+        <HelpTOCNode Title="FrameOrigin Property " Url="html/810577ef-fde8-3b0c-32a3-6d5d31055f00.htm" />
+        <HelpTOCNode Title="FrameTime Property " Url="html/476e436e-7baf-756b-9cb1-5cdb61743cf0.htm" />
+        <HelpTOCNode Title="InitialFrame Property " Url="html/a72d0691-315d-cc68-4ecc-d814249cfd53.htm" />
+        <HelpTOCNode Title="Location Property " Url="html/e8212fa6-0b74-3f49-c918-f3ed18e4d0c9.htm" />
+        <HelpTOCNode Title="NumberOfFrames Property " Url="html/86c30228-b1f5-3d5c-fc55-4f0c5fdba1d8.htm" />
+        <HelpTOCNode Title="Rotation Property " Url="html/efe19f55-c179-f569-da51-b3234101aa86.htm" />
+        <HelpTOCNode Title="TextureName Property " Url="html/28993099-3335-adc9-2545-9c49d71e34ca.htm" />
+        <HelpTOCNode Title="TintColor Property " Url="html/bebd5a07-2398-f290-e05f-d7ac40281e29.htm" />
+        <HelpTOCNode Title="Velocity Property " Url="html/ac16993e-f969-f632-ad51-7c237ab9429d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8184e325-9adf-425f-889f-5b2cc25104a6" Title="WG2DGraphicsLoaderTestLibrary Namespace" Url="html/fa9b6231-9224-8759-422c-c6a9bf651c34.htm">
+    <HelpTOCNode Id="0831c67a-80a8-4457-9095-0eb83c777c05" Title="TestImageLoader Class" Url="html/52a3222d-cbef-e42b-7f58-e310bddf0113.htm">
+      <HelpTOCNode Title="TestImageLoader Members" Url="html/7e3374dc-2d93-7928-4c96-c7336287a4bb.htm" />
+      <HelpTOCNode Title="TestImageLoader Constructor " Url="html/eb3265fc-f52c-2abf-7853-2618bf6dcf08.htm" />
+      <HelpTOCNode Id="d5a7d09d-a8c8-42a9-b355-2fcce8b07fd2" Title="TestImageLoader Methods" Url="html/8d44748a-46e1-c473-1c31-4101a6af44d8.htm">
+        <HelpTOCNode Title="Load Method " Url="html/1478c0d9-8761-88aa-00fd-37a4a9f5678b.htm" />
+        <HelpTOCNode Title="TestInitialization Method " Url="html/9a77bc4d-e407-69f3-70bd-efe599b03140.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0538a356-8af0-43ed-a54d-41ad97ea5e9b" Title="WG2DGraphicsTest Namespace" Url="html/f8415c84-2635-f750-b9a2-cfee63bc45db.htm">
+    <HelpTOCNode Id="421e458b-543f-427c-a4a1-aa5ff9fe25a7" Title="Game1 Class" Url="html/ee843f85-7dfc-727d-77d1-47d26c22af38.htm">
+      <HelpTOCNode Title="Game1 Members" Url="html/25dbfb5c-75d6-732a-35fd-b85e4076b7dc.htm" />
+      <HelpTOCNode Title="Game1 Constructor " Url="html/6ac11f8b-19aa-dc91-3234-002e0e389126.htm" />
+      <HelpTOCNode Id="887b3726-adff-487d-8251-979a07429f48" Title="Game1 Methods" Url="html/8c687d1e-e312-e757-f3f0-1cf453ae3635.htm">
+        <HelpTOCNode Title="Draw Method " Url="html/e1bf1b58-d390-f58d-5f41-9a39190c048d.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/92641c8a-4661-bff1-291d-88d02e22e09b.htm" />
+        <HelpTOCNode Title="LoadContent Method " Url="html/62ad1101-1bfa-3037-d7d2-acc83407ef49.htm" />
+        <HelpTOCNode Title="UnloadContent Method " Url="html/a3d98fc8-a7dc-092f-44fc-ce84995da19d.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/1bc83a3d-5c26-ca19-6759-d3c281a4a2b2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Game1 Properties" Url="html/c0b86f53-da71-72a1-da8b-cbbfbb528605.htm" />
+      <HelpTOCNode Title="Game1 Events" Url="html/92229206-97c8-615a-fd84-58506c036c1c.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="4f027553-a76a-4c63-ae25-6936a39bed98" Title="WG2DGraphicsTestLibrary Namespace" Url="html/f6c2c564-a91d-c7a6-6d6c-4147edabff85.htm">
+    <HelpTOCNode Id="8c444a03-7a19-42e4-9501-34b59e898c3d" Title="TestImage Class" Url="html/e7cf74c2-0ac1-c290-1ad3-07a6b88c3171.htm">
+      <HelpTOCNode Title="TestImage Members" Url="html/25034772-82a8-eba6-4a92-d1215073beba.htm" />
+      <HelpTOCNode Title="TestImage Constructor " Url="html/e7d8b276-1d00-4f73-6c12-b66f7adb54d4.htm" />
+      <HelpTOCNode Id="39d4eedd-438d-4a21-ac2b-63ac0a33da5a" Title="TestImage Fields" Url="html/c9cc9a57-16b6-4afd-4578-12cc58d406d5.htm">
+        <HelpTOCNode Title="expectedTexture Field" Url="html/20de3654-b46b-a7f6-8983-482265336b03.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b8feb8cc-d740-451a-9dea-adb44f207782" Title="TestImage Methods" Url="html/eb65bc8d-8750-3562-11a3-491a4cda9435.htm">
+        <HelpTOCNode Title="BasicConstructor Method " Url="html/8a1feff6-9a73-6816-3770-6ab4f2ee0fa5.htm" />
+        <HelpTOCNode Title="BasicConstructorWithColor Method " Url="html/0391e670-a510-57ba-673c-928eac975827.htm" />
+        <HelpTOCNode Title="CreateBasicImage Method " Url="html/86e7f7a8-3049-a09c-1930-ee11c97fe3fa.htm" />
+        <HelpTOCNode Title="CreateBasicImageWithColor Method " Url="html/6459136c-0fbe-95a5-be34-14282f594a42.htm" />
+        <HelpTOCNode Title="CreateDefaultObject Method " Url="html/bc965a47-f0cf-a3ac-92ff-1f6d2a80d047.htm" />
+        <HelpTOCNode Title="CreateFullObject Method " Url="html/0b99edfa-f430-13c6-a56e-c2689856076f.htm" />
+        <HelpTOCNode Title="Equality Method " Url="html/2a96eedb-b153-68d0-55c0-fa225277aef6.htm" />
+        <HelpTOCNode Title="ImageTexture Method " Url="html/ba7d71e0-ed09-ae10-f468-f11acdac9575.htm" />
+        <HelpTOCNode Title="InitializeLoader Method " Url="html/8fa6bdf0-ba25-1b9e-612e-fc2442925af2.htm" />
+        <HelpTOCNode Title="SetExpectedDefaultObjectValues Method " Url="html/49fd1997-15a8-5e82-c6e9-2dda8497d290.htm" />
+        <HelpTOCNode Title="SetExpectedStringText Method " Url="html/85098af6-8540-5fc6-a574-2822f212de97.htm" />
+        <HelpTOCNode Title="SetUp Method " Url="html/28d8378d-73bc-b751-dd29-fe6b1b3906b0.htm" />
+        <HelpTOCNode Title="TestInitialized Method " Url="html/01891e76-d210-7fc7-15e8-931a0fccb010.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="75c4181f-eb27-4d1e-acbe-b446a29ae22f" Title="TestScreen Class" Url="html/00ee8757-33b4-d9e2-b73c-029727e45835.htm">
+      <HelpTOCNode Title="TestScreen Members" Url="html/8da12f24-7165-c44e-5a36-9e6c6e55c244.htm" />
+      <HelpTOCNode Title="TestScreen Constructor " Url="html/9a488936-1f4f-5210-c785-1af1bae9952b.htm" />
+      <HelpTOCNode Id="bc67bd1e-f20e-489e-ad69-e68cc59ca1c4" Title="TestScreen Fields" Url="html/13b4569b-08f1-b419-15b1-1a0ccb340371.htm">
+        <HelpTOCNode Title="expectedActive Field" Url="html/2790f824-f0e3-cafb-16b3-402ac69b91e6.htm" />
+        <HelpTOCNode Title="expectedSprite Field" Url="html/c08e2e16-1690-f85d-e4a4-f249b0f3a004.htm" />
+        <HelpTOCNode Title="screen Field" Url="html/88397fc1-3d85-cd68-860b-6a61b145c46a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="02757813-725e-4d53-acb4-f746187da1e8" Title="TestScreen Methods" Url="html/c820015d-165e-d133-01f9-554cea7c949a.htm">
+        <HelpTOCNode Title="AddDynamicScreenElement Method " Url="html/f21c3da8-1465-1f35-6328-8f7a1576c225.htm" />
+        <HelpTOCNode Title="AddStaticScreenElement Method " Url="html/4ba4d04f-92d9-141c-7dcd-4dcf382a65d3.htm" />
+        <HelpTOCNode Title="CreateDefaultObject Method " Url="html/837b7151-bb9a-eb56-95b4-93e7be8ab956.htm" />
+        <HelpTOCNode Title="CreateFullObject Method " Url="html/5ddb3702-572f-6321-38a8-cded8132514f.htm" />
+        <HelpTOCNode Title="PercentageToScreenPosition Method " Url="html/d36ea903-6b2c-3ea9-8b05-6110587d584a.htm" />
+        <HelpTOCNode Title="SetExpectedDefaultObjectValues Method " Url="html/3d98ee8a-c4a0-68ea-74a7-0d599b5a7e27.htm" />
+        <HelpTOCNode Title="SetExpectedStringText Method " Url="html/09c0eb46-e87a-c146-389d-784a0bcba3e7.htm" />
+        <HelpTOCNode Title="SetExpectedValues Method " Url="html/4f90ec01-1b6a-e305-c0e8-26854d85cd24.htm" />
+        <HelpTOCNode Title="SetUp Method " Url="html/2eadf73e-a997-73db-82a0-b2de0a8eca93.htm" />
+        <HelpTOCNode Title="TestActive Method " Url="html/9ca06d27-4b49-6e7d-1aa7-6a3d6fdaad39.htm" />
+        <HelpTOCNode Title="TestInitialized Method " Url="html/e52122e9-28ca-87ac-1eed-cf4495bc5495.htm" />
+        <HelpTOCNode Title="Viewport Method " Url="html/18825543-d5f7-a765-a982-d58fed0653ac.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f3dbf7a2-5234-4423-a6f6-41587ad3f804" Title="TestScreenElement Class" Url="html/473c9191-d888-33e4-b50a-47316c665c73.htm">
+      <HelpTOCNode Title="TestScreenElement Members" Url="html/02934b87-3d80-52ff-7e23-b43e5a6446bb.htm" />
+      <HelpTOCNode Title="TestScreenElement Constructor " Url="html/0813e0ca-5ee5-5e0b-4ec6-9bcc759e42b0.htm" />
+      <HelpTOCNode Id="24fe6c3d-e1d5-40b0-b2b7-f887cdac36d6" Title="TestScreenElement Fields" Url="html/d5694464-075b-9851-25dd-f18d71f7d067.htm">
+        <HelpTOCNode Title="expectedArea Field" Url="html/3b90625b-788f-2888-c2cb-6c5ece282ce6.htm" />
+        <HelpTOCNode Title="expectedColor Field" Url="html/ac18afcb-bd75-906d-a5a6-5d326975096a.htm" />
+        <HelpTOCNode Title="expectedMouseState Field" Url="html/bd2eb3bc-2494-f71e-df0e-9c8f56a54836.htm" />
+        <HelpTOCNode Title="expectedRotation Field" Url="html/4ca560af-8027-9720-1cc4-bf33596552ab.htm" />
+        <HelpTOCNode Title="expectedVisibility Field" Url="html/dc445ce1-42ec-9bce-cf02-2466a52d8504.htm" />
+        <HelpTOCNode Title="screenElement Field" Url="html/78a0ee25-4965-8059-f296-d178db4161f7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5c1e4912-7afc-4f83-9505-3b9229325e27" Title="TestScreenElement Methods" Url="html/b414e479-936a-077f-6d04-fb3b9bf9507b.htm">
+        <HelpTOCNode Title="Area Method " Url="html/5967c4fb-1906-c9d5-7f76-e4246ffb67fb.htm" />
+        <HelpTOCNode Title="AreaChanged Method " Url="html/4e34f19e-aa7c-b795-ca7f-2f8e861bfbf5.htm" />
+        <HelpTOCNode Title="BoundingBox Method " Url="html/10f75d4e-2b92-3b4a-0c97-2a112ff007ba.htm" />
+        <HelpTOCNode Title="Clicked Method " Url="html/858e93aa-ab62-feb0-7938-e527d90fa6de.htm" />
+        <HelpTOCNode Title="ColorChanged Method " Url="html/7a31758a-e885-6ae6-ed20-90182b83db1a.htm" />
+        <HelpTOCNode Title="ColorProperty Method " Url="html/1336de2b-4032-2aa9-82da-69610ec0ecef.htm" />
+        <HelpTOCNode Title="ConvertToString Method " Url="html/53c5f987-09d5-1d4f-b32e-52c9208268da.htm" />
+        <HelpTOCNode Title="Equality Method " Url="html/230616dd-1c63-b4d5-79f1-78b02b40789f.htm" />
+        <HelpTOCNode Title="Height Method " Url="html/47773f9d-d9c8-250e-9510-ff4727aba1d5.htm" />
+        <HelpTOCNode Title="Position Method " Url="html/40c7a9ee-2aa3-5bdb-7a62-a0c9da8f5789.htm" />
+        <HelpTOCNode Title="RolledOver Method " Url="html/b91a39fd-ebfc-e070-ca66-ec4911bfedfb.htm" />
+        <HelpTOCNode Title="Rotation Method " Url="html/0b388fa3-c242-5de4-846d-3c98291f449b.htm" />
+        <HelpTOCNode Title="RotationChanged Method " Url="html/f2883f24-ee49-e947-3a5a-c0a5737d7cd9.htm" />
+        <HelpTOCNode Title="SetExpectedDefaultObjectValues Method " Url="html/bdb5a06c-1783-eddb-3274-4d608b16702b.htm" />
+        <HelpTOCNode Title="SetExpectedStringText Method " Url="html/c83db603-6183-358d-f5aa-f27c4047e9ed.htm" />
+        <HelpTOCNode Title="SetExpectedValues Method " Url="html/aaba0c31-83cc-7268-1da4-1cdf48d9caca.htm" />
+        <HelpTOCNode Title="Size Method " Url="html/2bd77fa6-54da-65af-b3ff-f235951b503e.htm" />
+        <HelpTOCNode Title="TestInitialized Method " Url="html/53a5b949-f84d-c963-a5c1-ac2466130fbc.htm" />
+        <HelpTOCNode Title="VisibilityChanged Method " Url="html/22d12b40-a609-3ca3-92a0-35c90de43504.htm" />
+        <HelpTOCNode Title="Visible Method " Url="html/ac73c553-28e8-a407-0cbd-5e4d2404a366.htm" />
+        <HelpTOCNode Title="Width Method " Url="html/de6336d9-844a-8c26-a8a6-ebcd7e9838fb.htm" />
+        <HelpTOCNode Title="X Method " Url="html/287daa69-6a5f-846d-c57a-c05e90469279.htm" />
+        <HelpTOCNode Title="Y Method " Url="html/0de60b20-9915-77ef-8a62-7ed7d8ec8dfa.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7cfdc391-5a42-42cd-b246-60f8a6975b9c" Title="TestSprite Class" Url="html/170da788-aa32-9794-6141-6373726740b0.htm">
+      <HelpTOCNode Title="TestSprite Members" Url="html/c0e7b78c-0546-5683-c08d-4b18bef06b8d.htm" />
+      <HelpTOCNode Title="TestSprite Constructor " Url="html/657d0dcb-2995-094b-32fc-c63cceedface.htm" />
+      <HelpTOCNode Id="ffceac27-d676-4840-97f4-b8a5daac3749" Title="TestSprite Fields" Url="html/e36bc81b-0ccc-038d-647f-218d8ec18121.htm">
+        <HelpTOCNode Title="expectedBoundingPadding Field" Url="html/fc32a3d2-e93d-9ce7-c8a3-b01bed33c7fc.htm" />
+        <HelpTOCNode Title="expectedCollisionRadius Field" Url="html/5c6bf896-7b44-7386-0fc8-117838e2b7d5.htm" />
+        <HelpTOCNode Title="expectedCurrentFrame Field" Url="html/a6878323-7dc1-426f-8f6e-304008e7122b.htm" />
+        <HelpTOCNode Title="expectedFrameCount Field" Url="html/e55e477a-15f9-b49b-9751-a04aea492161.htm" />
+        <HelpTOCNode Title="expectedFrameOrigin Field" Url="html/c7c9311b-d1f6-3091-9f35-95a0b3e8131b.htm" />
+        <HelpTOCNode Title="expectedFrames Field" Url="html/62ff8ade-af54-83cc-0109-c3a3cf6a7bd0.htm" />
+        <HelpTOCNode Title="expectedFrameTime Field" Url="html/4d2b95b8-9938-70bf-6b14-645956945d1e.htm" />
+        <HelpTOCNode Title="expectedInitialFrame Field" Url="html/b75ceea1-6b92-377a-c105-56652f204528.htm" />
+        <HelpTOCNode Title="expectedNumberOfFrames Field" Url="html/44a9c735-4230-932e-2b1f-9df118d1f964.htm" />
+        <HelpTOCNode Title="expectedVelocity Field" Url="html/349e6b0c-43cf-778b-727f-000dd6ada528.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a1a3417e-2896-4093-bcf0-f73bd3476e6d" Title="TestSprite Methods" Url="html/fdd07914-6470-c203-e60f-88c52cb0b979.htm">
+        <HelpTOCNode Title="BasicConstructor Method " Url="html/9a0af340-913e-b9e4-3a06-ca26c079ff39.htm" />
+        <HelpTOCNode Title="BasicConstructorWithColor Method " Url="html/fe068fcc-e06b-4c54-c86b-db3e3ab82a64.htm" />
+        <HelpTOCNode Title="BoundingBox Method " Url="html/837f5185-fab8-ac1c-f9a4-544ad566345d.htm" />
+        <HelpTOCNode Title="BoundingPadding Method " Url="html/249c3bac-7b7d-b559-1972-22a503917db6.htm" />
+        <HelpTOCNode Title="Center Method " Url="html/3f5f272f-56ba-c6ee-fb69-28e12ec12936.htm" />
+        <HelpTOCNode Title="CollisionRadius Method " Url="html/98fffeed-3713-58bb-3efe-42d978ce4c9b.htm" />
+        <HelpTOCNode Title="Constructor Method " Url="html/611b55c8-a4ae-fd07-ccc9-74274b92a2b2.htm" />
+        <HelpTOCNode Title="CreateFrame Method " Url="html/9a2fe56e-c203-010d-e3f5-138bb978e81d.htm" />
+        <HelpTOCNode Title="CreateFrameList Method " Url="html/112e6859-dbf9-ac13-8646-f52c529c9828.htm" />
+        <HelpTOCNode Title="CreateFullObject Method " Url="html/9d7aec69-4dd6-8c1e-bc42-d67255697124.htm" />
+        <HelpTOCNode Title="CurrentFrame Method " Url="html/49bf7d75-f529-018a-c52a-be0a3290c211.htm" />
+        <HelpTOCNode Title="ElapsedFrameTime Method " Url="html/ac6faf78-b3fb-d141-74c3-d318d7322cbc.htm" />
+        <HelpTOCNode Title="FirstFrame Method " Url="html/23ace1e7-1d6e-77c9-b6f6-9f5b60d58af7.htm" />
+        <HelpTOCNode Title="FrameCount Method " Url="html/81d1f3dc-c20d-180a-8fb6-318fc3f3e3fe.htm" />
+        <HelpTOCNode Title="FrameOrigin Method " Url="html/f520764f-8c4d-9e94-80e8-7aac41c73152.htm" />
+        <HelpTOCNode Title="Frames Method " Url="html/824b0fae-36f3-8300-69ab-81e307bef60f.htm" />
+        <HelpTOCNode Title="FrameTime Method " Url="html/15391f83-edcb-c1cb-4a63-b40b7927f9cc.htm" />
+        <HelpTOCNode Title="FullConstructor Method " Url="html/73c56cd2-3573-fdde-a2dc-ac3c9d0fa1ce.htm" />
+        <HelpTOCNode Title="InitialFrame Method " Url="html/7a970749-e302-2b8d-1a74-86017193f607.htm" />
+        <HelpTOCNode Title="IsBoxColliding Method " Url="html/acc915e7-37db-a38a-ebdb-ec86ef1d7544.htm" />
+        <HelpTOCNode Title="Location Method " Url="html/c3013553-983d-b0dc-d649-0adfa6a62c8d.htm" />
+        <HelpTOCNode Title="NumberOfFrames Method " Url="html/867f090b-d3bc-bd01-3cdb-6c7307145bde.htm" />
+        <HelpTOCNode Title="SetUp Method " Url="html/10050a8e-5d23-844b-5f86-bd4a0b5af260.htm" />
+        <HelpTOCNode Title="Source Method " Url="html/38bcd790-17e9-aeb7-db9b-05170543dcde.htm" />
+        <HelpTOCNode Title="TestEquality Method " Url="html/809469cb-b894-6ef9-89a9-f187061506f9.htm" />
+        <HelpTOCNode Title="TestInitialized Method " Url="html/33aa95a8-2fc2-ad20-74b4-f7ea485f1d26.htm" />
+        <HelpTOCNode Title="TestNextFrame Method " Url="html/96dbf500-8844-94fa-88ee-438d5023297b.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/5308a598-dec7-dab2-d23d-0d394cde3440.htm" />
+        <HelpTOCNode Title="Velocity Method " Url="html/e874631d-2999-4a8d-abd4-03d56d23ad02.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="53c1a12c-24bb-44ba-aace-13e981a39b0c" Title="WGCamera Namespace" Url="html/150e134f-cd69-2931-edac-a6b41752c26d.htm">
+    <HelpTOCNode Id="589a04fb-8c02-4e44-a8bd-e9d87b66e1e7" Title="ArcBallCamera Class" Url="html/b0f99089-44d3-224b-1e6e-8c55b9298ece.htm">
+      <HelpTOCNode Title="ArcBallCamera Members" Url="html/2cf4cd95-b488-5f72-cbfa-ced6e2525985.htm" />
+      <HelpTOCNode Title="ArcBallCamera Constructor " Url="html/f1a3856b-eb31-d89f-7551-59a4e05005c5.htm" />
+      <HelpTOCNode Title="ArcBallCamera Fields" Url="html/04dcd88f-a93a-c5d1-319e-746d6036b398.htm" />
+      <HelpTOCNode Id="e9e8c504-8605-459d-909d-67daef5b4512" Title="ArcBallCamera Methods" Url="html/42a1600b-5dcb-3116-2110-8b329bbdf333.htm">
+        <HelpTOCNode Id="3d8e27fc-2bf2-40e5-a7ce-3dc11b835747" Title="Move Method " Url="html/62d4122c-a508-5ee3-e53e-d01f43342217.htm">
+          <HelpTOCNode Title="Move Method (Single)" Url="html/15cb5245-e591-3024-d756-8dc08e12c85c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2d6e1f68-ff7e-4878-a269-49577ff002e6" Title="Rotate Method " Url="html/b71c0736-490d-656c-e1d1-d974933146e5.htm">
+          <HelpTOCNode Title="Rotate Method (Single, Single)" Url="html/7e0b2072-e423-6fef-89ac-16a53a2a9e4f.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Translate Method " Url="html/8e7f3983-9930-8067-f86e-73c38c0df408.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/51849929-0f76-0059-1bef-800b680b897d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4649ef9c-7a04-4902-b0ae-e471ddebd203" Title="ArcBallCamera Properties" Url="html/16cb81a5-4864-038e-266a-dad2eb0d59cf.htm">
+        <HelpTOCNode Title="Distance Property " Url="html/68015414-56bf-1c8d-af94-c2c98412a9a7.htm" />
+        <HelpTOCNode Title="MaxDistance Property " Url="html/2c101009-bcd6-f575-e8c8-9fe75c6ef5cc.htm" />
+        <HelpTOCNode Title="MaxRotationY Property " Url="html/1023d9aa-761d-21f4-ec9d-1e03746726dd.htm" />
+        <HelpTOCNode Title="MinDistance Property " Url="html/5732daae-d6ce-abf8-071c-2fe069842e77.htm" />
+        <HelpTOCNode Title="MinRotationY Property " Url="html/a3d1617f-7a71-805c-eb8d-afb01eeedd11.htm" />
+        <HelpTOCNode Title="RotationX Property " Url="html/c7df46cf-2d2a-1675-ac58-a4796a88cdc6.htm" />
+        <HelpTOCNode Title="RotationY Property " Url="html/cd3acee9-c6c6-47bf-ee9b-b614156140f1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5678d736-daef-46ce-a4a6-420f17fb32e6" Title="Camera Class" Url="html/f29125f9-80bf-2200-f593-7457c6845959.htm">
+      <HelpTOCNode Title="Camera Members" Url="html/c0391de4-d623-8072-9442-ea3430f8e26d.htm" />
+      <HelpTOCNode Id="48711ae7-2ae6-4a2d-8c20-3217c0173c72" Title="Camera Constructor " Url="html/d39b1141-92f1-56a5-83f2-1b248402ef0b.htm">
+        <HelpTOCNode Title="Camera Constructor " Url="html/ab43e1b1-e4c8-5da9-2cff-d70e1983354f.htm" />
+        <HelpTOCNode Title="Camera Constructor (Matrix)" Url="html/100b7147-02a8-5e15-22c1-17207de898df.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="670a913e-a4ee-47e8-8d22-157906cbca15" Title="Camera Fields" Url="html/c8fe2940-b304-2bd0-45e7-21994787f6dc.htm">
+        <HelpTOCNode Title="orientation Field" Url="html/a5a4408f-b208-c269-df69-fc546b464b0b.htm" />
+        <HelpTOCNode Title="position Field" Url="html/63abb17b-e0d5-10f7-7e65-0c1ae3c2b32f.htm" />
+        <HelpTOCNode Title="projection Field" Url="html/771b6c57-32d9-02dc-aa5a-f2e881a2a418.htm" />
+        <HelpTOCNode Title="rotation Field" Url="html/8ee6b7d1-be10-3324-ac18-ecd3d1e6b303.htm" />
+        <HelpTOCNode Title="translation Field" Url="html/26caf550-1595-378a-105a-0d6a04b5b466.htm" />
+        <HelpTOCNode Title="view Field" Url="html/ae2562be-f8e4-4ffb-9bf2-781855663b86.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="581b171c-e40b-484d-ad72-134a684a35c2" Title="Camera Methods" Url="html/7f7cf35b-17b7-df82-5963-f8939b0ce907.htm">
+        <HelpTOCNode Id="ac855de6-14bc-4ee6-a71e-7e6d1c711333" Title="BoundingVolumeIsInView Method " Url="html/2fddac8f-9f4f-5dcb-6764-8640f0c48d19.htm">
+          <HelpTOCNode Title="BoundingVolumeIsInView Method (BoundingBox)" Url="html/d5707c14-9a47-bea0-0bb8-888f6c91eca7.htm" />
+          <HelpTOCNode Title="BoundingVolumeIsInView Method (BoundingSphere)" Url="html/923ae381-7041-00f9-6aa4-88659118afcf.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="68fd4cd9-e7c1-4dd1-8232-3583fee9f446" Title="Move Method " Url="html/63b84427-ffdb-fe13-e8f6-65a1cb2cf2e7.htm">
+          <HelpTOCNode Title="Move Method (Vector3)" Url="html/050fa8df-3a8a-1c7d-aaaa-95e606249fc3.htm" />
+          <HelpTOCNode Title="Move Method (Single, Single)" Url="html/cd5bafcb-9fcb-bbfe-9f5f-e0854e63d850.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="484cf321-6000-4b8c-9c21-f41f740891dc" Title="Rotate Method " Url="html/2a705814-154b-6eca-ae82-fde7c39d52a7.htm">
+          <HelpTOCNode Title="Rotate Method (Vector3)" Url="html/ab0f6d01-1f18-eeef-4a66-25a1a4f247b2.htm" />
+          <HelpTOCNode Title="Rotate Method (Single, Single)" Url="html/543c41e5-e56a-65db-f4a6-1131962ea085.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a3921036-c9e6-42a8-9de9-a02fdddd75d7" Title="RotateByDegrees Method " Url="html/b25858c6-2d01-a558-5efd-b7dad5b54201.htm">
+          <HelpTOCNode Title="RotateByDegrees Method (Vector3)" Url="html/710e2187-a992-0fb0-5e88-4db72fdf6fe6.htm" />
+          <HelpTOCNode Title="RotateByDegrees Method (Single, Single)" Url="html/c55aa786-85ef-c1cd-4dc1-958377a40831.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Update Method " Url="html/ee8b808f-7bcd-5f2a-fa52-5903fcf3a88e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b3ada48b-0f98-447d-ba20-4f0752e4bf00" Title="Camera Properties" Url="html/63d04d2b-19f6-f4e4-ce22-a3cb5852c30f.htm">
+        <HelpTOCNode Title="Frustum Property " Url="html/98b7137e-89ab-4f81-9086-ee564df54e69.htm" />
+        <HelpTOCNode Title="Orientation Property " Url="html/c4067983-f88f-a89d-afa2-9dd0990c68f7.htm" />
+        <HelpTOCNode Title="Pitch Property " Url="html/da101cbb-4410-3dbc-3c7c-bbc246217e91.htm" />
+        <HelpTOCNode Title="Position Property " Url="html/019d93c5-6c0c-c3b4-ca9e-4a3b8a18e808.htm" />
+        <HelpTOCNode Title="Projection Property " Url="html/436dca84-e243-78f4-238d-904197061f51.htm" />
+        <HelpTOCNode Title="Roll Property " Url="html/e48564b6-28d1-baea-9cb4-320a562efd91.htm" />
+        <HelpTOCNode Title="Target Property " Url="html/106914ad-a3b3-890d-9d80-6c15f4f97b68.htm" />
+        <HelpTOCNode Title="View Property " Url="html/73a801f3-1e62-faf1-a18a-b4669d466a90.htm" />
+        <HelpTOCNode Title="Yaw Property " Url="html/d254d452-342a-a82c-770d-0c6c9339beda.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4316d729-2cbe-4427-8827-db84d5924011" Title="ChaseCamera Class" Url="html/1da4483e-46a3-1b5c-5092-c0e98d2b74bb.htm">
+      <HelpTOCNode Title="ChaseCamera Members" Url="html/40a612c0-6b99-0753-fa89-fad75bcf4c76.htm" />
+      <HelpTOCNode Title="ChaseCamera Constructor " Url="html/178cd906-74c1-6302-c019-fe1a6380d094.htm" />
+      <HelpTOCNode Title="ChaseCamera Fields" Url="html/b15110cb-7197-382b-dea8-bd3e55b0b315.htm" />
+      <HelpTOCNode Id="8b867773-158b-4155-ab50-cb2544e0d71d" Title="ChaseCamera Methods" Url="html/c8b663fd-7e21-54c0-8d27-fa6ce1b471a6.htm">
+        <HelpTOCNode Id="2202998c-07e7-4a2f-b9a4-8df9f1ef70ef" Title="Move Method " Url="html/6c27d3fb-f0b8-d8c5-b03b-cd9ade921c4f.htm">
+          <HelpTOCNode Title="Move Method (Vector3, Vector3)" Url="html/9aaf163e-862c-81d1-52f3-08c3a5b2d55f.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f74ec046-d20f-4494-b0cc-b99c8027ef7a" Title="Rotate Method " Url="html/7a341fe4-6874-a5c9-9110-a33b7e5ad66a.htm">
+          <HelpTOCNode Title="Rotate Method (Vector3)" Url="html/ae97af8a-2919-c1bf-fa05-086b2ebd4dbd.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Update Method " Url="html/b0e36537-0f2f-e038-56cb-3a76e8641d20.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5b45078b-f14e-4757-98bb-74f5466bf27c" Title="ChaseCamera Properties" Url="html/e24505be-abc0-fa08-8f48-db8335471cc9.htm">
+        <HelpTOCNode Title="FollowTargetPosition Property " Url="html/0a5fd798-a90d-b7e0-11e9-ae2dffec44a2.htm" />
+        <HelpTOCNode Title="FollowTargetRotation Property " Url="html/f0666b45-54b4-4f57-66da-0672566a49ca.htm" />
+        <HelpTOCNode Title="PositionOffset Property " Url="html/0011e7eb-28d8-aab2-1553-80f8d3f68a4e.htm" />
+        <HelpTOCNode Title="RelativeCameraRotation Property " Url="html/72b08d06-68a4-e12f-6965-311d46e84d19.htm" />
+        <HelpTOCNode Title="Springiness Property " Url="html/b30c0a07-3d55-b77e-ab24-2b7f39dd4d29.htm" />
+        <HelpTOCNode Title="TargetOffset Property " Url="html/0d987a9f-e68b-52d1-b65f-9e2dc2190a7d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6dead37a-116b-4380-aeb7-a1f6e06e9121" Title="FreeCamera Class" Url="html/7e61e9e9-c18a-1199-a8b4-04251fb26651.htm">
+      <HelpTOCNode Title="FreeCamera Members" Url="html/964e9a4e-0ce6-0f6a-2644-08f1db4fa07b.htm" />
+      <HelpTOCNode Id="4de68d85-07d7-4116-abb7-40a991d7cb65" Title="FreeCamera Constructor " Url="html/ce4ee1d9-c456-70c7-abd5-f9a0424c4971.htm">
+        <HelpTOCNode Title="FreeCamera Constructor " Url="html/e4f3053b-d0ab-e5b0-7187-c1a0b6f5fec9.htm" />
+        <HelpTOCNode Title="FreeCamera Constructor (Vector3, Single, Single, Matrix)" Url="html/4c25f81c-2bdd-30f6-0e46-a63dd3be3bda.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FreeCamera Fields" Url="html/de3686ed-4d45-50ac-57d9-a45ec1ed772d.htm" />
+      <HelpTOCNode Id="10f94a74-d00a-4270-9980-09054142e20f" Title="FreeCamera Methods" Url="html/40f9362c-9f88-dfce-322c-f842a3adbed5.htm">
+        <HelpTOCNode Id="ef2d67e0-341f-4200-9731-49afc76d26df" Title="Move Method " Url="html/5829ad31-1e17-e6fd-d1db-d0f6e5e26483.htm">
+          <HelpTOCNode Title="Move Method (Vector3)" Url="html/2e105cde-120c-6ef8-7749-40e198a1e1b7.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Update Method " Url="html/d690af29-8f0a-e09d-9b82-744fd1a02a2f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FreeCamera Properties" Url="html/e284aa8f-0698-2399-f5b9-d7ce66dd9101.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a527af4b-e284-4589-a02a-ab6bb41a6482" Title="TargetCamera Class" Url="html/c373f2c8-878c-e0df-ed77-ad2ef5690f74.htm">
+      <HelpTOCNode Title="TargetCamera Members" Url="html/f38c4c5c-2a2b-05e0-aa51-30c16b018e8f.htm" />
+      <HelpTOCNode Id="9f682636-b623-4afa-b562-e690bfb47c3e" Title="TargetCamera Constructor " Url="html/8f31e0d6-74a7-1ed4-c919-a432c94127ec.htm">
+        <HelpTOCNode Title="TargetCamera Constructor " Url="html/f4eab51b-d8c2-96fc-1677-a89c3c63cb59.htm" />
+        <HelpTOCNode Title="TargetCamera Constructor (Vector3, Vector3, Matrix)" Url="html/96800c7f-92f0-27e0-d870-dad134a99f99.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TargetCamera Fields" Url="html/a5fe24a3-bc48-3ff8-349d-198de5911243.htm" />
+      <HelpTOCNode Id="78f95189-f50d-4da3-a985-d38953536231" Title="TargetCamera Methods" Url="html/ec514565-7d32-8503-376a-3b63cd595df8.htm">
+        <HelpTOCNode Title="Update Method " Url="html/0ebd4b5d-814f-020a-a4e6-8f66ababa2e8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TargetCamera Properties" Url="html/b2800603-bc3b-0b4f-05a6-348ebfde36cb.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8ae65537-d2fc-4b38-a645-74879d49be50" Title="WGCameraLoader Namespace" Url="html/f27355bf-d20b-26bf-a627-955819b6e470.htm">
+    <HelpTOCNode Id="82710bf5-2192-48a8-8eac-f30b755fe077" Title="FreeCameraLoader Class" Url="html/cacb74a9-5455-50c4-5298-5861829e12cb.htm">
+      <HelpTOCNode Title="FreeCameraLoader Members" Url="html/bf2c325c-6af7-4e88-b6bb-70918e359851.htm" />
+      <HelpTOCNode Title="FreeCameraLoader Constructor " Url="html/1a0be8de-4cdd-d8e8-b52b-bd8af4d68c22.htm" />
+      <HelpTOCNode Id="ae569eda-2a5e-4419-b647-f810be1bacb5" Title="FreeCameraLoader Fields" Url="html/32705295-cdb5-f492-7a0f-b36784136cce.htm">
+        <HelpTOCNode Title="farPlaneDistance Field" Url="html/ff5a1eb5-8cab-f5e8-1a58-39f1645ecbe2.htm" />
+        <HelpTOCNode Title="nearPlaneDistance Field" Url="html/11c723df-c77d-224d-1ed4-823b3ce0916e.htm" />
+        <HelpTOCNode Title="orientation Field" Url="html/01ad269d-2084-7ae2-cc66-6392f9876d8a.htm" />
+        <HelpTOCNode Title="position Field" Url="html/2ccc51c8-35ea-4bdb-32ba-ba4abe72931a.htm" />
+        <HelpTOCNode Title="viewAngle Field" Url="html/2cd5eced-f47e-ba79-0c05-22412d9fb5a7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7d752bfb-a847-4271-897b-81f07afd0b73" Title="FreeCameraLoader Methods" Url="html/47199a49-2ce2-5430-9e28-be366fe0ec75.htm">
+        <HelpTOCNode Title="LoadFreeCamera Method " Url="html/a4b5d61e-c51d-1976-720e-85c95bb27d8f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1aae836c-a327-4c6b-9af2-b4ff4e698d95" Title="FreeCameraLoader Properties" Url="html/32dc0b3d-60b3-7da1-6400-c5333a0e1faf.htm">
+        <HelpTOCNode Title="FarPlaneDistance Property " Url="html/31cc72c8-f682-ad13-7a60-3c831a4c8e7a.htm" />
+        <HelpTOCNode Title="NearPlaneDistance Property " Url="html/726fa8a4-2ca9-40ea-df44-9eb92ae91334.htm" />
+        <HelpTOCNode Title="Orientation Property " Url="html/b8192df6-06a3-d454-102f-d03c91f856e8.htm" />
+        <HelpTOCNode Title="Position Property " Url="html/adfb6192-a18e-de23-e8a6-2500ec1f4389.htm" />
+        <HelpTOCNode Title="ViewAngle Property " Url="html/5de9bebf-0fd2-af74-cede-992beb8e083c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5f47a7df-1abc-4f27-a38a-b2447b6ca783" Title="TargetCameraLoader Class" Url="html/528b6639-fa1c-a76f-b588-8d6576b0d623.htm">
+      <HelpTOCNode Title="TargetCameraLoader Members" Url="html/888faf40-6f33-1246-b372-2e025849d80d.htm" />
+      <HelpTOCNode Title="TargetCameraLoader Constructor " Url="html/1fa3708e-9f17-cff3-70b6-4a0800836b35.htm" />
+      <HelpTOCNode Id="75b63da5-2cff-4272-9a06-16960c04ab26" Title="TargetCameraLoader Fields" Url="html/39c86a8e-31ef-14b1-d4f6-92c772d4b6f2.htm">
+        <HelpTOCNode Title="farPlaneDistance Field" Url="html/89ee0428-29d9-e0b1-633f-51531df9d01b.htm" />
+        <HelpTOCNode Title="nearPlaneDistance Field" Url="html/1ab9d844-e987-4173-0704-e5616b00952e.htm" />
+        <HelpTOCNode Title="position Field" Url="html/adae01cf-502a-d3bf-ce0b-7f76da19e471.htm" />
+        <HelpTOCNode Title="target Field" Url="html/4ce41bf0-0d60-5f22-ef36-7938058be9ba.htm" />
+        <HelpTOCNode Title="viewAngle Field" Url="html/5b3ca621-9bcf-0b1d-24f9-fb0b4eaf22b4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0b40aa78-ac58-4097-b500-6f5caa7c5c24" Title="TargetCameraLoader Methods" Url="html/59d56605-9f2c-eec7-cf30-50f2abb8b404.htm">
+        <HelpTOCNode Title="LoadTargetCamera Method " Url="html/9601e4ba-f1c8-8c68-ddae-0e4097998866.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f73e28a8-22a2-4bd2-b1df-5a0e58ec5634" Title="TargetCameraLoader Properties" Url="html/610054f4-83aa-f131-4cf9-2df412dad072.htm">
+        <HelpTOCNode Title="FarPlaneDistance Property " Url="html/88fcc322-d520-ed1b-9931-9773e34c73ba.htm" />
+        <HelpTOCNode Title="NearPlaneDistance Property " Url="html/d341ce49-aebb-2007-4739-b375c7092f58.htm" />
+        <HelpTOCNode Title="Position Property " Url="html/0e7bb4b9-3ba3-5fd4-37c2-ea803f541556.htm" />
+        <HelpTOCNode Title="Target Property " Url="html/447d7f6b-4913-be94-c5d1-9bb17a9b9717.htm" />
+        <HelpTOCNode Title="ViewAngle Property " Url="html/160e51bf-1147-fa79-d904-515f725e6866.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d23f7f51-55f5-4688-90fd-13fd5430dcd9" Title="WGCamerasTest Namespace" Url="html/e98dfa86-716c-6f60-3381-c488a0b42680.htm">
+    <HelpTOCNode Id="0799d9ee-c786-409c-b695-00c9b665dc45" Title="Game1 Class" Url="html/aa727468-5e84-5ffc-cb89-11f2b5299099.htm">
+      <HelpTOCNode Title="Game1 Members" Url="html/05cec102-f900-deeb-ffa0-a476a3ef47ac.htm" />
+      <HelpTOCNode Title="Game1 Constructor " Url="html/ec0756cf-3303-b99a-bd03-8150a0a9bdcc.htm" />
+      <HelpTOCNode Id="93ba6758-d208-4635-9785-731e374ce8f6" Title="Game1 Methods" Url="html/259e7240-648c-b82e-f4c6-d2f32a124a9f.htm">
+        <HelpTOCNode Title="Draw Method " Url="html/8e6d973c-2f9e-7637-841f-29cbdc6d7e9e.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/e0edf154-660c-1f46-2cdf-8c9eff0fcc73.htm" />
+        <HelpTOCNode Title="LoadContent Method " Url="html/e7f4a14e-3fcb-ab05-8150-cd1dd28821f2.htm" />
+        <HelpTOCNode Title="UnloadContent Method " Url="html/d0d77a47-3cea-bea4-00cf-489971d3f226.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/0cb981ae-6d5c-efa8-6124-61e79dadff2b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Game1 Properties" Url="html/b7c59c7d-ab61-faa6-878a-d17259c36115.htm" />
+      <HelpTOCNode Title="Game1 Events" Url="html/074ce2f6-77bf-85fe-a8bc-8604dc1b57ea.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="14ada34f-0591-4d5f-a58d-152991401e12" Title="WGIO Namespace" Url="html/6095413e-9379-a52e-630f-907a5fd13bdd.htm">
+    <HelpTOCNode Id="03878547-ec2c-4d37-9943-0c3e1d85b2b3" Title="BaseInputEvent Class" Url="html/373c2c1a-046b-f5d7-42b4-99ff496455e8.htm">
+      <HelpTOCNode Title="BaseInputEvent Members" Url="html/7172d4b2-98fb-71a2-5528-4381b1021e51.htm" />
+      <HelpTOCNode Id="b9b2a4b9-567c-4ba9-8d60-6164b3eb97dc" Title="BaseInputEvent Constructor " Url="html/018094b3-27ce-a1b9-2497-6ad58fc1d8e5.htm">
+        <HelpTOCNode Title="BaseInputEvent Constructor " Url="html/90d1edfa-fd2d-e37e-c04f-b5addaa22a30.htm" />
+        <HelpTOCNode Title="BaseInputEvent Constructor (Buttons)" Url="html/06240357-9938-874e-a78d-36f1bb77f9ed.htm" />
+        <HelpTOCNode Title="BaseInputEvent Constructor (Keys)" Url="html/0f2a6805-7da0-8bdf-795e-534206724ba7.htm" />
+        <HelpTOCNode Title="BaseInputEvent Constructor (MouseButtons)" Url="html/d631b448-f660-7072-1582-7f832396fbd1.htm" />
+        <HelpTOCNode Title="BaseInputEvent Constructor (OffsetInputs)" Url="html/5d3711b4-9a76-a865-6671-9466cc87abc0.htm" />
+        <HelpTOCNode Title="BaseInputEvent Constructor (Keys, Buttons)" Url="html/ec165d4b-1e6a-c21a-e9dc-5250d7377fa9.htm" />
+        <HelpTOCNode Title="BaseInputEvent Constructor (Keys, Buttons, MouseButtons)" Url="html/18b18a40-6b21-9d6f-fec5-39a9909163b8.htm" />
+        <HelpTOCNode Title="BaseInputEvent Constructor (Keys, Buttons, OffsetInputs)" Url="html/26e59320-afc0-b793-f0c7-d6156e23dfb1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b6870158-8562-412c-a7a1-61f0141fb8e1" Title="BaseInputEvent Fields" Url="html/e841edd0-a3d0-7edd-0ea4-2c5b97490588.htm">
+        <HelpTOCNode Title="eventButtons Field" Url="html/7faea5aa-a4c8-3815-9069-36f7e0f2fe56.htm" />
+        <HelpTOCNode Title="eventKeys Field" Url="html/0a601483-9dd2-f94e-7f5d-cc20085c55c4.htm" />
+        <HelpTOCNode Title="eventMouseButtons Field" Url="html/640b1fab-b748-a4bd-e3b6-ea00abb59440.htm" />
+        <HelpTOCNode Title="eventOffsetInputs Field" Url="html/5c508931-e8ae-c15a-46a1-6e7c1ab2718c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="052e565c-3c82-407f-b001-3a90b4a44a0a" Title="BaseInputEvent Methods" Url="html/4e4deba9-b7af-fb91-72f7-8c58a2a1910b.htm">
+        <HelpTOCNode Title="Initialize Method " Url="html/c5458e4c-35c7-b780-35e5-b2d784053637.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d696009e-8964-43bc-906d-d0b0f51fbd5a" Title="BaseInputEvent Properties" Url="html/a92a975b-2b6e-a5e8-5df7-5515c6ce3cac.htm">
+        <HelpTOCNode Title="EventButtons Property " Url="html/4a34ddaf-f9e3-e989-d469-bc3191c7f7d3.htm" />
+        <HelpTOCNode Title="EventKeys Property " Url="html/58b7d850-5cba-9438-fdcf-c3616e2bd32b.htm" />
+        <HelpTOCNode Title="EventMouseButtons Property " Url="html/4f52a594-9cf4-bc17-cff5-31ba75768044.htm" />
+        <HelpTOCNode Title="EventOffsetInputs Property " Url="html/0bf8380e-71d0-3cea-d147-6bb253c948eb.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="616bab44-f74c-4901-9342-213116cb7a95" Title="ButtonClickEventArgs Class" Url="html/9de66cb4-66c5-da1d-ac03-99ad6ddab24c.htm">
+      <HelpTOCNode Title="ButtonClickEventArgs Members" Url="html/35e61d81-cc7c-02fe-0ef7-f159157a66e9.htm" />
+      <HelpTOCNode Title="ButtonClickEventArgs Constructor " Url="html/2beefdf4-97df-a3c0-8cad-55887031af98.htm" />
+      <HelpTOCNode Title="ButtonClickEventArgs Methods" Url="html/70b7f935-c178-15a0-7d56-f3a2179a0a5f.htm" />
+      <HelpTOCNode Id="ff956fab-5270-44e0-ab0f-640ec4a67a51" Title="ButtonClickEventArgs Properties" Url="html/80515220-4101-8c91-4032-903a865312d9.htm">
+        <HelpTOCNode Title="Location Property " Url="html/be2c9294-7bbc-db29-03ad-d10d857bce93.htm" />
+        <HelpTOCNode Title="MouseState Property " Url="html/24fafea6-1be5-dd66-1678-6a09779c67ca.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="ButtonClickEventHandler Delegate" Url="html/da8d0c95-7e96-d74a-e55f-4f391aa6602c.htm" />
+    <HelpTOCNode Id="840665f9-f8d3-4af1-a68d-ee247a3adafc" Title="ButtonEvent Class" Url="html/a1d4efe7-0445-8989-d8ae-082a9269940e.htm">
+      <HelpTOCNode Title="ButtonEvent Members" Url="html/d15127b7-f352-56ea-7c04-624df27e5b44.htm" />
+      <HelpTOCNode Id="88449a3a-e544-4383-886b-7c060eea2b46" Title="ButtonEvent Constructor " Url="html/498beb2c-a45d-785f-99ab-ce9477dcce2c.htm">
+        <HelpTOCNode Title="ButtonEvent Constructor " Url="html/1692bcd1-ef29-4827-70cb-fa628222a39f.htm" />
+        <HelpTOCNode Title="ButtonEvent Constructor (ButtonClickEventHandler, Buttons)" Url="html/3901cea6-b939-5016-a7cb-bd6ed001dfc0.htm" />
+        <HelpTOCNode Title="ButtonEvent Constructor (ButtonClickEventHandler, Keys)" Url="html/d53bcebd-9593-84eb-344a-7902dc7b6252.htm" />
+        <HelpTOCNode Title="ButtonEvent Constructor (ButtonClickEventHandler, MouseButtons)" Url="html/be988586-7459-ecd0-e964-d47a206e06b4.htm" />
+        <HelpTOCNode Title="ButtonEvent Constructor (ButtonClickEventHandler, Keys, Buttons)" Url="html/cbcfa485-21e7-02f2-05e7-6325109d531d.htm" />
+        <HelpTOCNode Title="ButtonEvent Constructor (ButtonClickEventHandler, Keys, Buttons, MouseButtons)" Url="html/a006950a-9535-9b5e-211c-26954bb5bae5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ButtonEvent Fields" Url="html/b29ac1d5-5655-4acd-072c-19351a7d962a.htm" />
+      <HelpTOCNode Id="2a39f6c1-8197-4a3e-a7a0-513ed1f7764d" Title="ButtonEvent Methods" Url="html/5347e79e-def2-99db-314c-55e23475d21d.htm">
+        <HelpTOCNode Title="FireEvent Method " Url="html/e71b451c-7186-9a74-4913-dea1bfc26ce4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ButtonEvent Properties" Url="html/4fecd98c-e9e0-3429-72be-a0b5116b8272.htm" />
+      <HelpTOCNode Id="e78686f1-fc92-4e13-8807-b0d544a64d21" Title="ButtonEvent Events" Url="html/432a52b0-ca50-4210-94d3-17ac41264044.htm">
+        <HelpTOCNode Title="Event Event" Url="html/f690c5b9-09c9-ed55-cf0c-be09fb737a41.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dbe07534-c4da-438b-86d7-b637c2b81487" Title="File Class" Url="html/202546e6-6e82-407c-3dc1-7b39699d8b04.htm">
+      <HelpTOCNode Title="File Members" Url="html/66aa3e41-8a81-1b11-51ce-e8f9f9fa6815.htm" />
+      <HelpTOCNode Title="File Constructor " Url="html/6c958e49-9a80-8367-8a4f-c4241266cf08.htm" />
+      <HelpTOCNode Id="91e06def-7d53-402b-9d52-acb266b28eef" Title="File Methods" Url="html/1185babb-6592-7672-04eb-a09d52133133.htm">
+        <HelpTOCNode Title="Write Method " Url="html/633bac7e-7ec9-8110-ce42-e10079be36cc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0f206a9b-10f3-4ea1-863d-e160004b3712" Title="File Properties" Url="html/2de27682-93f9-afaa-44f4-8e1a0331dae9.htm">
+        <HelpTOCNode Title="FileName Property " Url="html/05f74402-4121-0900-5991-efe052fdd95f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d20498a5-5920-4716-be5c-3d4576ec29e5" Title="GamePadDevice Class" Url="html/ca8fb1ae-21c5-d7fd-5713-4082851d4da5.htm">
+      <HelpTOCNode Title="GamePadDevice Members" Url="html/d5e105ff-13c5-4e03-8dcf-421b31be4e9c.htm" />
+      <HelpTOCNode Title="GamePadDevice Constructor " Url="html/28b40ac3-901d-d35d-d187-88be2d14f2ac.htm" />
+      <HelpTOCNode Title="GamePadDevice Fields" Url="html/21e8ea79-26ba-2031-32c1-ecc1e4b6c6f0.htm" />
+      <HelpTOCNode Id="582d116e-cdd6-4618-b72e-3c12022af7b0" Title="GamePadDevice Methods" Url="html/2bf762bd-7f7e-b286-de54-4fa22a1a54bc.htm">
+        <HelpTOCNode Title="DoBasicGamePadUpdate Method " Url="html/666ae60a-244f-6fd3-d764-ffd21a61ae25.htm" />
+        <HelpTOCNode Title="FireRequiredButtonEvents Method " Url="html/29ae7c5f-345f-830d-cab2-a269c80baff4.htm" />
+        <HelpTOCNode Title="FireRequiredInputEvents Method " Url="html/0e738008-12bb-fb03-5bb6-74d906d07e02.htm" />
+        <HelpTOCNode Title="FireRequiredOffsetEvents Method " Url="html/e6561f59-7763-9590-6c8a-811f5a64f910.htm" />
+        <HelpTOCNode Title="OffsetInput Method " Url="html/a2fc0573-b9b9-c54f-115d-d8b9e71c623a.htm" />
+        <HelpTOCNode Title="OffsetInputReceived Method " Url="html/0f719a7c-a53c-54c1-c216-5e780e451729.htm" />
+        <HelpTOCNode Id="4375e47a-825a-45cf-b0bf-dd57c5ae0d8e" Title="Update Method " Url="html/35f7fed1-f40f-7b66-2bce-746f543f8c64.htm">
+          <HelpTOCNode Title="Update Method (GameTime)" Url="html/a4bc9485-e5c7-f585-459c-d350735ff63f.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState)" Url="html/d05c9274-180a-ce98-a9fb-5030e3733656.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState, KeyboardState)" Url="html/043d20dc-2a96-cecd-f246-96f3825df585.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState, KeyboardState, GamePadState)" Url="html/e83ea3de-3ba9-e1d6-9506-8d3efd6b849c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UpdateDeviceActiveState Method " Url="html/82b641d6-8325-3f35-05d8-12cfc899abd5.htm" />
+        <HelpTOCNode Title="UpdateDeviceConnectedState Method " Url="html/fa19152e-1597-01de-4b2c-9c478b583f3f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="GamePadDevice Properties" Url="html/f0cebc2b-deb4-ee83-2fa9-bf34ebe44b14.htm" />
+      <HelpTOCNode Title="GamePadDevice Events" Url="html/52bc71e8-2296-f97d-bb7b-7370d3a75054.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0f02dae9-a505-4c2c-b7c0-6f42d9b272a4" Title="GuideWrapper Class" Url="html/d61f3a8c-bd26-0f5b-3663-abd481536e75.htm">
+      <HelpTOCNode Title="GuideWrapper Members" Url="html/fc9d5d4a-e45b-af22-19d7-8aa8e12ca394.htm" />
+      <HelpTOCNode Id="ab726dff-4af7-4c25-b867-db52ec8c24b9" Title="GuideWrapper Constructor " Url="html/496282c0-ff58-3663-bbd7-8508cfe6f848.htm">
+        <HelpTOCNode Title="GuideWrapper Constructor " Url="html/d517d465-62cb-f3ec-7dca-2720058ad03a.htm" />
+        <HelpTOCNode Title="GuideWrapper Constructor (Boolean)" Url="html/1fe6ea81-ae3c-aa4a-66cc-c2718298fda9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="399adca9-ca54-4c8a-a31b-ad1f5a0a86b3" Title="GuideWrapper Fields" Url="html/7f2d20a0-136f-83b4-ba64-2d589e18d902.htm">
+        <HelpTOCNode Title="dialogSelection Field" Url="html/a907abed-f43a-403b-1a58-a0f9065ccb74.htm" />
+        <HelpTOCNode Title="dialogText Field" Url="html/68d10879-57b2-3541-1a29-434f4947b426.htm" />
+        <HelpTOCNode Title="FirstSelection Field" Url="html/4a257991-4e97-7471-7a19-fe759358d384.htm" />
+        <HelpTOCNode Title="guideNotInitialized Field" Url="html/53b7c2da-38cc-4541-d910-09758eb32342.htm" />
+        <HelpTOCNode Title="isTrialMode Field" Url="html/51251a23-57f9-812f-1004-ff530dd17c84.htm" />
+        <HelpTOCNode Title="isVisible Field" Url="html/740d4d4b-c2a9-aa09-1e05-4ee013c9802b.htm" />
+        <HelpTOCNode Title="NoSelection Field" Url="html/356e0e01-4737-422c-91d4-4649a2698d89.htm" />
+        <HelpTOCNode Title="SecondSelection Field" Url="html/90562c12-81ef-0e7d-702b-42b8d889722c.htm" />
+        <HelpTOCNode Title="simulateTrialMode Field" Url="html/79111d91-7a42-b4b9-809a-99d63c853a03.htm" />
+        <HelpTOCNode Title="ThirdSelection Field" Url="html/9f668914-42e4-cf6c-80aa-7fffa9296cfb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fe4e21e6-4109-4cb1-92f2-82fd0ebf1ed7" Title="GuideWrapper Methods" Url="html/0bf0d504-dd48-f192-281f-127227d92ddf.htm">
+        <HelpTOCNode Title="OnMarketPlaceClosed Method " Url="html/49ed7f9d-2353-7d88-3267-f31bf98329e2.htm" />
+        <HelpTOCNode Title="OnSelectionClosed Method " Url="html/08a6330f-8a49-2026-34a7-25d3102bf1a3.htm" />
+        <HelpTOCNode Title="SelectionDialogCallback Method " Url="html/190190c8-2812-5fc6-a85b-20efd7bbfa1d.htm" />
+        <HelpTOCNode Title="ShowDialog Method " Url="html/5aef939f-0c97-534c-9206-86fc6784c2fd.htm" />
+        <HelpTOCNode Title="ShowLoadFailedDialog Method " Url="html/a7bf59b1-635a-df19-a543-3e9e8ecaea4a.htm" />
+        <HelpTOCNode Title="ShowMarketPlace Method " Url="html/9400a63a-63d1-3698-c1d3-929756a1afb0.htm" />
+        <HelpTOCNode Title="ShowSaveFailedDialog Method " Url="html/c06a66b8-2809-1a7c-9d78-83e0d02266e1.htm" />
+        <HelpTOCNode Title="ShowSaveLoadFailedDialog Method " Url="html/3bea40fe-ccfd-36d8-2f00-c8cffd4777eb.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/6aadd484-c077-bc08-203e-4fca6dde3a37.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2ec2d60a-5fd7-44fe-95ed-f7326d29780d" Title="GuideWrapper Properties" Url="html/cff1c2e6-5f79-3043-dca5-9e80babfaa4b.htm">
+        <HelpTOCNode Title="DialogSelection Property " Url="html/f6ce91f0-5674-3a84-6dd9-047c254db890.htm" />
+        <HelpTOCNode Title="DialogText Property " Url="html/5c4a14b3-ff5b-9c24-cd89-541b336535f7.htm" />
+        <HelpTOCNode Title="GuideNotInitialized Property " Url="html/76e47a32-555d-9f3b-1687-14cb95149445.htm" />
+        <HelpTOCNode Title="IsTrialMode Property " Url="html/ae7058f2-6eb2-5e31-8da8-48a15c0678c0.htm" />
+        <HelpTOCNode Title="IsVisible Property " Url="html/b351884e-c9da-0119-4374-211ba751daea.htm" />
+        <HelpTOCNode Title="SimulateTrialMode Property " Url="html/e08f15e4-8c21-0d9e-7d19-108d07d88b8b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e3b0eba0-cb78-456b-9d70-2b3b1c28c566" Title="GuideWrapper Events" Url="html/63b04ecc-2d00-7f32-71f5-df7660bc6c9a.htm">
+        <HelpTOCNode Title="MarketPlaceClosed Event" Url="html/ffa05d92-b1ed-92fa-f6c0-ed37e5d1189b.htm" />
+        <HelpTOCNode Title="SelectionClosed Event" Url="html/2c64ee9b-1457-5029-8838-76dea6bc3442.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f2fe68b1-5b28-47b2-93bd-1248fc8675e6" Title="InputDevice Class" Url="html/b83b45b9-5a64-6358-632a-18b4a46d47a8.htm">
+      <HelpTOCNode Title="InputDevice Members" Url="html/c70b49f0-ab7c-0446-041f-b2f876f08e7d.htm" />
+      <HelpTOCNode Title="InputDevice Constructor " Url="html/50931930-3e15-75e8-7640-0c18d079b576.htm" />
+      <HelpTOCNode Id="3dc31853-474b-4d61-9dfc-feb97b0d6cb5" Title="InputDevice Fields" Url="html/6359c702-3f34-bbcf-8732-e06617e9ce1a.htm">
+        <HelpTOCNode Title="buttonChangedEvents Field" Url="html/134fd293-d35e-872c-43b5-fc9b34b2af1b.htm" />
+        <HelpTOCNode Title="buttonEvents Field" Url="html/87460329-4c1b-086e-6b2d-6764925c6df1.htm" />
+        <HelpTOCNode Title="cameraStateFlag Field" Url="html/4fda5510-e170-b595-1d1b-33f3063329b3.htm" />
+        <HelpTOCNode Title="currentGamePadState Field" Url="html/41821256-ef4d-3d6d-880e-55c8b6399a1e.htm" />
+        <HelpTOCNode Title="currentKeyboardState Field" Url="html/4b808ba4-9f71-f76b-5fe9-fc86241d9d2e.htm" />
+        <HelpTOCNode Title="currentMouseState Field" Url="html/2ba12595-16b0-b513-9cfc-824cd9a694bd.htm" />
+        <HelpTOCNode Title="gamer Field" Url="html/0a9707b3-0faf-2b5e-3ef0-85aeaf993757.htm" />
+        <HelpTOCNode Title="inputChangedEvents Field" Url="html/68213488-1ca4-97a4-cf75-44b8f773f922.htm" />
+        <HelpTOCNode Title="inputEvents Field" Url="html/195d90b8-6f65-de27-021c-3aa73753701d.htm" />
+        <HelpTOCNode Title="invertYAxis Field" Url="html/7ffeaf92-2158-cb30-3c72-6be8198d5616.htm" />
+        <HelpTOCNode Title="isActive Field" Url="html/2099346f-cc60-03f6-f7cc-090c03c6261c.htm" />
+        <HelpTOCNode Title="isConnected Field" Url="html/37241a92-8cf5-fa0a-976c-29b57ad29430.htm" />
+        <HelpTOCNode Title="mouseDelta Field" Url="html/23d1e269-08dc-8f49-a2cc-78d69d457b15.htm" />
+        <HelpTOCNode Title="mouseIsVisible Field" Url="html/9832d1c8-d09c-54c3-33d7-62fa2e601661.htm" />
+        <HelpTOCNode Title="mouseSensitivity Field" Url="html/11504f22-e600-4ff1-c286-893a425e9f55.htm" />
+        <HelpTOCNode Title="mouseThumbStickControl Field" Url="html/a5a402f0-25a8-35cd-5881-4fbc22277359.htm" />
+        <HelpTOCNode Title="offsetEvents Field" Url="html/b172a93e-a38c-f823-9b6e-c3b04f220684.htm" />
+        <HelpTOCNode Title="player Field" Url="html/84e6d160-5e02-facc-735f-69fafa776ba9.htm" />
+        <HelpTOCNode Title="playerViewport Field" Url="html/33720da6-1010-b220-d3a7-a83d107680b6.htm" />
+        <HelpTOCNode Title="previousGamePadState Field" Url="html/205a4e46-8613-8e5d-afc1-d8b65cec3c3b.htm" />
+        <HelpTOCNode Title="previousKeyboardState Field" Url="html/7d3de1cf-6369-140d-5118-63689245e7c5.htm" />
+        <HelpTOCNode Title="previousMouseState Field" Url="html/3d92f525-e240-7107-fc05-1706f95d854c.htm" />
+        <HelpTOCNode Title="state Field" Url="html/6d7e7545-c674-867b-0a90-08b3413c4d3e.htm" />
+        <HelpTOCNode Title="storageDevice Field" Url="html/235e4a6d-bb4b-09c2-f442-c6dd6adcb268.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5626d009-55f0-42a7-a894-3d14c2774f25" Title="InputDevice Methods" Url="html/7899a77e-ab6e-abc4-ff9f-1e10d2252ac2.htm">
+        <HelpTOCNode Id="a374d402-2e97-42e9-8eb3-9d0f86f5a5e7" Title="ButtonChanged Method " Url="html/6e7e4051-b88f-fb86-3ad2-96911f41b582.htm">
+          <HelpTOCNode Title="ButtonChanged Method (Buttons)" Url="html/ca33d57b-267f-7778-956c-c9d3414dee86.htm" />
+          <HelpTOCNode Title="ButtonChanged Method (MouseButtons)" Url="html/1c48759c-c500-1657-8221-ddb8fd3bddc9.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ButtonDown Method " Url="html/56067851-eaed-f117-5ae4-8c0fe90dc853.htm" />
+        <HelpTOCNode Id="624c4359-6283-4ebb-a5cb-73fc32ed8821" Title="ButtonPressed Method " Url="html/e197d268-b7fc-0278-c5af-ae50421fe719.htm">
+          <HelpTOCNode Title="ButtonPressed Method (Buttons)" Url="html/1160557f-df5a-8d7a-3c55-0f9fcf6b78b8.htm" />
+          <HelpTOCNode Title="ButtonPressed Method (MouseButtons)" Url="html/bf56ac8c-af5b-29ba-3530-fdf63211608d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ButtonReleased Method " Url="html/8f35a77a-8ed3-045f-7791-4279c590b48f.htm" />
+        <HelpTOCNode Title="ButtonUp Method " Url="html/987b443d-33e5-ef36-29a2-fed26df7417c.htm" />
+        <HelpTOCNode Title="DoBasicUpdate Method " Url="html/795eb601-6bcf-f72e-79eb-817ff30dc1d8.htm" />
+        <HelpTOCNode Title="FireRequiredButtonEvents Method " Url="html/413a3f02-3a3d-4f65-3ee3-eb9e8b1c88ba.htm" />
+        <HelpTOCNode Title="FireRequiredInputEvents Method " Url="html/eb30d668-3ff8-684b-4ee6-96966a560353.htm" />
+        <HelpTOCNode Title="FireRequiredOffsetEvents Method " Url="html/b01f5623-77ca-f13c-32b3-ed1a573e85d3.htm" />
+        <HelpTOCNode Title="InputReceived Method " Url="html/5645072e-a5a1-63d4-d577-2c47fd75f455.htm" />
+        <HelpTOCNode Title="KeyChanged Method " Url="html/8d5c5993-f8be-3412-2930-d56ced3ab429.htm" />
+        <HelpTOCNode Title="KeyPressed Method " Url="html/97bf981e-a0af-acd2-6375-0e3a5dc69a62.htm" />
+        <HelpTOCNode Title="KeyReleased Method " Url="html/f14f9b93-9f79-5eda-195b-d4a39581f551.htm" />
+        <HelpTOCNode Title="LoadFromXmlFile Method " Url="html/7f9db329-46d3-03e5-bc03-7e72c14aba3b.htm" />
+        <HelpTOCNode Title="OffsetChanged Method " Url="html/c36a0d5d-8728-3f97-3cfd-a10f1fc1b842.htm" />
+        <HelpTOCNode Title="OffsetInput Method " Url="html/38aa7a5e-aa09-38e1-9c6c-3dc25f9cada0.htm" />
+        <HelpTOCNode Title="OffsetInputReceived Method " Url="html/a4c3e8c8-50c4-0fe1-7655-6a255cac46a8.htm" />
+        <HelpTOCNode Title="OnActivated Method " Url="html/1ab955ea-5078-0e4d-f6fe-00e9f6f034af.htm" />
+        <HelpTOCNode Title="OnConnect Method " Url="html/2803afc9-bee9-9d48-8341-c2262d695cc1.htm" />
+        <HelpTOCNode Title="OnDeactivate Method " Url="html/86db5ec0-556d-d9bb-1afb-f0dabd278d88.htm" />
+        <HelpTOCNode Title="OnDisconnect Method " Url="html/0deb0efb-f6b1-28aa-38bc-5554b4931502.htm" />
+        <HelpTOCNode Title="OnStorageDeviceSelected Method " Url="html/6ca92fb7-1f65-22e6-91b8-da6d677a991d.htm" />
+        <HelpTOCNode Title="OpenContainer Method " Url="html/a521d575-1e12-c204-430a-8871f20d0f90.htm" />
+        <HelpTOCNode Title="SaveToXmlFile Method " Url="html/b7c42c13-7676-ead4-9365-12beafa1a880.htm" />
+        <HelpTOCNode Title="SelectStorageDevice Method " Url="html/663631cb-e5d1-be9b-f0c2-39d659081978.htm" />
+        <HelpTOCNode Id="613033be-9733-4cef-aa4c-e2c754cf4040" Title="Update Method " Url="html/2981dcc7-afeb-4c34-3ac1-d8111b8dc79c.htm">
+          <HelpTOCNode Title="Update Method (GameTime)" Url="html/96283c37-b0d1-6d41-6fac-b6722a24c1d8.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState)" Url="html/35e933c3-a9cb-6127-af58-9d371a00b786.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState, KeyboardState)" Url="html/a1b11567-90b1-55c0-86d4-48f3deca7b33.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState, KeyboardState, GamePadState)" Url="html/6f1437dc-0463-3a1d-7052-cee083a51c4f.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UpdateDeviceActiveState Method " Url="html/a67e0189-0c54-a5d2-fadf-53967435eef5.htm" />
+        <HelpTOCNode Title="UpdateDeviceConnectedState Method " Url="html/6ce391d7-a1a1-5050-f9ac-516939010994.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="97ede6c5-fd91-4dbc-a255-809debafda75" Title="InputDevice Properties" Url="html/c9da8ec2-b138-2dd6-a070-47b117ee5d80.htm">
+        <HelpTOCNode Title="ButtonChangedEvents Property " Url="html/88e6d59f-e20b-60bc-a647-173efd52ac04.htm" />
+        <HelpTOCNode Title="ButtonClickedEvents Property " Url="html/579f952a-b7f6-36ac-6f4b-5b7559cfdf72.htm" />
+        <HelpTOCNode Title="CameraStateButtonPressed Property " Url="html/be99ace8-e21e-5caf-9f1b-00cc0b938273.htm" />
+        <HelpTOCNode Title="CurrentGamePadState Property " Url="html/c4520f75-4b72-870c-e73e-25d367027911.htm" />
+        <HelpTOCNode Title="CurrentKeyboardState Property " Url="html/6f67b5cd-1184-4f68-3699-1cdf731b8416.htm" />
+        <HelpTOCNode Title="CurrentMouseState Property " Url="html/6fdc4fd6-6009-a1f2-d06b-b10e530e6c3e.htm" />
+        <HelpTOCNode Title="Debug Property " Url="html/b187fc54-ce47-014a-f64b-0d35ca61cf6d.htm" />
+        <HelpTOCNode Title="Gamer Property " Url="html/658ac193-fe25-4a4d-5ba9-224e6c6adb0b.htm" />
+        <HelpTOCNode Title="InputChangedEvents Property " Url="html/4c84dfab-dfec-e02e-0827-2f2f5d97213d.htm" />
+        <HelpTOCNode Title="InputClickedEvents Property " Url="html/b2ace655-f482-e445-53aa-cc90dec990e8.htm" />
+        <HelpTOCNode Title="InvertYAxis Property " Url="html/96f1a80e-17b3-b464-368a-23012f0171d5.htm" />
+        <HelpTOCNode Title="IsActive Property " Url="html/f3ce54a5-77fe-f058-c4b0-a35a89605635.htm" />
+        <HelpTOCNode Title="IsConnected Property " Url="html/3780393a-3842-1d18-59d7-b3fd58955ce3.htm" />
+        <HelpTOCNode Title="MouseDelta Property " Url="html/c7085349-8056-ba2b-a4fb-a69fcd8e94ed.htm" />
+        <HelpTOCNode Title="MouseDeltaX Property " Url="html/2989b561-59ec-0a4b-0927-156c572d1679.htm" />
+        <HelpTOCNode Title="MouseDeltaY Property " Url="html/44d17a16-c543-9daa-a584-9e579d4db033.htm" />
+        <HelpTOCNode Title="MouseIsVisible Property " Url="html/a8418266-30a9-9fe7-b442-06e73e7a0302.htm" />
+        <HelpTOCNode Title="MouseSensitivity Property " Url="html/0dc7aa9e-f900-62bc-d7cf-3e573df2c394.htm" />
+        <HelpTOCNode Title="MouseThumbStickControl Property " Url="html/02e5ae1f-5829-cc61-026b-d4bc0e6f7fba.htm" />
+        <HelpTOCNode Title="OffsetEvents Property " Url="html/6bc59875-7416-fb30-ae37-4fffddc55a78.htm" />
+        <HelpTOCNode Title="Player Property " Url="html/baf27951-b40a-a3e9-358f-a0f056910760.htm" />
+        <HelpTOCNode Title="PlayerViewport Property " Url="html/55eb5fb1-8c92-b8e9-1ec9-08e71eeffa37.htm" />
+        <HelpTOCNode Title="PreviousGamePadState Property " Url="html/ecad9be5-f865-712a-96fb-0398bcb75d3b.htm" />
+        <HelpTOCNode Title="PreviousKeyboardState Property " Url="html/b90d564b-a0f7-f929-1c4d-d702ff3d45b9.htm" />
+        <HelpTOCNode Title="PreviousMouseState Property " Url="html/b3dd4d72-b63e-9a98-39d3-081440b6d5c5.htm" />
+        <HelpTOCNode Title="State Property " Url="html/33ec1f06-9c47-6b29-2a09-3c5d1509c0e1.htm" />
+        <HelpTOCNode Title="StorageDevice Property " Url="html/88db1532-4397-0f6b-21f9-563b9bedd005.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4d09334e-d10f-4a34-8269-6249bedb9fa2" Title="InputDevice Events" Url="html/34a4f81a-9e34-35ba-b904-0d80bc20c3ee.htm">
+        <HelpTOCNode Title="Activated Event" Url="html/c45183fa-2189-ea11-7bf7-7abab1a2d237.htm" />
+        <HelpTOCNode Title="Connected Event" Url="html/280f0bbe-b40d-be23-2e0b-99eb4064e369.htm" />
+        <HelpTOCNode Title="Deactivated Event" Url="html/74d380b9-1eeb-6240-2d2e-b06716cf7084.htm" />
+        <HelpTOCNode Title="Disconnected Event" Url="html/8cc1a473-95f4-f082-1743-37c6dbad7aaa.htm" />
+        <HelpTOCNode Title="StorageDeviceSelected Event" Url="html/1f88d90b-68b5-a985-d189-8e24f517f68f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="316928d6-b210-4931-a75d-827c9a849763" Title="InputDevices Class" Url="html/2af322c0-7bc9-7235-6c73-c1dabded240a.htm">
+      <HelpTOCNode Title="InputDevices Members" Url="html/084e24fb-9e80-2ecf-193e-fce1a9731ff5.htm" />
+      <HelpTOCNode Title="InputDevices Constructor " Url="html/d52adac9-e839-b780-712f-359ed09b65b5.htm" />
+      <HelpTOCNode Id="143f22c2-8a68-4faf-a896-b0c96a85b829" Title="InputDevices Methods" Url="html/f39b2e56-3e53-5357-b8c3-aa4536c60516.htm">
+        <HelpTOCNode Title="Activated Method " Url="html/45b037e0-ca71-2cb6-11a4-d22f2f50a6e3.htm" />
+        <HelpTOCNode Title="AddButtonChangedEvent Method " Url="html/1a38ab49-81a0-c733-9410-c3b04fbd40dd.htm" />
+        <HelpTOCNode Title="AddButtonEvent Method " Url="html/834f49c5-d15b-4338-92de-3dbc6981a007.htm" />
+        <HelpTOCNode Title="AddInputChangedEvent Method " Url="html/2b697675-c351-c9dc-964b-6f143b2547bd.htm" />
+        <HelpTOCNode Title="AddInputEvent Method " Url="html/f672ee9f-7016-e865-2007-3d0cd851e02f.htm" />
+        <HelpTOCNode Title="AddOffsetEvent Method " Url="html/827e9495-c0ec-56a0-1742-fc4aa264fb6b.htm" />
+        <HelpTOCNode Title="AddStorageDeviceSelectedEvent Method " Url="html/3d241d45-6325-e069-2cc1-c094cec55516.htm" />
+        <HelpTOCNode Title="Connected Method " Url="html/4b75e052-772f-e6df-2fb4-441df2a91412.htm" />
+        <HelpTOCNode Title="Deactivated Method " Url="html/db6497ba-719a-71e5-8fc5-52a782bc3397.htm" />
+        <HelpTOCNode Title="Disconnected Method " Url="html/db36d42d-7ec3-1e52-bbe5-41c4837daf15.htm" />
+        <HelpTOCNode Title="FirstGamePadDevice Method " Url="html/7e398429-0678-b460-299e-53c8af54a6a7.htm" />
+        <HelpTOCNode Title="InvertYAxis Method " Url="html/b152df3b-47be-a630-48c3-6850de88df05.htm" />
+        <HelpTOCNode Title="MouseSensitivity Method " Url="html/b0236d97-51c0-68fc-6ffc-619a49761dfe.htm" />
+        <HelpTOCNode Title="SetConnectedEventHandler Method " Url="html/1f793690-fe2e-dd01-afcd-50e136c781d0.htm" />
+        <HelpTOCNode Title="SetDisconnectedEventHandler Method " Url="html/1782304b-355e-8f9e-b87d-24f38be53134.htm" />
+        <HelpTOCNode Title="SetInvertYAxis Method " Url="html/1cb58cea-93a7-e3c6-9061-0defccadf953.htm" />
+        <HelpTOCNode Title="SetMouseShouldBeVisible Method " Url="html/35851682-af95-969b-7782-d2cc02cca06a.htm" />
+        <HelpTOCNode Title="SetMouseThumbstickControl Method " Url="html/cb97cb75-7730-0ee2-2c02-4bdbf2efc377.htm" />
+        <HelpTOCNode Id="0c5d2774-34c7-4a7b-923c-7995aa93c5d6" Title="Update Method " Url="html/4e4c3542-c4d2-d711-7ca9-7c2b6f5f2c8d.htm">
+          <HelpTOCNode Title="Update Method (GameTime)" Url="html/51026a57-3749-4920-9fd9-b29188a29a06.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState, KeyboardState, GamePadState)" Url="html/5c6aa9f2-94ea-a333-608d-3be2012daf75.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="b77585f8-e110-4e16-803d-a1255b6c8667" Title="InputDevices Properties" Url="html/a2d39193-cd3e-f313-6dd0-e4bbe6f68715.htm">
+        <HelpTOCNode Title="CurrentDevice Property " Url="html/ff423559-8b0d-4b11-93ce-895f4ed5711a.htm" />
+        <HelpTOCNode Title="DeviceList Property " Url="html/2ab0eeeb-3b1b-d010-63d9-5877a26639b3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="InputDeviceState Enumeration" Url="html/23f778f7-4d1d-0e45-dac5-6e9b8209deb9.htm" />
+    <HelpTOCNode Id="a3d3b5a4-fce6-4a8f-8f2a-daad05466c72" Title="InputEvent Class" Url="html/848d4fd3-2909-9b63-d761-5e2a8766ec6a.htm">
+      <HelpTOCNode Title="InputEvent Members" Url="html/fc7d13eb-38ef-3011-9168-658311f7b805.htm" />
+      <HelpTOCNode Id="19b5bdd6-4d21-42b7-b645-47ef82a6dcba" Title="InputEvent Constructor " Url="html/768203a5-380f-c6cd-0493-1c19e19f722e.htm">
+        <HelpTOCNode Title="InputEvent Constructor " Url="html/ba2f10e1-1223-b929-d21f-e19b0b3d41c1.htm" />
+        <HelpTOCNode Title="InputEvent Constructor (EventHandler, Buttons)" Url="html/ce89482b-ff47-1fbd-acd3-6b0baf52bc0c.htm" />
+        <HelpTOCNode Title="InputEvent Constructor (EventHandler, Keys)" Url="html/5bc6ec0c-8ec5-27ee-f861-68e59fb68f43.htm" />
+        <HelpTOCNode Title="InputEvent Constructor (EventHandler, MouseButtons)" Url="html/94486034-ab1f-0aab-7335-3847f4099854.htm" />
+        <HelpTOCNode Title="InputEvent Constructor (EventHandler, Keys, Buttons)" Url="html/a1af724e-03f8-46e6-ca2d-a693892bc20b.htm" />
+        <HelpTOCNode Title="InputEvent Constructor (EventHandler, Keys, Buttons, MouseButtons)" Url="html/87b45153-b3ec-266e-4f3a-bb8eec964354.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InputEvent Fields" Url="html/c0049533-7c04-ff50-bdff-5d3167af07cb.htm" />
+      <HelpTOCNode Id="15c3c91c-a895-49e0-8c6b-b8cff102ec08" Title="InputEvent Methods" Url="html/9b57e8bc-ecc4-6dc3-ceba-2d87e0c9a510.htm">
+        <HelpTOCNode Title="FireEvent Method " Url="html/4da138fe-44bf-c86e-d4f8-99fa13e809d2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InputEvent Properties" Url="html/33cdd159-9e2a-fa57-34b0-99311c6e2d04.htm" />
+      <HelpTOCNode Id="10ccfcf3-cbf0-47d6-bc46-e40f2de2c667" Title="InputEvent Events" Url="html/9af9011c-f9ec-0e2c-5e88-5d5ce9ecf36a.htm">
+        <HelpTOCNode Title="Event Event" Url="html/3c9178fd-ac86-867b-40f9-0ef5e968c909.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="InputEvents Enumeration" Url="html/95eab4b7-4489-d4b3-8112-d427a33bf280.htm" />
+    <HelpTOCNode Title="MouseButtons Enumeration" Url="html/b73e9a5e-02d4-3e87-e09d-86266921d333.htm" />
+    <HelpTOCNode Id="6c704757-8676-4f23-ba58-00b177f4c584" Title="MouseMovedEventArgs Class" Url="html/c28eabe1-f645-2741-a399-2115d2a80ee4.htm">
+      <HelpTOCNode Title="MouseMovedEventArgs Members" Url="html/c364d9a2-00f8-06f6-41b8-7f3c6021e275.htm" />
+      <HelpTOCNode Title="MouseMovedEventArgs Constructor " Url="html/fbaa552f-e59d-3f94-a1bb-ffba5a318eb7.htm" />
+      <HelpTOCNode Title="MouseMovedEventArgs Methods" Url="html/f5ed5d02-03ae-f99f-1d49-78c18851300b.htm" />
+      <HelpTOCNode Id="0dccc953-6963-44b8-ae73-121f73c429f2" Title="MouseMovedEventArgs Properties" Url="html/ef252369-a4fd-b734-2653-1b2db667a291.htm">
+        <HelpTOCNode Title="CurrentMouseState Property " Url="html/9a540747-12b0-5015-fd74-2cf6835de456.htm" />
+        <HelpTOCNode Title="Location Property " Url="html/b5efdcba-e4ac-d659-d1b5-200038474f3d.htm" />
+        <HelpTOCNode Title="PreviousMouseState Property " Url="html/ae89d270-d99e-0e42-3a24-4df451e7cd57.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="MouseMovedEventHandler Delegate" Url="html/978970e1-c5d1-9585-22be-23f30d951149.htm" />
+    <HelpTOCNode Title="MouseThumbstickControlState Enumeration" Url="html/ce5f1092-f4e0-59e1-83f3-bca84f4e5bda.htm" />
+    <HelpTOCNode Id="885bf1ea-5850-4b50-9a56-3d25385e27c1" Title="OffsetEvent Class" Url="html/e64ef2ad-18c9-0d2f-1c40-68b73a644989.htm">
+      <HelpTOCNode Title="OffsetEvent Members" Url="html/0e1eec50-63d0-5a15-1220-9820051a72cc.htm" />
+      <HelpTOCNode Id="82a08f03-99d9-4114-8a7f-2b29b2285935" Title="OffsetEvent Constructor " Url="html/90f103ae-eed1-817d-2e63-bfaa7711f64b.htm">
+        <HelpTOCNode Title="OffsetEvent Constructor " Url="html/5c473175-5125-c0f2-7521-2bb07c20952d.htm" />
+        <HelpTOCNode Title="OffsetEvent Constructor (OffsetEventHandler, OffsetInputs)" Url="html/c8f77b88-bd9d-87a9-8e19-4f363e3c7d6b.htm" />
+        <HelpTOCNode Title="OffsetEvent Constructor (OffsetEventHandler, Buttons, Vector2)" Url="html/d56ea4a5-06a6-bc72-c127-868c3266606f.htm" />
+        <HelpTOCNode Title="OffsetEvent Constructor (OffsetEventHandler, Keys, Vector2)" Url="html/f8ee85e1-3688-1936-5973-4bb5e52a4b38.htm" />
+        <HelpTOCNode Title="OffsetEvent Constructor (OffsetEventHandler, Keys, Buttons, OffsetInputs, Vector2)" Url="html/9fa5ce05-8bfb-f780-90a8-f03117ac4512.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1bb0bf4d-803c-49fc-9dd7-4c0ffcf8efde" Title="OffsetEvent Fields" Url="html/6466b567-9729-fa4f-a702-497dbec3bccc.htm">
+        <HelpTOCNode Title="buttonOffset Field" Url="html/0e4f85f4-e916-179c-651f-73f66b487a53.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="716ef5bc-bf44-4360-b8cd-13fb9bf75b99" Title="OffsetEvent Methods" Url="html/b817cfe3-3079-9fa5-7b9d-78070bd99f53.htm">
+        <HelpTOCNode Title="FireEvent Method " Url="html/382db148-0fca-57b2-1f60-29b66e08feae.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7054b9bd-47ae-4cd7-a3b4-303556d11855" Title="OffsetEvent Properties" Url="html/e9291ee7-e834-0053-2d11-3d0b44eb5d12.htm">
+        <HelpTOCNode Title="ButtonOffset Property " Url="html/00ad2d41-ebde-601f-dab2-cc6e099dd097.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c0dff898-d726-46c7-aa10-ec8a2f79848e" Title="OffsetEvent Events" Url="html/c455b79b-e1dc-83f2-40e3-6eb021c16a54.htm">
+        <HelpTOCNode Title="Event Event" Url="html/106bc12f-deb3-494c-70e5-8f9ae43c173b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0d29b6d9-8779-4b51-b282-7b0915c09ba3" Title="OffsetEventArgs Class" Url="html/89ed0107-f578-d6b0-a6cd-7730501686d7.htm">
+      <HelpTOCNode Title="OffsetEventArgs Members" Url="html/a3c2776c-c301-8e37-653b-45c3886a5f48.htm" />
+      <HelpTOCNode Title="OffsetEventArgs Constructor " Url="html/0c357dd4-8298-5475-dc27-87fbf78843f6.htm" />
+      <HelpTOCNode Title="OffsetEventArgs Methods" Url="html/07128aa4-7e5b-60ed-e2f2-74e2fa76e69f.htm" />
+      <HelpTOCNode Id="73d01b37-6365-42af-8f85-fb190b2b8297" Title="OffsetEventArgs Properties" Url="html/c80f61c0-a2b6-a3f3-7b55-c4735ea080d6.htm">
+        <HelpTOCNode Title="Offset Property " Url="html/0235e65c-0799-95f3-5ae2-ec14adbecf51.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="OffsetEventHandler Delegate" Url="html/27f5ba80-01b4-519a-5d2a-c6c7cde26d98.htm" />
+    <HelpTOCNode Title="OffsetInputs Enumeration" Url="html/893c3a03-9616-2348-eef7-09015dba4170.htm" />
+    <HelpTOCNode Id="bd3eac9f-97b4-4dd7-a35c-3e4b2372a0bd" Title="TrialMode Class" Url="html/ced731a8-37e7-0311-c963-65b34b9e01d9.htm">
+      <HelpTOCNode Title="TrialMode Members" Url="html/94e91169-915d-3dc1-3ff1-9a14a2fa3ca7.htm" />
+      <HelpTOCNode Title="TrialMode Constructor " Url="html/cff45837-44b1-da77-619e-d829349651c3.htm" />
+      <HelpTOCNode Id="b568f196-bcb4-4ba8-ac10-203ebe1049b2" Title="TrialMode Fields" Url="html/061bcc2e-19ad-70fb-1b5e-124e92c9ea96.htm">
+        <HelpTOCNode Title="guide Field" Url="html/76449a01-8a95-f50c-d405-3042a132479f.htm" />
+        <HelpTOCNode Title="state Field" Url="html/f9ca71f1-1a51-4c70-e7a6-d641702e05b0.htm" />
+        <HelpTOCNode Title="timeOut Field" Url="html/efccf6c3-0c4c-75ab-9d03-4387ac476af4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="498f2e2b-123d-4805-84f5-7c221d0df6b9" Title="TrialMode Methods" Url="html/38b0cff0-1050-1d39-3b45-3be56ff9e147.htm">
+        <HelpTOCNode Title="Guide_UnauthorizedDialogClosed Method " Url="html/d92e72ee-2ada-7501-49e7-325737f28cc5.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/b1b909f0-20c3-6ffa-23d0-4b9ff8bbc0c3.htm" />
+        <HelpTOCNode Title="OnExitGame Method " Url="html/f133c9e3-c947-f2ba-7e9e-d22b56f9ac73.htm" />
+        <HelpTOCNode Title="OnGameNotPurchased Method " Url="html/c8f29252-205b-a60a-4225-358c9e79d2ba.htm" />
+        <HelpTOCNode Title="OnGamePurchased Method " Url="html/6c95895b-116c-3061-3b2c-50e0a577dd2e.htm" />
+        <HelpTOCNode Title="OnTrialModeExpired Method " Url="html/bafbafad-db7e-4437-8911-4f920ec9e2b9.htm" />
+        <HelpTOCNode Title="Purchase Method " Url="html/4e245e1c-c83b-c19e-206a-c5c72093f583.htm" />
+        <HelpTOCNode Title="PurchaseGameEventHandler Method " Url="html/ae8283bf-b0c7-e6a2-634d-0d0047761d64.htm" />
+        <HelpTOCNode Title="TrialModeIsRequired Method " Url="html/97d3ab39-d5c8-972b-4c2c-01dbde0abab7.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/37b25220-4141-407e-9232-20533890f3d3.htm" />
+        <HelpTOCNode Title="UpdateTimer Method " Url="html/0f6a44f9-381f-4595-d113-9cbe78460712.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ee587f24-2d1a-4bb2-9df1-4d20a97bcdd1" Title="TrialMode Properties" Url="html/220b2a73-1340-80fe-24fd-8fd681554383.htm">
+        <HelpTOCNode Title="GuideWrapper Property " Url="html/9625d5a4-c5bd-eccf-f6ea-9bb379d10376.htm" />
+        <HelpTOCNode Title="IsTrialMode Property " Url="html/4e52bd30-34cf-0b11-0ce8-ef1272bf669d.htm" />
+        <HelpTOCNode Title="State Property " Url="html/c3e4ad8f-beca-99a4-822c-d62f07f729b2.htm" />
+        <HelpTOCNode Title="TimeOut Property " Url="html/41022f8d-1c08-9b9f-5608-f80b0187055b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="91c9a2f4-8d69-4b88-9e5c-2417295cf6f6" Title="TrialMode Events" Url="html/2c2898a3-e3cb-e753-519f-55fb682bee18.htm">
+        <HelpTOCNode Title="ExitGame Event" Url="html/00d0f306-31b5-5cfa-a86f-8124d1512b19.htm" />
+        <HelpTOCNode Title="GameNotPurchased Event" Url="html/c8354472-7d3c-b8d6-ee0e-c6ca8aa644b0.htm" />
+        <HelpTOCNode Title="GamePurchased Event" Url="html/7a3b8472-879e-c899-d05c-14d9dafc225b.htm" />
+        <HelpTOCNode Title="TrialModeExpired Event" Url="html/d29a6ef0-2b9e-07cc-27e2-819b379647d0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="TrialModeState Enumeration" Url="html/cd0a8288-c378-f78f-0d17-f6af02caa829.htm" />
+    <HelpTOCNode Id="3ce0798f-8cc0-4b5a-b029-e49cec7f83f1" Title="WGTimeSpan Class" Url="html/edf172af-2eb2-6dd7-4198-ea6636937440.htm">
+      <HelpTOCNode Title="WGTimeSpan Members" Url="html/be6607b3-d0a3-7c38-e779-b38a77353d2e.htm" />
+      <HelpTOCNode Id="2dc630b6-0a50-4097-a723-eb00a39f3974" Title="WGTimeSpan Constructor " Url="html/4f8fbffc-a878-6701-1523-ecc80ca9ef9f.htm">
+        <HelpTOCNode Title="WGTimeSpan Constructor " Url="html/27380fc2-0844-75da-26a4-1fbb00053dc8.htm" />
+        <HelpTOCNode Title="WGTimeSpan Constructor (TimeSpan)" Url="html/0924e642-2bed-8430-64ca-9b13a9fc9840.htm" />
+        <HelpTOCNode Title="WGTimeSpan Constructor (WGTimeSpan)" Url="html/3d0f1572-5235-dfc1-f970-ce6fc93257f2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c3dbcc69-91f2-4c35-9b87-15e84280126b" Title="WGTimeSpan Fields" Url="html/f6f3b2da-197e-c523-e54e-563e3302832a.htm">
+        <HelpTOCNode Title="HH_MM_SS_FORMAT Field" Url="html/d548e536-44ea-4867-a321-3090521baefa.htm" />
+        <HelpTOCNode Title="MM_SS_FORMAT Field" Url="html/3f61d36f-2766-2639-0993-6bbb7423904e.htm" />
+        <HelpTOCNode Title="timeSpan Field" Url="html/c25731e2-2558-6732-56b1-7a5d9f6466fe.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="91e7cecb-4682-4d87-aaae-1f959d6ebab4" Title="WGTimeSpan Methods" Url="html/95452b24-d237-8ef2-2223-f6f1467dc8e9.htm">
+        <HelpTOCNode Id="ced57515-2485-4ecb-b481-a7a0f2eb6c18" Title="Equals Method " Url="html/a341d27e-5397-dcd9-df9a-bb9b1b66142b.htm">
+          <HelpTOCNode Title="Equals Method (Object)" Url="html/277c4f67-fd67-84da-6366-1e606f90cb46.htm" />
+          <HelpTOCNode Title="Equals Method (TimeSpan)" Url="html/1f3246ab-f0c1-a4b6-5f88-55ca60f3dfd9.htm" />
+          <HelpTOCNode Title="Equals Method (WGTimeSpan)" Url="html/c782d9f9-54eb-6fca-4011-4d48558d6fa7.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetHashCode Method " Url="html/80ec6e5b-f319-8779-992e-42564d165200.htm" />
+        <HelpTOCNode Title="IncrementToString Method " Url="html/81730236-8525-2038-fc54-2417413ff2a3.htm" />
+        <HelpTOCNode Title="ToHHMMSS Method " Url="html/7779ae91-569a-0f3f-880c-ac4ffbaac496.htm" />
+        <HelpTOCNode Title="ToMMSS Method " Url="html/f4c03e37-3033-f86f-40f3-210e2b480918.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/a7fb9c93-ed23-3781-c77b-363c05efddf1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e10eec9a-49f4-418e-bad2-548693dbc19d" Title="WGTimeSpan Type Conversions" Url="html/60cc2bf6-59ef-05eb-9e26-753155394fe1.htm">
+        <HelpTOCNode Id="4192887b-513e-4984-9308-918432c95bac" Title="Implicit Conversion Operators" Url="html/983f1bf9-e7f6-cd6f-1885-66369b5646a8.htm">
+          <HelpTOCNode Title="Implicit Conversion (TimeSpan to WGTimeSpan)" Url="html/06e1e4c4-a936-d205-0803-1026bc1b1bd1.htm" />
+          <HelpTOCNode Title="Implicit Conversion (WGTimeSpan to TimeSpan)" Url="html/c6b758eb-1c5d-7095-980d-e23ae8e0170a.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="1bcdd60d-c020-40e6-83ce-79a0f9680a6a" Title="WGTimeSpan Properties" Url="html/4d298296-dbff-24c9-9f03-e3ae40dc4eaf.htm">
+        <HelpTOCNode Title="Days Property " Url="html/528484c7-1871-505f-a83b-4a2a68d5e815.htm" />
+        <HelpTOCNode Title="Duration Property " Url="html/322e3b9e-edfe-78a1-f54a-d07dd666c402.htm" />
+        <HelpTOCNode Title="Hours Property " Url="html/161e136f-e0cb-6880-0be6-ce0c23ddcb1c.htm" />
+        <HelpTOCNode Title="Milliseconds Property " Url="html/5b85ef93-3222-5c61-2ad1-9b487401f9d1.htm" />
+        <HelpTOCNode Title="Minutes Property " Url="html/6f04db46-ced7-cfb1-e837-4cab703e433a.htm" />
+        <HelpTOCNode Title="Seconds Property " Url="html/84fdeb8c-e2c9-8bac-9bca-d89d7f2ad997.htm" />
+        <HelpTOCNode Title="TimeSpan Property " Url="html/86597120-03ca-bd76-e882-5d6691f8da98.htm" />
+        <HelpTOCNode Title="TotalDays Property " Url="html/3f64caf3-b16e-e459-432b-0e749ad9c3ee.htm" />
+        <HelpTOCNode Title="TotalHours Property " Url="html/0344b980-fdd4-3644-31cc-a804afcedfa4.htm" />
+        <HelpTOCNode Title="TotalMilliseconds Property " Url="html/6326abf8-8ca6-575f-2d6a-9d7524043494.htm" />
+        <HelpTOCNode Title="TotalMinutes Property " Url="html/74d53afc-0c07-bc2e-8367-07ba1442a82d.htm" />
+        <HelpTOCNode Title="TotalSeconds Property " Url="html/7d568677-8c98-b931-b049-7f7b66aa1fed.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1e82f817-470c-41db-85a9-62d02a8cae97" Title="WindowsDevice Class" Url="html/cf0c4d2a-6b99-0b6e-3c96-bea324fcb0dd.htm">
+      <HelpTOCNode Title="WindowsDevice Members" Url="html/73793ef8-78e1-4d79-12cd-718c44dfdc1f.htm" />
+      <HelpTOCNode Title="WindowsDevice Constructor " Url="html/a41d89b7-54f2-ce14-73f8-634498b312c1.htm" />
+      <HelpTOCNode Id="fc9f87de-b489-4c82-abc7-7baeb03b238f" Title="WindowsDevice Fields" Url="html/b72572c3-50e1-f4e1-4b62-5512e1fa20c6.htm">
+        <HelpTOCNode Title="eventKeys Field" Url="html/7305b3f7-69ff-ea55-8151-cd3384707919.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1ef58131-3efe-4f92-8dd6-bfdab1a1862c" Title="WindowsDevice Methods" Url="html/fa20521a-26f7-59b9-313d-6c8ed45f1bbf.htm">
+        <HelpTOCNode Title="DoBasicKeyBoardUpdate Method " Url="html/8d3e9977-863b-6274-c4be-806c55a7962b.htm" />
+        <HelpTOCNode Title="FireRequiredButtonEvents Method " Url="html/7aff6310-5ed5-3060-05e5-a583fbb1073e.htm" />
+        <HelpTOCNode Title="FireRequiredInputEvents Method " Url="html/0e86fecc-f08a-8294-9cd5-fec0bc209bcb.htm" />
+        <HelpTOCNode Title="FireRequiredOffsetEvents Method " Url="html/94f86850-ac51-4e15-f531-cd9e3ac38b23.htm" />
+        <HelpTOCNode Title="OffsetInput Method " Url="html/bbf6a4fe-e2b9-0710-adfe-e32f6b661c3f.htm" />
+        <HelpTOCNode Title="OffsetInputReceived Method " Url="html/3e0a9ea3-5643-cf09-0007-4198c6fd439f.htm" />
+        <HelpTOCNode Id="4202185a-c16d-44cc-8154-b09c536787a0" Title="Update Method " Url="html/4c336af4-f3ab-fa79-c037-9bc89d07cc6a.htm">
+          <HelpTOCNode Title="Update Method (GameTime)" Url="html/ee59ad2b-35f8-08f8-a226-d133ba461e25.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState)" Url="html/9be72b7d-970b-5556-a130-5be8d9b71e87.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState, KeyboardState)" Url="html/cb806c82-c5eb-e8cf-a601-84e86e4b627f.htm" />
+          <HelpTOCNode Title="Update Method (GameTime, MouseState, KeyboardState, GamePadState)" Url="html/1e23aabb-31b0-4bdf-fd1d-e417aa012803.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UpdateDeviceActiveState Method " Url="html/239e9e4e-cfb1-06ed-da09-2c1be9737561.htm" />
+        <HelpTOCNode Title="UpdateDeviceConnectedState Method " Url="html/49a18946-0638-154f-45e3-900dc8ab68cb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="105b71db-bb42-4935-b9d1-342aa12636fa" Title="WindowsDevice Properties" Url="html/0a204457-c462-6053-eb7d-c02de92d2058.htm">
+        <HelpTOCNode Title="EventKeys Property " Url="html/89efbed5-767e-d2f6-ab4c-958e21b1a0cc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="WindowsDevice Events" Url="html/c9c97d15-9d5a-8ad1-38ae-080029ea228e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f2a9b7f8-e4d8-42da-bc25-6ccef4596eea" Title="WindowsGuideWrapper Class" Url="html/cdd75f5c-eab7-f56a-899d-8afc27d7b42b.htm">
+      <HelpTOCNode Title="WindowsGuideWrapper Members" Url="html/f3c124d6-bf58-f898-bc75-941baf163f72.htm" />
+      <HelpTOCNode Title="WindowsGuideWrapper Constructor " Url="html/7094f24e-e267-e0ca-b41c-39953d3fccf3.htm" />
+      <HelpTOCNode Title="WindowsGuideWrapper Fields" Url="html/01155022-3fe8-efca-a07b-9161d419849c.htm" />
+      <HelpTOCNode Id="9431d655-4427-4af3-9400-d03da535b036" Title="WindowsGuideWrapper Methods" Url="html/93ca4886-c085-3708-7182-dc679840d81b.htm">
+        <HelpTOCNode Title="PurchaseDialogCallback Method " Url="html/896dd5d7-1739-2160-bcb6-a716c8959670.htm" />
+        <HelpTOCNode Title="ShowMarketPlace Method " Url="html/4f313ffc-caf6-c45d-94a2-297b5e350a77.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="WindowsGuideWrapper Properties" Url="html/d39ff61b-4cff-9547-bc9f-4b3e26f6aa7b.htm" />
+      <HelpTOCNode Title="WindowsGuideWrapper Events" Url="html/5eed561e-e085-ab39-e566-2f61c2d164ca.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="bd136cc5-bab2-4461-a5a6-e5e433d4cdd7" Title="WindowsTrialMode Class" Url="html/83c81558-811f-c904-6223-2d41dfc63071.htm">
+      <HelpTOCNode Title="WindowsTrialMode Members" Url="html/13d6a9cc-8181-8a19-0169-85290f423205.htm" />
+      <HelpTOCNode Title="WindowsTrialMode Constructor " Url="html/1dae6993-67ec-9dc1-b257-e4f4ad3189bb.htm" />
+      <HelpTOCNode Title="WindowsTrialMode Fields" Url="html/90d95a4f-3725-628f-2225-a7f6c5dd33b6.htm" />
+      <HelpTOCNode Title="WindowsTrialMode Methods" Url="html/f3922b77-ef2f-d355-fc12-73f90e717689.htm" />
+      <HelpTOCNode Title="WindowsTrialMode Properties" Url="html/28fda008-e2cf-7383-0b22-66c7079c9852.htm" />
+      <HelpTOCNode Title="WindowsTrialMode Events" Url="html/c5d0c911-f5b2-eb79-a159-8a3da393b750.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="22bef4dd-c899-4ea4-a13b-3fd0f9b82d7c" Title="XboxTrialMode Class" Url="html/d057770d-9843-deea-a312-b4d4cd2aa553.htm">
+      <HelpTOCNode Title="XboxTrialMode Members" Url="html/72ec4ff8-5e23-f127-6076-3984a298ee8a.htm" />
+      <HelpTOCNode Title="XboxTrialMode Constructor " Url="html/88e7c08c-d40e-dd86-b714-c0846979c87c.htm" />
+      <HelpTOCNode Title="XboxTrialMode Fields" Url="html/9755d3d4-8371-0af1-0031-f7348556adcf.htm" />
+      <HelpTOCNode Id="bf24872b-c419-4023-b6f6-1951a62402ff" Title="XboxTrialMode Methods" Url="html/7cbb50b1-a272-4353-eb39-5e842719651c.htm">
+        <HelpTOCNode Title="Update Method " Url="html/72b37e2c-c5fc-f2d9-bccc-f2073eef3955.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f8cf061c-cacd-4fff-9261-d5b68018c446" Title="XboxTrialMode Properties" Url="html/3df68904-521d-ac41-6b4c-29382edc454d.htm">
+        <HelpTOCNode Title="IsTrialMode Property " Url="html/96b32ceb-2493-4faf-15d8-e1610bb66875.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="XboxTrialMode Events" Url="html/fd7e1f28-6baa-ad74-e37a-15a10514748e.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="7e90b46d-e28e-4319-b3db-1177cbe130eb" Title="WGIOTest Namespace" Url="html/81df8ac4-defa-5242-d408-85013daea513.htm">
+    <HelpTOCNode Id="1152a711-c89a-42e4-826a-0d15addf5769" Title="Game1 Class" Url="html/eb482cb8-45ac-1d74-c3d7-11b896655f74.htm">
+      <HelpTOCNode Title="Game1 Members" Url="html/fcea9df2-66ef-f40d-c079-07c32ef00961.htm" />
+      <HelpTOCNode Title="Game1 Constructor " Url="html/9eff22b5-1d39-bef2-5b6b-8541426f2841.htm" />
+      <HelpTOCNode Id="f4211434-1b2f-4fd5-a256-a8ddb36d876e" Title="Game1 Methods" Url="html/2dcd74e8-1bb9-7c71-dcea-a6963b9173fb.htm">
+        <HelpTOCNode Title="Draw Method " Url="html/e7faf2d6-1788-d104-cdb0-3643ce2509a6.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/27893cb5-1b44-4ad9-a867-48ec1ea208e7.htm" />
+        <HelpTOCNode Title="LoadContent Method " Url="html/dac95944-11f0-c71d-9e5f-413a93b09a55.htm" />
+        <HelpTOCNode Title="UnloadContent Method " Url="html/42f3ec9b-e4a2-9b91-fbf2-becec736edb6.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/e476ec0f-bb9b-4e07-85c5-839c31922007.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Game1 Properties" Url="html/b526a09d-4e7b-92a9-c6c3-282ad267da7a.htm" />
+      <HelpTOCNode Title="Game1 Events" Url="html/c1a291c4-4f5e-36ef-9aae-41b7fc8e2527.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="61a285eb-ab4d-484c-b269-4970cd6a1533" Title="Game1.SaveGameData Structure" Url="html/82bbc24e-86c9-f5c4-30d4-aa6afa1e76be.htm">
+      <HelpTOCNode Title="Game1.SaveGameData Members" Url="html/9591838f-052f-fc45-cab7-df0eadcf0e46.htm" />
+      <HelpTOCNode Id="1a5159ed-8424-4e4b-8742-51046fa343f5" Title="Game1.SaveGameData Fields" Url="html/888b35a6-e68a-8c92-b5fa-a70329ef8b77.htm">
+        <HelpTOCNode Title="AvatarPosition Field" Url="html/b19b199d-8064-c0d7-d092-9cb371cc3a21.htm" />
+        <HelpTOCNode Title="Level Field" Url="html/79dd6083-b6f5-680b-8ad7-8881f54b0ae7.htm" />
+        <HelpTOCNode Title="PlayerName Field" Url="html/fe65eb98-78e8-6c79-76a2-33e87621bb3e.htm" />
+        <HelpTOCNode Title="Score Field" Url="html/a10e7b91-eee6-457c-589d-a5b15fc660a4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Game1.SaveGameData Methods" Url="html/50e0343c-18d6-f1cf-e094-cb914d977e12.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="702e8a31-5741-403c-b008-06bc5fa137f6" Title="WGIOTestLibrary Namespace" Url="html/1c783e7d-1ccb-f9b5-f178-f2cbfa2bb7ce.htm">
+    <HelpTOCNode Id="970d9b06-8204-49ce-a992-b13b711c9861" Title="BaseTestInput Class" Url="html/159e7a2c-b0c4-6259-c06c-b612b18d1ce3.htm">
+      <HelpTOCNode Title="BaseTestInput Members" Url="html/c51b64c3-e954-f441-c983-c8b4ccb36247.htm" />
+      <HelpTOCNode Title="BaseTestInput Constructor " Url="html/267f75ab-ccd6-d715-82d3-7517a8134ded.htm" />
+      <HelpTOCNode Id="5b6f0f89-c5d8-4e80-a917-d18e8a3189e8" Title="BaseTestInput Fields" Url="html/6e9149c9-6cf9-42b0-6eaa-82afb047a4d2.htm">
+        <HelpTOCNode Title="eventFlags Field" Url="html/5ff90c05-013c-6aa7-c140-5d06359758d5.htm" />
+        <HelpTOCNode Title="expectedGamePadState Field" Url="html/4ef0a53e-2246-630a-2cc3-cf6c31a3b87a.htm" />
+        <HelpTOCNode Title="expectedGamer Field" Url="html/94733da3-2c98-dd8f-ec16-1a17b1dc574a.htm" />
+        <HelpTOCNode Title="expectedKeyBoardState Field" Url="html/6de36fcb-3a1c-d080-a1c5-2e344e6b9ebb.htm" />
+        <HelpTOCNode Title="expectedMouseDelta Field" Url="html/44a4fb3c-afc7-cd7b-7614-11c9a48f26c4.htm" />
+        <HelpTOCNode Title="expectedMouseSensitivity Field" Url="html/cfa356a1-2d69-ce54-7f7f-4e31b4b3bea5.htm" />
+        <HelpTOCNode Title="expectedMouseState Field" Url="html/b3ff99b3-88da-e07a-46b0-0072cb0c5780.htm" />
+        <HelpTOCNode Title="expectedOffset Field" Url="html/1bf9a4ed-07ce-c63f-7f43-031431c4dc65.htm" />
+        <HelpTOCNode Title="expectedUpdateEventsFired Field" Url="html/25fd2d08-38f6-b7e0-9999-d0f6069cd552.htm" />
+        <HelpTOCNode Title="expectedViewport Field" Url="html/22cbf458-0a21-3cfb-90d3-8786d8ba8f2f.htm" />
+        <HelpTOCNode Title="inputDevice Field" Url="html/a1a1a8e0-f635-ba80-e191-3a6fbd7cfb5a.htm" />
+        <HelpTOCNode Title="inputEventArgs Field" Url="html/5a76c7ed-cb4e-74e5-1342-640e2fe45e82.htm" />
+        <HelpTOCNode Title="inputEventFired Field" Url="html/6c88d43e-f5c9-0369-6a14-20d62e80352b.htm" />
+        <HelpTOCNode Title="inputEvents Field" Url="html/ec191e16-0542-7361-ecb4-861a3cce76b2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="25390039-ab0f-4e5b-a268-c95505c4aa62" Title="BaseTestInput Methods" Url="html/57c3cff4-9b84-7bbf-ef39-230bef623afd.htm">
+        <HelpTOCNode Title="ButtonEventHandler Method " Url="html/8eca6d6e-bc3b-fc45-96de-087349a5abd9.htm" />
+        <HelpTOCNode Title="CreateDefaultObject Method " Url="html/edcdee1c-00b4-c5f9-2b14-625260f87f44.htm" />
+        <HelpTOCNode Title="CreateFullObject Method " Url="html/822c7181-3814-9af4-256c-4450834f806f.htm" />
+        <HelpTOCNode Title="InputEventHandler Method " Url="html/ca5ffd33-900f-1a97-e8b6-20d83a729dda.htm" />
+        <HelpTOCNode Title="OffsetEventHandler Method " Url="html/83a2c747-e83f-ecf6-0dc0-e9d460bd53bb.htm" />
+        <HelpTOCNode Title="SetExpectedDefaultObjectValues Method " Url="html/dd47d1bf-e3bd-15ac-63ae-6f15faebfa80.htm" />
+        <HelpTOCNode Title="SetExpectedStringText Method " Url="html/2c14e32c-7c61-9c63-7893-4db11f1ba41a.htm" />
+        <HelpTOCNode Title="SetExpectedValues Method " Url="html/dd54428e-dda4-163f-149e-e340e6cbadc5.htm" />
+        <HelpTOCNode Title="SetUp Method " Url="html/b5cb8b7c-0597-1049-7730-0e8dd938e1ea.htm" />
+        <HelpTOCNode Title="SetupExpectedInput Method " Url="html/ebce185a-441c-c1b9-01c2-0c0286542fce.htm" />
+        <HelpTOCNode Title="TestInitialized Method " Url="html/dd144ca8-8842-2239-7c0f-a0630f0ea555.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f350c28a-b915-47bf-babb-c151d1d55ddd" Title="TestBaseInputEvent Class" Url="html/f844e6ff-40dd-53f7-8cf7-7fefaaa884ae.htm">
+      <HelpTOCNode Title="TestBaseInputEvent Members" Url="html/f9b05e1e-6379-f8c1-bbdf-41928db7b7ed.htm" />
+      <HelpTOCNode Title="TestBaseInputEvent Constructor " Url="html/5df64cf6-12c9-9e24-fa13-3728a1fa1781.htm" />
+      <HelpTOCNode Id="4929cc22-5cda-4401-b0a3-9790a0b9e3f6" Title="TestBaseInputEvent Fields" Url="html/31345ab9-0f07-df7f-f14c-526dc13519b4.htm">
+        <HelpTOCNode Title="eventFired Field" Url="html/0c1afeae-3368-46ee-3af7-1c6401654254.htm" />
+        <HelpTOCNode Title="expectedButtonCount Field" Url="html/e90b3759-aac0-2ef9-0af4-bfca69bfea70.htm" />
+        <HelpTOCNode Title="expectedKeyCount Field" Url="html/4062cdfc-2c17-d879-216e-d4b6e8da8e3a.htm" />
+        <HelpTOCNode Title="expectedMouseButtonCount Field" Url="html/483e02a2-da71-f759-dee4-892dae1ac24f.htm" />
+        <HelpTOCNode Title="expectedOffsetInputCount Field" Url="html/a72e3013-0864-9ace-5299-f324cd87c523.htm" />
+        <HelpTOCNode Title="inputEvent Field" Url="html/70c95e03-d74f-ade9-de0e-e57a9b4f7ced.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6520594f-9824-4885-8733-4c09f509c766" Title="TestBaseInputEvent Methods" Url="html/386b970f-e050-7691-eca4-5457ced9563c.htm">
+        <HelpTOCNode Title="CreateEvent Method " Url="html/4901c0bf-31dc-6d21-f6f0-9d5f2ca4a214.htm" />
+        <HelpTOCNode Title="DefaultConstructor Method " Url="html/d6250848-7dd7-3e0c-1c7a-2fb6c0d3c3ab.htm" />
+        <HelpTOCNode Title="EventButtons Method " Url="html/192113ea-80ce-e02f-0c79-4419fca2c1ac.htm" />
+        <HelpTOCNode Title="EventKeys Method " Url="html/d08717b9-3400-3e66-3d2c-a4094e45a01c.htm" />
+        <HelpTOCNode Title="EventMouseButtons Method " Url="html/20191c9b-525c-7d1b-772a-e386915d101e.htm" />
+        <HelpTOCNode Title="EventOffsetInputs Method " Url="html/f789182f-afa9-351b-083e-ff02eefccc79.htm" />
+        <HelpTOCNode Title="Setup Method " Url="html/347a1189-34d0-22f1-4b92-173493074de2.htm" />
+        <HelpTOCNode Title="SetupEvent Method " Url="html/c13af34d-1b6e-9419-e201-c260f6dcdd81.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c09aa855-d77e-47cb-b1fd-ff15be2268e6" Title="TestGamePadDevice Class" Url="html/887e068e-6112-fb8e-8f12-dbc60ca9c712.htm">
+      <HelpTOCNode Title="TestGamePadDevice Members" Url="html/138841ca-fcc2-c409-f551-2255fee356ad.htm" />
+      <HelpTOCNode Title="TestGamePadDevice Constructor " Url="html/f8590199-3f96-fcf1-a7fc-91f00c7b339d.htm" />
+      <HelpTOCNode Title="TestGamePadDevice Fields" Url="html/7c334147-f2b0-5cd8-c3be-c1b663d8304f.htm" />
+      <HelpTOCNode Id="b86776dd-21a0-4961-bf18-6dd7cafd8d81" Title="TestGamePadDevice Methods" Url="html/46657723-fa88-72db-9a69-efe9db197268.htm">
+        <HelpTOCNode Title="ButtonChangedEventButtonReceived Method " Url="html/64053bc5-8762-27e1-93db-7b145bd54a3b.htm" />
+        <HelpTOCNode Title="ButtonInputEventButtonReceived Method " Url="html/287289b0-e5f2-6f25-0a89-d00453c8ef89.htm" />
+        <HelpTOCNode Title="ConnectedProperty Method " Url="html/66b6a345-d9be-e151-7483-bd1e32ec0e2e.htm" />
+        <HelpTOCNode Title="CreateDevice Method " Url="html/18bdaad2-714f-ee18-5025-2086d1f50fa1.htm" />
+        <HelpTOCNode Title="InputChangedEventButtonReceived Method " Url="html/fcc43aa5-be5b-b4cb-4491-e9294af9e9b7.htm" />
+        <HelpTOCNode Title="InputEventButtonReceived Method " Url="html/94b41949-93f6-6204-d690-79a388ebc35f.htm" />
+        <HelpTOCNode Title="OffsetInputEventButtonReceived Method " Url="html/b5669bd4-1dfc-6d71-aa9c-79501fab0bc8.htm" />
+        <HelpTOCNode Title="OffsetInputEventThumbstickOffsetReceived Method " Url="html/ec6f4b38-6e22-4939-c396-316915dd369e.htm" />
+        <HelpTOCNode Title="OffsetInputReceivedFromThumbstick Method " Url="html/709281b8-bd58-d18d-598c-3fb4ba373983.htm" />
+        <HelpTOCNode Title="SpecificDeviceOffsetInput Method " Url="html/527b8d09-62ca-62d4-a692-2eb9148b16ee.htm" />
+        <HelpTOCNode Title="UpdateSpecificDeviceConnectedState Method " Url="html/41e44c20-2371-4399-761d-65f58f637e02.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="abb0be27-e87c-4138-b158-efa1bed09cf9" Title="TestGuideWrapper Class" Url="html/3b02fe98-29a7-aa92-e326-5646942b7fa1.htm">
+      <HelpTOCNode Title="TestGuideWrapper Members" Url="html/ec22fdfe-c059-4c5f-e5c5-c3c035d9329b.htm" />
+      <HelpTOCNode Title="TestGuideWrapper Constructor " Url="html/d7b43029-4d8c-9cfd-3374-65d47f7ab4ba.htm" />
+      <HelpTOCNode Id="30047e10-d2d0-4ba0-851c-6d1884de88ec" Title="TestGuideWrapper Fields" Url="html/09947c6e-13e5-174c-75e2-c55f8b393ea0.htm">
+        <HelpTOCNode Title="guide Field" Url="html/806c38a8-9f80-da1c-9c58-ed1f3234329f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ba43104-f65e-4830-82cf-03622f224878" Title="TestGuideWrapper Methods" Url="html/62897523-f7ff-d4ff-4ce5-d0667ebce4bf.htm">
+        <HelpTOCNode Title="CreateGuide Method " Url="html/61cd4d10-a5a4-0a00-50e8-e2e71deeb2e6.htm" />
+        <HelpTOCNode Title="DialogSelection Method " Url="html/b8963464-e0ab-31f6-36d7-7e1a40a1559e.htm" />
+        <HelpTOCNode Title="DialogText Method " Url="html/3a1aa0e2-a45e-e2b4-41f2-4af1053cd33f.htm" />
+        <HelpTOCNode Title="Initialization Method " Url="html/874831b0-a59b-1305-d720-5da923f1f5bc.htm" />
+        <HelpTOCNode Title="IsTrialMode Method " Url="html/38696649-3e43-e45f-e367-55a5f4b07706.htm" />
+        <HelpTOCNode Title="IsVisible Method " Url="html/ba34be28-dd8f-ed50-2a8b-4f952506ba8a.htm" />
+        <HelpTOCNode Title="Setup Method " Url="html/73813898-8560-fda6-0628-504562af7207.htm" />
+        <HelpTOCNode Title="ShouldShowDialog Method " Url="html/09008b96-0b57-bfb1-773a-9798644a25e4.htm" />
+        <HelpTOCNode Title="ShouldShowLoadFailedDialog Method " Url="html/4f52e207-a7d7-ce06-05c7-1de362e8a99a.htm" />
+        <HelpTOCNode Title="ShouldShowSaveFailedDialog Method " Url="html/1e80768a-165c-9a30-5755-a34c019ae318.htm" />
+        <HelpTOCNode Title="ShowMarketPlace Method " Url="html/8fbd145c-8f42-e92b-1a36-f555c4e7c2b8.htm" />
+        <HelpTOCNode Title="SimulateTrialMode Method " Url="html/f7d3039e-c5a7-b3b6-0ced-8bdb280365b0.htm" />
+        <HelpTOCNode Title="UpdateNotVisible Method " Url="html/1f2f3b41-d505-d265-45da-5997249afdcc.htm" />
+        <HelpTOCNode Title="UpdateVisible Method " Url="html/7bb10adb-39e5-9685-c90a-ab7465dabc02.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fc0912d0-a75d-4e3d-9e8e-e3f713d4172c" Title="TestInputDevice Class" Url="html/025d5ae2-9eab-e03b-4f10-794b6fdda001.htm">
+      <HelpTOCNode Title="TestInputDevice Members" Url="html/3ec8ed0d-7c4d-f8ce-0738-042a27df8e1d.htm" />
+      <HelpTOCNode Title="TestInputDevice Constructor " Url="html/959f7df5-1c9b-6db6-7cf8-246e6648e9a6.htm" />
+      <HelpTOCNode Title="TestInputDevice Fields" Url="html/1cfd0c1d-5f60-3551-c72e-67d623c33eb1.htm" />
+      <HelpTOCNode Id="6ea44a49-313b-4248-984c-feacec187bd3" Title="TestInputDevice Methods" Url="html/8bf16d38-6691-0a28-e721-ca1f21b65151.htm">
+        <HelpTOCNode Title="Activated Method " Url="html/c76fdb27-04f3-ec2e-bf1b-93814fbc4003.htm" />
+        <HelpTOCNode Title="activatedEventHandler Method " Url="html/cc615beb-d540-5ee6-666a-9b0fd4c72b95.htm" />
+        <HelpTOCNode Title="AssertInputDeviceInitialized Method " Url="html/035438ae-68bf-297b-1a0c-85a4bda287cd.htm" />
+        <HelpTOCNode Title="AssertInputDeviceMouseState Method " Url="html/da210512-31d2-450b-c0b9-dc37df183744.htm" />
+        <HelpTOCNode Title="ButtonChangedDown Method " Url="html/71aad809-41f6-9552-fea5-0207d29448a0.htm" />
+        <HelpTOCNode Title="ButtonChangedUp Method " Url="html/26683edb-232e-dbab-7126-ea349759b283.htm" />
+        <HelpTOCNode Title="CameraStateButtonPressed Method " Url="html/ebc515dd-961c-f2e8-3008-f06924ef60c8.htm" />
+        <HelpTOCNode Title="Connected Method " Url="html/32bf3fe1-75bd-f680-612e-921f52a903d7.htm" />
+        <HelpTOCNode Title="connectedEventHandler Method " Url="html/3b60151c-22b3-b45a-4232-8147a88557d7.htm" />
+        <HelpTOCNode Title="ConnectedProperty Method " Url="html/6ed610ea-9d76-8211-8b24-4febe7678956.htm" />
+        <HelpTOCNode Title="CreateDevice Method " Url="html/33caa6c0-5988-178d-d880-84af68615eaf.htm" />
+        <HelpTOCNode Title="CurrentGamePadState Method " Url="html/9ee0892e-da48-973d-714f-6943b3f22cd9.htm" />
+        <HelpTOCNode Title="CurrentMouseState Method " Url="html/7bfbd769-8677-a602-537f-4ec27bce3b8a.htm" />
+        <HelpTOCNode Title="Deactivated Method " Url="html/a2484591-d270-c0d4-a1e7-553b5fcc6da9.htm" />
+        <HelpTOCNode Title="deactivatedEventHandler Method " Url="html/717d177e-9ac1-e031-fe41-00685eea499b.htm" />
+        <HelpTOCNode Title="Disconnected Method " Url="html/405c8405-4190-1beb-0a6b-5c20452adb0c.htm" />
+        <HelpTOCNode Title="disconnectedEventHandler Method " Url="html/d2cce963-2877-121c-451a-50fd84afc7c5.htm" />
+        <HelpTOCNode Title="FirstInputActivatesAndFiresActivateEvent Method " Url="html/0f70bec3-6ebd-a342-4279-d03db8854582.htm" />
+        <HelpTOCNode Title="InitializeDevice Method " Url="html/62c2228c-2543-f177-2352-287ba1070ab6.htm" />
+        <HelpTOCNode Title="InvertYAxis Method " Url="html/8a95077f-8a15-3d04-7be4-3fdb58601140.htm" />
+        <HelpTOCNode Title="IsActive Method " Url="html/c4e502af-3d87-ece9-2520-8fb1812246e1.htm" />
+        <HelpTOCNode Title="IsConnected Method " Url="html/573ff6b9-a887-f1d1-6a39-ee515210824f.htm" />
+        <HelpTOCNode Title="KeyChangedDown Method " Url="html/554ff5a5-2109-d846-7058-8d8e722ed554.htm" />
+        <HelpTOCNode Title="KeyChangedUp Method " Url="html/b6db5488-d5a5-24bd-fa80-3d354ab7a471.htm" />
+        <HelpTOCNode Title="MouseButtonChanged Method " Url="html/df6ab305-a7bb-36f7-eff9-2d502a7a4a41.htm" />
+        <HelpTOCNode Title="MouseButtonDown Method " Url="html/ad76d252-1830-6aed-246f-8dae224dff88.htm" />
+        <HelpTOCNode Title="MouseButtonPressed Method " Url="html/1f0191f0-aa5c-0a54-43ce-ae13e979ff90.htm" />
+        <HelpTOCNode Title="MouseButtonUp Method " Url="html/ebf34f6f-ef22-b9cb-0fb2-88425e360f74.htm" />
+        <HelpTOCNode Title="MouseDeltaX Method " Url="html/45d8640d-e62b-8de3-9483-fbfc1aa1f91f.htm" />
+        <HelpTOCNode Title="MouseDeltaY Method " Url="html/3eb96a72-a513-be61-d6bc-263c00753863.htm" />
+        <HelpTOCNode Title="MouseIsVisible Method " Url="html/2d96b874-93be-4425-712b-56b30ff04a6f.htm" />
+        <HelpTOCNode Title="MouseSensitivity Method " Url="html/a9000fbb-0fe5-0c8f-b5e7-c6a4d9ba9f32.htm" />
+        <HelpTOCNode Title="MouseThumbStickControl Method " Url="html/9097cacc-3acf-7c9a-45e6-78ac6f5b568a.htm" />
+        <HelpTOCNode Title="OffsetInput Method " Url="html/1ce66353-11a9-3db4-241b-8cd9663d5ca9.htm" />
+        <HelpTOCNode Title="PlayerViewport Method " Url="html/7f24ee14-5298-8848-a44f-223d7152346f.htm" />
+        <HelpTOCNode Title="PreviousGamePadState Method " Url="html/411e0ef1-5e8a-ea20-90aa-e2ed08054b34.htm" />
+        <HelpTOCNode Title="PreviousMouseState Method " Url="html/a9ca4171-8f57-f7cb-d25b-a2d4ebb51ee1.htm" />
+        <HelpTOCNode Title="Setup Method " Url="html/1885cd7b-0df4-edad-1e0f-2aaf6cb07b7a.htm" />
+        <HelpTOCNode Title="SetupEvents Method " Url="html/037bfa03-6b0e-59c2-6c9f-6d18ef9b81e5.htm" />
+        <HelpTOCNode Title="ShouldLoadFromXmlFile Method " Url="html/0454ab9f-0547-4ba7-5afc-560a4f1f9743.htm" />
+        <HelpTOCNode Title="ShouldOpenContainer Method " Url="html/1f7da249-c0ec-e108-2209-4ceae475e441.htm" />
+        <HelpTOCNode Title="ShouldSaveToXmlFile Method " Url="html/d0ee7947-cdf9-a341-8ac2-cc01161a67d2.htm" />
+        <HelpTOCNode Title="ShouldSelectStorageDevice Method " Url="html/e78a7cd5-d8c4-ee8e-8314-b13cdbed40fb.htm" />
+        <HelpTOCNode Title="SpecificDeviceOffsetInput Method " Url="html/16542c57-7894-baf0-7f3d-3121cf47a6a0.htm" />
+        <HelpTOCNode Title="TestInputChanged Method " Url="html/b9df7cbe-3457-13ca-61db-1b34c80be830.htm" />
+        <HelpTOCNode Title="TestInputDeviceState Method " Url="html/133299a7-0d85-5266-7434-49a7bb83df7c.htm" />
+        <HelpTOCNode Title="TestInputPressedReceived Method " Url="html/9d04e9e4-dbcd-ae42-92e6-9c0bee38e0cc.htm" />
+        <HelpTOCNode Title="TestInputReleasedReceived Method " Url="html/b51abe4d-6532-f133-adaa-395ebcd91787.htm" />
+        <HelpTOCNode Title="TestPlayerIndex Method " Url="html/86972773-fd89-ea50-0050-14afe582471f.htm" />
+        <HelpTOCNode Title="UpdateDeviceConnectedState Method " Url="html/206e2cdf-7500-4326-1d24-71c9a4cf8242.htm" />
+        <HelpTOCNode Title="UpdateSpecificDeviceConnectedState Method " Url="html/452053b0-0433-a0af-59f3-7fd5f6c4ab45.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d2b0361a-8798-4290-9ec6-390d199033ae" Title="TestInputDevices Class" Url="html/f84d68fd-39a4-9799-8930-5e080b69d630.htm">
+      <HelpTOCNode Title="TestInputDevices Members" Url="html/fbf96699-e6ab-e63f-2fec-c25783de1a08.htm" />
+      <HelpTOCNode Title="TestInputDevices Constructor " Url="html/76dd2095-804a-cdb7-fa3c-3c5823878415.htm" />
+      <HelpTOCNode Title="TestInputDevices Fields" Url="html/7dda467c-c91b-7a52-963b-08378b85e99c.htm" />
+      <HelpTOCNode Id="ae5eed45-8852-4a55-8085-4345b421bf54" Title="TestInputDevices Methods" Url="html/a1197638-6e35-1f01-91ba-4381ad0a675a.htm">
+        <HelpTOCNode Title="ButtonChangedEvent Method " Url="html/841f9573-662e-e3a0-ef0e-ceb71c9f21b0.htm" />
+        <HelpTOCNode Title="ButtonEvent Method " Url="html/98af4696-3f24-4f34-fb97-940eb59fd9fb.htm" />
+        <HelpTOCNode Title="CreateDevices Method " Url="html/b2664c28-3190-c0f2-40db-031c81b1a45b.htm" />
+        <HelpTOCNode Title="DeviceFourSelected Method " Url="html/dffecdcb-1360-176a-8720-0abb908478b7.htm" />
+        <HelpTOCNode Title="DeviceOneSelected Method " Url="html/12e574d6-554a-edaa-c917-2d23620f0b74.htm" />
+        <HelpTOCNode Title="InputChangedEvent Method " Url="html/cb8e027c-6dec-f539-00cb-250605bafb48.htm" />
+        <HelpTOCNode Title="OffsetEvent Method " Url="html/bf703b05-9366-b7c1-eacd-65977d8f35dc.htm" />
+        <HelpTOCNode Title="SecondActivatedDeviceNotSelected Method " Url="html/d8b41a1d-ae36-f27b-3baa-012611c37274.htm" />
+        <HelpTOCNode Title="SetInvertYAxis Method " Url="html/60c5e7f2-f3fe-aa85-0376-79a5855fed6d.htm" />
+        <HelpTOCNode Title="SetMouseThumstickControl Method " Url="html/654b12af-e60b-f252-4dd6-9485b8e2c6b0.htm" />
+        <HelpTOCNode Title="ShouldAddStorageDeviceSelectedEvent Method " Url="html/a57736ed-a388-61a5-58f0-30acc9b79a65.htm" />
+        <HelpTOCNode Title="TestInputDevicesInitialization Method " Url="html/a4dd3673-8e71-c7d0-b885-b0fbedcfc2d2.htm" />
+        <HelpTOCNode Title="UpdateWithCurrentDevice Method " Url="html/6fd4ee40-aa29-9652-7a11-33e33039c969.htm" />
+        <HelpTOCNode Title="UpdateWithNoCurrentDevice Method " Url="html/f788b33f-5730-36b3-0d6c-2d2f8b9541d4.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c6b75303-1676-41b5-86ca-759be258790e" Title="TestInputEvent Class" Url="html/17e50cd3-ae71-e58a-414a-527556cd72df.htm">
+      <HelpTOCNode Title="TestInputEvent Members" Url="html/bfad426c-b8c5-9154-29c0-a56415386a0d.htm" />
+      <HelpTOCNode Title="TestInputEvent Constructor " Url="html/5be6d93c-205b-334a-37d0-6a860f6f4279.htm" />
+      <HelpTOCNode Title="TestInputEvent Fields" Url="html/daecd192-a173-dfa4-35f5-2eb94e365944.htm" />
+      <HelpTOCNode Id="1502e46c-aadf-4b75-9953-2b980c89f2da" Title="TestInputEvent Methods" Url="html/02095931-651a-08d8-ec5f-dc4a1c7fb775.htm">
+        <HelpTOCNode Title="ButtonConstructor Method " Url="html/c16f56fb-8142-00b4-3dc6-7d8ad40529b7.htm" />
+        <HelpTOCNode Title="CreateEvent Method " Url="html/ca69330a-8004-b7ab-a793-9465e9a9c4cc.htm" />
+        <HelpTOCNode Title="EventFiredHandler Method " Url="html/c298e248-5830-43b5-5230-2b7a650dd820.htm" />
+        <HelpTOCNode Title="FireEvent Method " Url="html/c2577ad6-8600-5341-15e1-e934ec86857e.htm" />
+        <HelpTOCNode Title="KeyButtonConstructor Method " Url="html/3c102ab6-1939-dc1e-fbff-7c5cc4399625.htm" />
+        <HelpTOCNode Title="KeyButtonMouseButtonConstructor Method " Url="html/813bdda1-e073-4614-1dfe-fe05c1e7d302.htm" />
+        <HelpTOCNode Title="KeyConstructor Method " Url="html/14e21e3a-96bb-d03f-2a1c-16370d81aa10.htm" />
+        <HelpTOCNode Title="MouseButtonConstructor Method " Url="html/39a9a2ef-7722-9870-d785-25bb9c3ceedb.htm" />
+        <HelpTOCNode Title="SetupEvent Method " Url="html/b7dc2c67-445d-5df8-d993-3aa4da72d676.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f9d0050b-c60d-4552-86f7-e02ab9c347b3" Title="TestMouseMovedEventArgs Class" Url="html/445a2038-831a-ccd0-7fc2-440f81777199.htm">
+      <HelpTOCNode Title="TestMouseMovedEventArgs Members" Url="html/6deb13d9-d37e-16e9-c867-9a483ef0d5ec.htm" />
+      <HelpTOCNode Title="TestMouseMovedEventArgs Constructor " Url="html/9ed722d8-576f-4ab1-b420-d077b2b7513e.htm" />
+      <HelpTOCNode Id="932d1216-8bd1-4e88-a257-7c948549f8ae" Title="TestMouseMovedEventArgs Methods" Url="html/db147822-157a-d744-246d-4ddb27d63ab1.htm">
+        <HelpTOCNode Title="CreateTestMouseMovedArgs Method " Url="html/ba2d10a7-f112-9969-41a9-6583eae19434.htm" />
+        <HelpTOCNode Title="TestMouseMovedEventArgsInitiailization Method " Url="html/dc0cd366-5e1b-78b2-e03e-d1446186ed33.htm" />
+        <HelpTOCNode Title="TestMouseOffset Method " Url="html/704d86d0-942a-742e-03bb-00dde72bd244.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e157482b-ad33-4111-8bb2-4acd6bcd8790" Title="TestOffsetEvent Class" Url="html/1e0d33a1-0361-7d66-837f-e92a75307401.htm">
+      <HelpTOCNode Title="TestOffsetEvent Members" Url="html/42f8fddc-5a0f-6121-e726-3d6349dc40bb.htm" />
+      <HelpTOCNode Title="TestOffsetEvent Constructor " Url="html/9afb8d99-4662-e260-9d7d-29c545de2723.htm" />
+      <HelpTOCNode Title="TestOffsetEvent Fields" Url="html/74896b82-acd0-7ffc-f56d-c17eed304bbb.htm" />
+      <HelpTOCNode Id="4b3be956-11a4-4570-83f5-722a096251c1" Title="TestOffsetEvent Methods" Url="html/6271aeb8-76d7-6d43-4da7-bfce8356d36a.htm">
+        <HelpTOCNode Title="ButtonConstructor Method " Url="html/b1dfc90b-a11c-9134-c21b-3d11b8c07300.htm" />
+        <HelpTOCNode Title="ButtonOffset Method " Url="html/0b467bb9-d4ee-b2d7-58ed-b55b99d1401e.htm" />
+        <HelpTOCNode Title="CreateEvent Method " Url="html/469062c7-3eb6-7d52-be54-63fc13975f7a.htm" />
+        <HelpTOCNode Title="FireEvent Method " Url="html/e75bcd36-d46a-f420-0311-0dc446732348.htm" />
+        <HelpTOCNode Title="KeyButtonOffsetInputConstructor Method " Url="html/52d08ff4-86ee-a9ff-0703-6e70223b5be2.htm" />
+        <HelpTOCNode Title="KeyConstructor Method " Url="html/05a8809f-9f52-4aeb-af45-434384e6ea87.htm" />
+        <HelpTOCNode Title="OffsetEventFiredHandler Method " Url="html/e59745bc-a736-0c80-a42f-0114b5e211c6.htm" />
+        <HelpTOCNode Title="OffsetInputConstructor Method " Url="html/2e35ace0-12d2-bfba-df20-6ca7caca4324.htm" />
+        <HelpTOCNode Title="SetupEvent Method " Url="html/1062c2a0-9026-43fe-9602-db909b67366a.htm" />
+        <HelpTOCNode Title="ThumbStickConstructor Method " Url="html/b413438d-9c38-519a-d1a0-81c13861f3f1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ef981818-c302-47e1-b90d-caf6de56f628" Title="TestStorageDevice Class" Url="html/51d80bc5-5d78-32f6-de8f-3736794c7baa.htm">
+      <HelpTOCNode Title="TestStorageDevice Members" Url="html/d4543a00-aa3b-ac65-f6b3-61566628d44b.htm" />
+      <HelpTOCNode Title="TestStorageDevice Constructor " Url="html/e5ba29e1-46c5-0b42-14ca-3bcc0fad3cf2.htm" />
+      <HelpTOCNode Id="1030a3c4-9325-4fb2-ac1a-6aa58633dbf6" Title="TestStorageDevice Methods" Url="html/ed22612d-e8f7-de61-8cdb-c39d2124e968.htm">
+        <HelpTOCNode Title="TestInitializeStorageDevice Method " Url="html/48e49ed3-4cfa-22b1-1993-a320936cdaf2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a6757779-ea2b-4718-97ad-dd878fc8b8d0" Title="TestTrialMode Class" Url="html/2cd735f7-5381-d99d-b897-10c44687d4f7.htm">
+      <HelpTOCNode Title="TestTrialMode Members" Url="html/242ba639-dd76-095b-5ce0-26ca0813648c.htm" />
+      <HelpTOCNode Title="TestTrialMode Constructor " Url="html/5fe0b785-208b-4f80-c225-ddb5c3bb0a15.htm" />
+      <HelpTOCNode Id="b9ef3025-30a4-47bf-a80c-d98c83e166ec" Title="TestTrialMode Fields" Url="html/4ed49852-4db7-8321-42a9-b787e031746d.htm">
+        <HelpTOCNode Title="args Field" Url="html/d651a423-7eff-c81a-df08-8b59c227e5ec.htm" />
+        <HelpTOCNode Title="device Field" Url="html/8570d862-5e6f-cef8-a32f-26d4d3df535b.htm" />
+        <HelpTOCNode Title="eventFired Field" Url="html/206ab959-0bd9-4138-ca45-4cfea1638b23.htm" />
+        <HelpTOCNode Title="expectedGamePadState Field" Url="html/95f30893-ae9d-77e3-2b81-851ba7705d08.htm" />
+        <HelpTOCNode Title="expectedPlayerIndex Field" Url="html/729e8dd3-826b-0b0a-087b-c7f9c169e294.htm" />
+        <HelpTOCNode Title="mode Field" Url="html/2dabe6dd-5718-658e-8bc7-9f3eec2af9a5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="306a1ab2-2db5-4467-a289-59790febcae5" Title="TestTrialMode Methods" Url="html/4060b601-0f77-3b55-4c86-b699698556f7.htm">
+        <HelpTOCNode Title="CreateInputDevice Method " Url="html/bd22ad56-1415-71b2-829c-357de21b9a2f.htm" />
+        <HelpTOCNode Title="CreateTrialMode Method " Url="html/88f8cdb5-2922-7e23-ce68-cfed04ec7e88.htm" />
+        <HelpTOCNode Title="eventHandler Method " Url="html/237e0399-94e1-9c2b-33cb-1212c0239561.htm" />
+        <HelpTOCNode Title="Purchase Method " Url="html/4682e4a6-98b7-b087-93b8-e25bb3eb7270.htm" />
+        <HelpTOCNode Title="PurchaseGame Method " Url="html/2d51742b-799c-11fa-b8c7-50047ba793b9.htm" />
+        <HelpTOCNode Title="Setup Method " Url="html/5de4c13d-0774-376d-6a5e-797d5a824964.htm" />
+        <HelpTOCNode Title="State Method " Url="html/8a3d3e60-b37d-efb7-feda-8265d6566269.htm" />
+        <HelpTOCNode Title="TrialModeExitGame Method " Url="html/01d88650-cefd-303a-1cdb-ef6082306c3b.htm" />
+        <HelpTOCNode Title="TrialModeGameNotPurchased Method " Url="html/d138b9c4-eec4-ad83-0e1a-d0d99ca1b680.htm" />
+        <HelpTOCNode Title="TrialModeGamePurchased Method " Url="html/7c6c66c2-9982-b8ca-6019-1eb341364643.htm" />
+        <HelpTOCNode Title="TrialModeInitialization Method " Url="html/fb0b0a2d-ba10-7eb5-93c4-936adeb5981f.htm" />
+        <HelpTOCNode Title="TrialModeIsTrialMode Method " Url="html/9292385f-5bf8-481c-1a5f-f2e77e2d16dd.htm" />
+        <HelpTOCNode Title="TrialModeTimeOut Method " Url="html/a6bb1d4a-b874-1501-d22e-06535fea8f70.htm" />
+        <HelpTOCNode Title="TrialModeTrialModeExpired Method " Url="html/22b6ef94-c2a4-1cb7-ba15-75d09507ec0b.htm" />
+        <HelpTOCNode Title="TrialModeUpdateTimer Method " Url="html/4f1709c3-783b-8606-caff-840bbcb07a0e.htm" />
+        <HelpTOCNode Title="UpdateTimerExpired Method " Url="html/b0fa45fc-d284-154f-4b2d-f4dc6350b4e3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="552102ea-58f3-4bb9-9199-a1efef872543" Title="TestWGTimeSpan Class" Url="html/ea732c48-5d66-1fda-03b0-a351b1fb939d.htm">
+      <HelpTOCNode Title="TestWGTimeSpan Members" Url="html/b671f87c-0402-faeb-ae50-73612e61653e.htm" />
+      <HelpTOCNode Title="TestWGTimeSpan Constructor " Url="html/3ce97042-d8dd-548f-0369-eead88cf477b.htm" />
+      <HelpTOCNode Id="fe1bd1d2-1fea-4b16-bb01-1856d07ce91e" Title="TestWGTimeSpan Fields" Url="html/7872c44b-6b39-9d45-0b2b-fccf3a758ec0.htm">
+        <HelpTOCNode Title="expectedTimeSpan Field" Url="html/391f462a-811e-35b5-f9eb-119f58644db1.htm" />
+        <HelpTOCNode Title="timeSpan Field" Url="html/16512dd2-8397-aba8-e3c9-57e58f96d0e6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9e52c289-1019-4f51-b54a-b19e7a0483f9" Title="TestWGTimeSpan Methods" Url="html/3d12ce3b-bec0-128b-a901-0e8e0509102c.htm">
+        <HelpTOCNode Title="ConvertToHHMMSS Method " Url="html/110c4127-29a0-d0bc-5a51-747059356c47.htm" />
+        <HelpTOCNode Title="ConvertToMMSS Method " Url="html/e0d31434-46b5-bd15-5d00-56e07220f25b.htm" />
+        <HelpTOCNode Title="ConvertToString Method " Url="html/c9cc13da-d255-a29e-f5d4-b775f27037ad.htm" />
+        <HelpTOCNode Title="CopyConstructor Method " Url="html/55fb2697-518d-c750-78fb-888bba0e4a0b.htm" />
+        <HelpTOCNode Title="CreateTimeSpan Method " Url="html/82a3720d-08d6-7911-fcb3-4c2c46cfe0a0.htm" />
+        <HelpTOCNode Title="Days Method " Url="html/beaa7566-24b1-dd59-3b75-75e972856044.htm" />
+        <HelpTOCNode Title="DefaultConstructor Method " Url="html/f98c8c28-6523-29c2-3b6a-7f2d134daf2c.htm" />
+        <HelpTOCNode Title="Duration Method " Url="html/15386621-7d7d-589e-ff26-703e489bd366.htm" />
+        <HelpTOCNode Title="Equality Method " Url="html/c0a65bd8-a7ab-e1e6-ab5b-b66ae0dbd2a1.htm" />
+        <HelpTOCNode Title="Hours Method " Url="html/597fb27d-53a4-49be-c13b-ad7352caae3f.htm" />
+        <HelpTOCNode Title="Milliseconds Method " Url="html/82f58734-84ce-5d8b-0ce1-2d1050d59c1d.htm" />
+        <HelpTOCNode Title="Minutes Method " Url="html/89c107f5-decc-a2e8-016b-c56d21c11696.htm" />
+        <HelpTOCNode Title="Seconds Method " Url="html/37fabf6c-8ddb-d7a5-464f-e47f73802aeb.htm" />
+        <HelpTOCNode Title="Setup Method " Url="html/f8afba08-da35-ce78-d24e-ca9db52d5c49.htm" />
+        <HelpTOCNode Title="TimeSpanConstructor Method " Url="html/fcbc8cf4-dd19-334c-ba97-dbd2fabb7c27.htm" />
+        <HelpTOCNode Title="TimeSpanToWGTimeSpan Method " Url="html/55aee6ee-7a51-1780-54e6-709f36135bcf.htm" />
+        <HelpTOCNode Title="TotalDays Method " Url="html/3d2c2fde-7e8f-4e52-d5c9-afcff0cedf16.htm" />
+        <HelpTOCNode Title="TotalHours Method " Url="html/832dfbe9-f43e-f9e7-2e5f-701f26912cf8.htm" />
+        <HelpTOCNode Title="TotalMilliseconds Method " Url="html/c7eb9080-dfc1-60b7-0865-702bdd5d2f41.htm" />
+        <HelpTOCNode Title="TotalMinutes Method " Url="html/69920840-ff24-f1c5-4dac-ea723244425a.htm" />
+        <HelpTOCNode Title="TotalSeconds Method " Url="html/dca8fd15-f0c6-4ad4-73fc-143ad8ee0fc9.htm" />
+        <HelpTOCNode Title="WGTimeSpanToTimeSpan Method " Url="html/890aeb2b-da38-db62-9b3d-919f0fab1ce8.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="083c98a6-3530-4e2b-997e-9f644726f9dd" Title="TestWindowsDevice Class" Url="html/a9f015c0-b24c-656e-d92f-bbef16f5c7e4.htm">
+      <HelpTOCNode Title="TestWindowsDevice Members" Url="html/9bd01a2c-e920-5169-811b-8db544e63fbf.htm" />
+      <HelpTOCNode Title="TestWindowsDevice Constructor " Url="html/ee135b1c-8a9a-e63a-3cf1-f6c12487d481.htm" />
+      <HelpTOCNode Title="TestWindowsDevice Fields" Url="html/8552bc71-8cdf-0a58-8d5c-5c278918c38e.htm" />
+      <HelpTOCNode Id="c311fc7f-11c6-4f07-b9af-c6e6894c5477" Title="TestWindowsDevice Methods" Url="html/7169d5c0-0317-ead2-0002-90763b39b749.htm">
+        <HelpTOCNode Title="ButtonChangedEventKeyReceived Method " Url="html/6f957602-6f6b-073a-aa53-3f716fb92199.htm" />
+        <HelpTOCNode Title="ButtonChangedEventMouseButtonReceived Method " Url="html/26bddfdb-f1b5-7402-e21c-dfc4ffa14b50.htm" />
+        <HelpTOCNode Title="ButtonInputEventKeyReceived Method " Url="html/5b0b06e7-301e-d0dd-bacb-1525a3adb959.htm" />
+        <HelpTOCNode Title="ButtonInputEventMouseButtonReceived Method " Url="html/41465d50-ee17-4e27-724a-be6c07dbc13a.htm" />
+        <HelpTOCNode Title="ConnectedProperty Method " Url="html/dfdf2ea5-2ee4-1ebf-1670-5c13637629e5.htm" />
+        <HelpTOCNode Title="CreateDevice Method " Url="html/323c38f2-c50d-e4e1-967f-6d09375635bf.htm" />
+        <HelpTOCNode Title="InputChangedEventKeyReceived Method " Url="html/62e16602-e368-72dc-56e4-25cfd7efae4b.htm" />
+        <HelpTOCNode Title="InputChangedEventMouseButtonReceived Method " Url="html/8841c9e7-5771-5640-d007-908a6939a553.htm" />
+        <HelpTOCNode Title="InputEventKeyReceived Method " Url="html/a8dd530a-18da-83cd-5bde-05647a8a2880.htm" />
+        <HelpTOCNode Title="InputEventMouseButtonReceived Method " Url="html/df861db7-9522-7478-b699-12748a225658.htm" />
+        <HelpTOCNode Title="KeyMappings Method " Url="html/8b46dff0-4f0a-fc7e-4b56-65475638bc8d.htm" />
+        <HelpTOCNode Title="OffsetInputEventKeyReceived Method " Url="html/c17972f9-3cc0-5e55-8d99-794376a65b64.htm" />
+        <HelpTOCNode Title="OffsetInputEventMouseInputReceived Method " Url="html/040ac53a-a235-a67d-a573-f402e1767fec.htm" />
+        <HelpTOCNode Title="OffsetInputReceivedFromMouse Method " Url="html/d690f593-fc9d-34c9-a83d-99c6e751671c.htm" />
+        <HelpTOCNode Title="SpecificDeviceOffsetInput Method " Url="html/9fe89693-36f7-4403-a174-ef080c6689da.htm" />
+        <HelpTOCNode Title="UpdateSpecificDeviceConnectedState Method " Url="html/0f62a671-4202-2a8c-13fe-18cfd8de028a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b38010a0-dede-47b2-9961-73ce5107cada" Title="TestWindowsGuideWrapper Class" Url="html/2b822245-3a49-978c-19a0-b47152c8106a.htm">
+      <HelpTOCNode Title="TestWindowsGuideWrapper Members" Url="html/fcf2fdac-abc1-589b-9fe4-1c43b74cee9a.htm" />
+      <HelpTOCNode Title="TestWindowsGuideWrapper Constructor " Url="html/91806dac-f9e1-6e59-f9b2-8e51bd0c6532.htm" />
+      <HelpTOCNode Title="TestWindowsGuideWrapper Fields" Url="html/bf2c9c35-6790-9361-98af-fb93bad60430.htm" />
+      <HelpTOCNode Id="b1fadb85-5af7-4b79-938f-fb4851fc4808" Title="TestWindowsGuideWrapper Methods" Url="html/2ebf97d5-a5d1-af02-797c-ccf6bcf83cbf.htm">
+        <HelpTOCNode Title="CreateGuide Method " Url="html/6a8c34dd-04fe-715e-d62d-7cc2f823b658.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9bb83641-9b6f-4ccb-b433-d942c10a013d" Title="TestWindowsTrialMode Class" Url="html/8d22374f-8c1b-e6fb-07af-e4fb0fadc706.htm">
+      <HelpTOCNode Title="TestWindowsTrialMode Members" Url="html/0fab4258-d4c9-209e-78c8-6bce2f089332.htm" />
+      <HelpTOCNode Title="TestWindowsTrialMode Constructor " Url="html/e04e6c35-8152-1b10-874f-4956dc3476f6.htm" />
+      <HelpTOCNode Title="TestWindowsTrialMode Fields" Url="html/1a9383f6-2865-43de-7d20-10ba67dd11e9.htm" />
+      <HelpTOCNode Id="16cdd11d-0b85-4b52-a475-e37c8ff456b6" Title="TestWindowsTrialMode Methods" Url="html/ea81cfde-7c4b-27f5-eb20-69e67340a56f.htm">
+        <HelpTOCNode Title="CreateInputDevice Method " Url="html/dcaab2b8-cfb3-fc02-ce19-5e9833dac953.htm" />
+        <HelpTOCNode Title="CreateTrialMode Method " Url="html/caa01c69-7748-1295-b37b-bb30df0675f2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="51bcf22a-086a-4d95-be82-da8e00405332" Title="TestXboxTrialMode Class" Url="html/2e0d5511-0aab-c54c-06df-dd908b5fa261.htm">
+      <HelpTOCNode Title="TestXboxTrialMode Members" Url="html/c77a3968-59a9-2c68-8423-133e1da36ded.htm" />
+      <HelpTOCNode Title="TestXboxTrialMode Constructor " Url="html/2b3b3015-328e-d047-358b-00e7a67536c1.htm" />
+      <HelpTOCNode Title="TestXboxTrialMode Fields" Url="html/4a7976cc-2c9a-8965-d716-fdf63f950609.htm" />
+      <HelpTOCNode Id="5803abd8-6088-4ca6-bf7c-d5bde0e35dfb" Title="TestXboxTrialMode Methods" Url="html/0184edba-f664-4ff2-91eb-79566106c14d.htm">
+        <HelpTOCNode Title="CreateInputDevice Method " Url="html/830f4cae-0b88-045b-0997-2ecc2500f424.htm" />
+        <HelpTOCNode Title="CreateTrialMode Method " Url="html/4d7993d7-2e9a-6f3d-f880-5e66cb7502ba.htm" />
+        <HelpTOCNode Title="Initialization Method " Url="html/4d2bdaa0-432d-5de5-6f60-cfb26a0f29ef.htm" />
+        <HelpTOCNode Title="TrialModeIsRequired Method " Url="html/27ef5cf6-90f8-e0e0-76ac-8d1e4fbd8fe6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
