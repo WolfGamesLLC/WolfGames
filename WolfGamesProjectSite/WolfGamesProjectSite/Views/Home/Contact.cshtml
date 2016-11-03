@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<div class="transparent-background soft-border-radius">
+    <form enctype="text/plain" action="mailto:dain@wolfgamesllc.com" method="get" class="form-format" target="_blank" novalidate>
+        <div>
+            <h2>Fill out the form below or <a href="mailto:dain@wolfgamesllc.com">contact us</a></h2>
+            <p>You may omit your name when using the form.</p>
+
+            <div>
+                <label for="FNAME">First Name </label><br />
+                <input type="text" value="" name="FNAME" class="transparent-background soft-border-radius" id="FNAME">
+            </div>
+            <div>
+                <label for="EMAIL">Email </label><br />
+                <input type="email" value="" cols="30" name="EMAIL" class="transparent-background soft-border-radius" id="EMAIL">
+            </div>
+
+            <div>
+                <label for="COMMENT">Comment </label><br />
+                <textarea value="" cols="30" rows="3" name="comment" class="transparent-background soft-border-radius" id="COMMENT">  </textarea>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary btn-lg button-xl" value="Submit" name="submit" />
+            </div>
+        </div>
+    </form>
+</div>
+
