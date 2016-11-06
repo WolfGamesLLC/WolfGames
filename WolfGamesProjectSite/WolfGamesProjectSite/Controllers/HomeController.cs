@@ -38,5 +38,12 @@ namespace WolfGamesProjectSite.Controllers
 
             return View();
         }
+
+        public ActionResult DevCorner()
+        {
+            ViewBag.Message = "Welcome to Wolf Games' dev corner.";
+
+            return View();
+        }
     }
 }
