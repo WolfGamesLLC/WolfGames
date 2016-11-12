@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WolfGamesSite.Models;
 
 namespace WolfGamesSite.Controllers
 {
     public class CustomerController : Controller
     {
+        private WGDbContext db = new WGDbContext();
+
         // GET: Customer
         public ActionResult Index()
         {
@@ -28,11 +31,12 @@ namespace WolfGamesSite.Controllers
 
         // POST: Customer/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Customer customer)
         {
             try
             {
-                // TODO: Add insert logic here
+                db.Customers.Add(customer);
+                db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
