@@ -15,14 +15,33 @@ namespace WolfGamesSite.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "About Wolf Games.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "We love to hear from you.";
+
+            return View();
+        }
+
+        public ActionResult Error()
+        {
+            return View("~/Views/Shared/Error.cshtml");
+        }
+
+        public ActionResult ThankYou()
+        {
+            ViewBag.Message = "Thank you from all of us at Wolf Games.";
+
+            return View();
+        }
+
+        public ActionResult DevCorner()
+        {
+            ViewBag.Message = "Welcome to Wolf Games' dev corner.";
 
             return View();
         }
