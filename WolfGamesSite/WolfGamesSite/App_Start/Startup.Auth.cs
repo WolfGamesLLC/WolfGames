@@ -54,10 +54,16 @@ namespace WolfGamesSite
             //   consumerKey: "",
             //   consumerSecret: "");
 
+            // Production Settings
             //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            //   appId: "130984234045601",
+            //   appSecret: "91d4430603418cb03bd86065fc4babeb");
 
+            // Test settings
+            app.UseFacebookAuthentication(
+               appId: "131000074044017",
+               appSecret: "7d439d0a74205bc338b6821693959ea9");
+            
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
             //    ClientId = "",
