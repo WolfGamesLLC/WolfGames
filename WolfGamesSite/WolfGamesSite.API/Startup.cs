@@ -5,7 +5,6 @@ using Microsoft.Owin;
 using Owin;
 
 [assembly: OwinStartup(typeof(WolfGamesSite.API.Startup))]
-
 namespace WolfGamesSite.API
 {
     public partial class Startup
