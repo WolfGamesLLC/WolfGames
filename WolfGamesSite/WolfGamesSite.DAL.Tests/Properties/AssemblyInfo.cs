@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WolfGamesSite.DAL.Tests")]
-[assembly: AssemblyDescription("Unit testing for Wolf Games ASP.NET Web Data Access Layer for games and applications")]
+[assembly: AssemblyTitle("WolfGamesSite.DALTests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Wolf Games, LLC.")]
-[assembly: AssemblyProduct("WolfGamesSite.DAL.Tests")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("WolfGamesSite.DALTests")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0ebaaa41-d0d1-4b43-babc-6eef16a3d222")]
+[assembly: Guid("ab28be45-c127-4fce-aa02-fdac1f2faa4b")]
 
 // Version information for an assembly consists of the following four values:
 //
