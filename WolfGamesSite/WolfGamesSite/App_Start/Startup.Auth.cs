@@ -61,8 +61,8 @@ namespace WolfGamesSite
 
             // Test settings
             app.UseFacebookAuthentication(
-               appId: "131000074044017",
-               appSecret: "7d439d0a74205bc338b6821693959ea9");
+               appId: authorizaation.Id,
+               appSecret: authorizaation.Secret);
             
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

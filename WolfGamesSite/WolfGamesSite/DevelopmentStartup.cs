@@ -2,20 +2,16 @@
 using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
+using WolfGamesSite.DAL;
 
 [assembly: OwinStartupAttribute("TestingConfiguration", typeof(WolfGamesSite.DevelopmentStartup))]
 namespace WolfGamesSite
 {
-    public class DevelopmentStartup
+    public class DevelopmentStartup : Startup
     {
-        public void Configuration(IAppBuilder app)
+        public DevelopmentStartup()
         {
-            // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
-            app.Run(context =>
-            {
-                string t = DateTime.Now.Millisecond.ToString();
-                return context.Response.WriteAsync(t + " Development OWIN App");
-            });
+            authorizaation = new OAuthAppData("131000074044017", "7d439d0a74205bc338b6821693959ea9");
         }
     }
 }

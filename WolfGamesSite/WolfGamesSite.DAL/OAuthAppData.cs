@@ -13,14 +13,15 @@ namespace WolfGamesSite.DAL
 
         public OAuthAppData(string id, string secret)
         {
-                
+            this.id = id;
+            this.secret = secret;   
         }
 
         public string Id
         {
             get
             {
-                throw new NotImplementedException();
+                return id;
             }
         }
 
@@ -28,7 +29,7 @@ namespace WolfGamesSite.DAL
         {
             get
             {
-                throw new NotImplementedException();
+                return secret;
             }
         }
     }

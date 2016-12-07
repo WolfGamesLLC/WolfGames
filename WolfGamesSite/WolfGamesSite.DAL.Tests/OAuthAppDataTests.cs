@@ -14,7 +14,12 @@ namespace WolfGamesSite.DAL.Tests
         [TestMethod()]
         public void OAuthAppDataTest()
         {
-            Assert.Fail();
+            string id = "id";
+            string secret = "secret";
+
+            OAuthAppData o = new OAuthAppData(id, secret);
+            Assert.AreEqual(id, o.Id);
+            Assert.AreEqual(secret, o.Secret);
         }
     }
 }
