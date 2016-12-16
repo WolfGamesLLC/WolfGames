@@ -11,7 +11,7 @@ namespace WolfGamesSite
     {
         public DevelopmentStartup()
         {
-            authorizaation = new OAuthAppData("131000074044017", "7d439d0a74205bc338b6821693959ea9");
+            authorization = new OAuthAppData("131000074044017", "7d439d0a74205bc338b6821693959ea9");
         }
     }
 }

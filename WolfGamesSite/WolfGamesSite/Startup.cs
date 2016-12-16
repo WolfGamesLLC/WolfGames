@@ -7,11 +7,11 @@ namespace WolfGamesSite
 {
     public partial class Startup
     {
-        protected OAuthAppData authorizaation;
+        protected OAuthAppData authorization;
 
         public Startup()
         {
-            authorizaation = new OAuthAppData("131000074044017", "7d439d0a74205bc338b6821693959ea9");
+            authorization = new OAuthAppData("130984234045601", "91d4430603418cb03bd86065fc4babeb");
         }
 
         public virtual void Configuration(IAppBuilder app)
