@@ -6,7 +6,7 @@ using WolfGamesSite.API.Controllers;
 namespace WolfGamesSite.API.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class HomeControllerAPITest
     {
         [TestMethod]
         public void Index()
