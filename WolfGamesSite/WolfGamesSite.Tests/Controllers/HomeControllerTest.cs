@@ -56,5 +56,17 @@ namespace WolfGamesSite.Tests.Controllers
             // Assert
             Assert.AreEqual("We love to hear from you.", Result.ViewBag.Message);
         }
+
+        [TestMethod]
+        public void Error()
+        {
+            // Arrange
+
+            // Act
+            Result = Controller.Error() as ViewResult;
+
+            // Assert
+            Assert.AreEqual("~/Views/Shared/Error.cshtml", Result.ViewName);
+        }
     }
 }
