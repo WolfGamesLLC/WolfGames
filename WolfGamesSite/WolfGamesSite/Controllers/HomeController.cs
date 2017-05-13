@@ -6,8 +6,30 @@ using System.Web.Mvc;
 
 namespace WolfGamesSite.Controllers
 {
+    public class HomeControllerMessages
+    {
+        private string messsage;
+
+        public string Message
+        {
+            get
+            {
+                return messsage;
+            }
+        }
+    }
+
     public class HomeController : Controller
     {
+        enum HCCodes
+        {
+            ABOUT,
+        }
+        string[] HCMes =
+        {
+            "About Wolf Games."
+        };
+
         public ActionResult Index()
         {
             return View();
@@ -15,7 +37,7 @@ namespace WolfGamesSite.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "About Wolf Games.";
+            ViewBag.Message = HCMes[(int)HCCodes.ABOUT];
 
             return View();
         }
