@@ -13,6 +13,7 @@ namespace WolfGamesSite.Tests.Controllers
     public class HomeControllerTest
     {
         HomeController Controller;
+        ViewResult viewResult;
 
         [TestInitialize]
         public void TestSetup()
@@ -26,10 +27,10 @@ namespace WolfGamesSite.Tests.Controllers
             // Arrange
 
             // Act
-            ViewResult result = Controller.Index() as ViewResult;
+            viewResult = Controller.Index() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsNotNull(viewResult);
         }
 
         [TestMethod]
@@ -38,10 +39,10 @@ namespace WolfGamesSite.Tests.Controllers
             // Arrange
 
             // Act
-            ViewResult result = Controller.About() as ViewResult;
+            viewResult = Controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("About Wolf Games.", result.ViewBag.Message);
+            Assert.AreEqual("About Wolf Games.", viewResult.ViewBag.Message);
         }
 
         [TestMethod]
@@ -50,10 +51,10 @@ namespace WolfGamesSite.Tests.Controllers
             // Arrange
 
             // Act
-            ViewResult result = Controller.Contact() as ViewResult;
+            viewResult = Controller.Contact() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(result);
+            Assert.IsNotNull(viewResult);
         }
     }
 }
