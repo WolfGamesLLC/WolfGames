@@ -14,11 +14,16 @@ namespace WolfGamesSite.Tests.Controllers
     {
         HomeController Controller;
 
+        [TestInitialize]
+        public void TestSetup()
+        {
+            Controller = new HomeController();
+        }
+
         [TestMethod]
         public void Index()
         {
             // Arrange
-            Controller = new HomeController();
 
             // Act
             ViewResult result = Controller.Index() as ViewResult;
@@ -31,7 +36,6 @@ namespace WolfGamesSite.Tests.Controllers
         public void About()
         {
             // Arrange
-            Controller = new HomeController();
 
             // Act
             ViewResult result = Controller.About() as ViewResult;
@@ -44,7 +48,6 @@ namespace WolfGamesSite.Tests.Controllers
         public void Contact()
         {
             // Arrange
-            Controller = new HomeController();
 
             // Act
             ViewResult result = Controller.Contact() as ViewResult;
