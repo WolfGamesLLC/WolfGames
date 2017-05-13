@@ -54,7 +54,7 @@ namespace WolfGamesSite.Tests.Controllers
             viewResult = Controller.Contact() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(viewResult);
+            Assert.AreEqual("We love to hear from you.", viewResult.ViewBag.Message);
         }
     }
 }
