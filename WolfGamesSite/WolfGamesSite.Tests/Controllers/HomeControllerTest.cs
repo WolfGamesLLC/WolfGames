@@ -10,7 +10,7 @@ using WolfGamesSite.Controllers;
 namespace WolfGamesSite.Controllers.Tests
 {
     [TestClass()]
-    public class HomeControllerTest
+    public class HomeControllerMessageTest
     {
         string message;
 
@@ -66,7 +66,7 @@ namespace WolfGamesSite.Tests.Controllers
             Result = Controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("About Wolf Games.", Result.ViewBag.Message);
+            Assert.AreEqual(HomeControllerMessages.About(), Result.ViewBag.Message);
         }
 
         [TestMethod]
