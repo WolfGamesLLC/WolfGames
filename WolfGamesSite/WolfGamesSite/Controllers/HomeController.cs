@@ -8,28 +8,29 @@ namespace WolfGamesSite.Controllers
 {
     public class HomeControllerMessages
     {
-        private string messsage;
+        private string message;
 
         public string Message
         {
             get
             {
-                return messsage;
+                return message;
             }
+        }
+
+        public HomeControllerMessages(string message)
+        {
+            this.message = message;
+        }
+
+        public static string About()
+        {
+            return new HomeControllerMessages("About Wolf Games.").Message;
         }
     }
 
     public class HomeController : Controller
     {
-        enum HCCodes
-        {
-            ABOUT,
-        }
-        string[] HCMes =
-        {
-            "About Wolf Games."
-        };
-
         public ActionResult Index()
         {
             return View();
@@ -37,7 +38,7 @@ namespace WolfGamesSite.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = HCMes[(int)HCCodes.ABOUT];
+            ViewBag.Message = HomeControllerMessages.About();
 
             return View();
         }

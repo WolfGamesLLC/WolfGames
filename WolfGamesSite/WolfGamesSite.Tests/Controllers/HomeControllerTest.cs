@@ -7,6 +7,30 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WolfGamesSite;
 using WolfGamesSite.Controllers;
 
+namespace WolfGamesSite.Controllers.Tests
+{
+    [TestClass()]
+    public class HomeControllerTest
+    {
+        string message;
+
+        [TestMethod()]
+        public void HomeControllerMessagesTest()
+        {
+            string text = "test text";
+            message = new HomeControllerMessages(text).Message;
+            Assert.AreEqual(text, message);
+        }
+
+        [TestMethod()]
+        public void AboutTest()
+        {
+            message = HomeControllerMessages.About();
+            Assert.AreEqual("About Wolf Games.", message);
+        }
+    }
+}
+
 namespace WolfGamesSite.Tests.Controllers
 {
     [TestClass]
