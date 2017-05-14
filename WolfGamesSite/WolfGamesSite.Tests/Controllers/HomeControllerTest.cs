@@ -24,6 +24,12 @@ namespace WolfGamesSite.Controllers.Tests
         {
             Assert.AreEqual("About Wolf Games.", HomeControllerMessages.About());
         }
+
+        [TestMethod()]
+        public void ContactTest()
+        {
+            Assert.AreEqual("We love to hear from you.", HomeControllerMessages.Contact());
+        }
     }
 }
 
@@ -74,7 +80,7 @@ namespace WolfGamesSite.Tests.Controllers
             Result = Controller.Contact() as ViewResult;
 
             // Assert
-            Assert.AreEqual("We love to hear from you.", Result.ViewBag.Message);
+            Assert.AreEqual(HomeControllerMessages.Contact(), Result.ViewBag.Message);
         }
 
         [TestMethod]

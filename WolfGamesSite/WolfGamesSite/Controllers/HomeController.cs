@@ -27,6 +27,11 @@ namespace WolfGamesSite.Controllers
         {
             return new HomeControllerMessages("About Wolf Games.").Message;
         }
+
+        public static string Contact()
+        {
+            return new HomeControllerMessages("We love to hear from you.").Message;
+        }
     }
 
     public class HomeController : Controller
@@ -45,7 +50,7 @@ namespace WolfGamesSite.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "We love to hear from you.";
+            ViewBag.Message = HomeControllerMessages.Contact();
 
             return View();
         }
