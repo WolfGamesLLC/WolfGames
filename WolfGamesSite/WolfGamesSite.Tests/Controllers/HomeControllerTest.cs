@@ -30,6 +30,12 @@ namespace WolfGamesSite.Controllers.Tests
         {
             Assert.AreEqual("We love to hear from you.", HomeControllerMessages.Contact());
         }
+
+        [TestMethod()]
+        public void ErrorTest()
+        {
+            Assert.AreEqual("~/Views/Shared/Error.cshtml", HomeControllerMessages.Error());
+        }
     }
 }
 
@@ -92,7 +98,7 @@ namespace WolfGamesSite.Tests.Controllers
             Result = Controller.Error() as ViewResult;
 
             // Assert
-            Assert.AreEqual("~/Views/Shared/Error.cshtml", Result.ViewName);
+            Assert.AreEqual(HomeControllerMessages.Error(), Result.ViewName);
         }
     }
 }
