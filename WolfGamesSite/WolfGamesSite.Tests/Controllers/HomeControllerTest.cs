@@ -42,6 +42,12 @@ namespace WolfGamesSite.Controllers.Tests
         {
             Assert.AreEqual("Thank you from all of us at Wolf Games.", HomeControllerMessages.ThankYou());
         }
+
+        [TestMethod()]
+        public void DevCornerTest()
+        {
+            Assert.AreEqual("Welcome to Wolf Games' dev corner.", HomeControllerMessages.DevCorner());
+        }
     }
 
     [TestClass]
@@ -114,6 +120,18 @@ namespace WolfGamesSite.Controllers.Tests
 
             // Assert
             Assert.AreEqual(HomeControllerMessages.ThankYou(), Result.ViewBag.Message);
+        }
+
+        [TestMethod()]
+        public void DevCornerTest()
+        {
+            // Arrange
+
+            // Act
+            Result = Controller.DevCorner() as ViewResult;
+
+            // Assert
+            Assert.AreEqual(HomeControllerMessages.DevCorner(), Result.ViewBag.Message);
         }
     }
 }

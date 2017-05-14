@@ -42,6 +42,11 @@ namespace WolfGamesSite.Controllers
         {
             return new HomeControllerMessages("Thank you from all of us at Wolf Games.").Message;
         }
+
+        public static string DevCorner()
+        {
+            return new HomeControllerMessages("Welcome to Wolf Games' dev corner.").Message;
+        }
     }
 
     public class HomeController : Controller
@@ -79,7 +84,7 @@ namespace WolfGamesSite.Controllers
 
         public ActionResult DevCorner()
         {
-            ViewBag.Message = "Welcome to Wolf Games' dev corner.";
+            ViewBag.Message = HomeControllerMessages.DevCorner();
 
             return View();
         }
