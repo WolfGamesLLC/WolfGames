@@ -12,21 +12,17 @@ namespace WolfGamesSite.Controllers.Tests
     [TestClass()]
     public class HomeControllerMessageTest
     {
-        string message;
-
         [TestMethod()]
         public void HomeControllerMessagesTest()
         {
             string text = "test text";
-            message = new HomeControllerMessages(text).Message;
-            Assert.AreEqual(text, message);
+            Assert.AreEqual(text, new HomeControllerMessages(text).Message);
         }
 
         [TestMethod()]
         public void AboutTest()
         {
-            message = HomeControllerMessages.About();
-            Assert.AreEqual("About Wolf Games.", message);
+            Assert.AreEqual("About Wolf Games.", HomeControllerMessages.About());
         }
     }
 }
