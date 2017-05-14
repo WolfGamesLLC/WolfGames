@@ -37,6 +37,11 @@ namespace WolfGamesSite.Controllers
         {
             return new HomeControllerMessages("~/Views/Shared/Error.cshtml").Message;
         }
+
+        public static string ThankYou()
+        {
+            return new HomeControllerMessages("Thank you from all of us at Wolf Games.").Message;
+        }
     }
 
     public class HomeController : Controller
@@ -67,7 +72,7 @@ namespace WolfGamesSite.Controllers
 
         public ActionResult ThankYou()
         {
-            ViewBag.Message = "Thank you from all of us at Wolf Games.";
+            ViewBag.Message = HomeControllerMessages.ThankYou();
 
             return View();
         }
