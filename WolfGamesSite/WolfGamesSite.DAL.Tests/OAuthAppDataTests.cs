@@ -21,5 +21,32 @@ namespace WolfGamesSite.DAL.Tests
             Assert.AreEqual(id, o.Id);
             Assert.AreEqual(secret, o.Secret);
         }
+
+        [TestMethod()]
+        public void ShouldNotEqualNullObject()
+        {
+            string id = "id";
+            string secret = "secret";
+
+            OAuthAppData l = new OAuthAppData(id, secret);
+            Assert.IsFalse(l.Equals(null));
+        }
+
+        [TestMethod()]
+        public void EqualsTrueTest()
+        {
+            string id = "id";
+            string secret = "secret";
+
+            OAuthAppData l = new OAuthAppData(id, secret);
+            OAuthAppData r = new OAuthAppData(id, secret);
+            Assert.AreEqual(l, r);
+        }
+
+        [TestMethod()]
+        public void GetHashCodeTest()
+        {
+            Assert.Fail();
+        }
     }
 }
