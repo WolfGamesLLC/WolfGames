@@ -46,7 +46,13 @@ namespace WolfGamesSite.DAL.Tests
         [TestMethod()]
         public void GetHashCodeTest()
         {
-            Assert.Fail();
+            string id = "id";
+            string secret = "secret";
+            int hash = id.GetHashCode() + secret.GetHashCode();
+
+            OAuthAppData o = new OAuthAppData(id, secret);
+
+            Assert.AreEqual(hash, o.GetHashCode());
         }
     }
 }

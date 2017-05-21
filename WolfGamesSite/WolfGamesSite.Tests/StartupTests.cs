@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WolfGamesSite;
+using WolfGamesSite.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,9 @@ namespace WolfGamesSite.Tests
         [TestMethod()]
         public void StartupTest()
         {
-            Assert.Fail();
+            OAuthAppData expectedOAuth = new OAuthAppData("130984234045601", "91d4430603418cb03bd86065fc4babeb");
+            Startup startUp = new Startup();
+            Assert.AreEqual(expectedOAuth, startUp.Authorization);
         }
 
         [TestMethod()]
