@@ -86,12 +86,6 @@ namespace WolfGamesSite
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            // Production Settings
-            //app.UseFacebookAuthentication(
-            //   appId: "130984234045601",
-            //   appSecret: "91d4430603418cb03bd86065fc4babeb");
-
-            // Test settings
             app.UseFacebookAuthentication(
                appId: authorization.Id,
                appSecret: authorization.Secret);
