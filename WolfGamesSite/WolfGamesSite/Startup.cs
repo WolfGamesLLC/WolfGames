@@ -9,6 +9,12 @@ namespace WolfGamesSite
     {
         protected OAuthAppData authorization;
 
+        public OAuthAppData Authorization
+        {
+            get { return authorization; }
+//            set { authorization = value; }
+        }
+
         public Startup()
         {
             authorization = new OAuthAppData("130984234045601", "91d4430603418cb03bd86065fc4babeb");

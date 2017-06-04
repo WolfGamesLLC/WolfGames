@@ -21,12 +21,6 @@ namespace WolfGamesSite.Tests
         }
 
         [TestMethod()]
-        public void ConfigurationTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
         public void ConfigureAuthTest()
         {
             Assert.Fail();
