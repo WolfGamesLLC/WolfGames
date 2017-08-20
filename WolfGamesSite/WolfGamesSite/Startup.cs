@@ -1,28 +1,68 @@
-﻿using Microsoft.Owin;
-using Owin;
-using WolfGamesSite.DAL;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using WolfGamesSite.Data;
+using WolfGamesSite.Models;
+using WolfGamesSite.Services;
 
-[assembly: OwinStartupAttribute(typeof(WolfGamesSite.Startup))]
 namespace WolfGamesSite
 {
-    public partial class Startup
+    public class Startup
     {
-        protected OAuthAppData authorization;
-
-        public OAuthAppData Authorization
+        public Startup(IConfiguration configuration)
         {
-            get { return authorization; }
-//            set { authorization = value; }
+            Configuration = configuration;
         }
 
-        public Startup()
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
         {
-            authorization = new OAuthAppData("130984234045601", "91d4430603418cb03bd86065fc4babeb");
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            // Add application services.
+            services.AddTransient<IEmailSender, EmailSender>();
+
+            services.AddMvc();
         }
 
-        public virtual void Configuration(IAppBuilder app)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            ConfigureAuth(app);
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
+                app.UseDatabaseErrorPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
+
+            app.UseStaticFiles();
+
+            app.UseAuthentication();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
