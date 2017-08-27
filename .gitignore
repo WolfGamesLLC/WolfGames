@@ -73,6 +73,7 @@ Temporary Items
 /WolfGamesSite/WolfGamesSite.*/bin
 /WolfGamesSite/WolfGamesSite.*.Tests/bin
 /WolfGamesSite/WolfGamesSite/SimpleGames
+/WolfGamesSite/.vs
 /WolfGamesCoreSite/WolfGamesCoreSite/bin/Debug/net452/win7-x86
 /WolfGamesCoreSite/WolfGamesCoreSite/bin/Debug/net452/win7-x86/WolfGamesCoreSite.exe
 /WolfGamesCoreSite/WolfGamesCoreSite/bin/Debug/net452/win7-x86/System.Threading.Tasks.Extensions.dll
