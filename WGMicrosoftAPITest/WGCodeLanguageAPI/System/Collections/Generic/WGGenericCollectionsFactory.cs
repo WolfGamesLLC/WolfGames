@@ -7,7 +7,7 @@ namespace WGCodeLanguageAPI.System.Collections.Generic
 {
     public class WGGenericCollectionsFactory
     {
-        public IList CreateList<T>()
+        public IList<T> CreateList<T>()
         {
             return new List<T>();
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WGCodeLanguageAPI.System.Collections.Generic;
 
 namespace WGMicrosoftAPITest.Controllers
 {
@@ -11,11 +12,23 @@ namespace WGMicrosoftAPITest.Controllers
     [Route("api/TestList")]
     public class TestListController : Controller
     {
+        private WGGenericCollectionsFactory wGGenericCollectionsFactory;
+
+        public TestListController(WGGenericCollectionsFactory collectionsFactory)
+        {
+            wGGenericCollectionsFactory = collectionsFactory;
+        }
+
         // GET: api/TestList
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            IList<string> data = wGGenericCollectionsFactory.CreateList<string>();
+            data.Add("Key");
+            data.Add("Value");
+
+            return (IEnumerable<string>)data;
+//            return new string[] { "value1", "value2" };
         }
 
         // GET: api/TestList/5
