@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
-using WGCodeLanguageAPI.System.Collections.Generic;
+using WGSystem.Collections.Generic;
 using System.Collections;
 
-namespace WGCodeLanguageXUnitTest.System.Collections.Generic
+namespace WGSystemXUnitTest.Collections.Generic
 {
     public class WGGenericCollectionsFactoryXUnitTestSuite
     {

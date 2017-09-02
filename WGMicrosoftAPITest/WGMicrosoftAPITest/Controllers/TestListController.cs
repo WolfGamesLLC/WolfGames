@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WGCodeLanguageAPI.System.Collections.Generic;
+using WGSystem.Collections.Generic;
 
 namespace WGMicrosoftAPITest.Controllers
 {
