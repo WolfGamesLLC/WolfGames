@@ -4,7 +4,10 @@ using System.Text;
 
 namespace WGSystem.ComponentModel.DataAnnotations
 {
-    class WGAspNetCore2Validation
+    /// <summary>
+    /// Implementation of ASP.Net Core 2.0 model validation 
+    /// </summary>
+    class WGAspNetCore2Validation : IWGValidationImplementation
     {
     }
 }

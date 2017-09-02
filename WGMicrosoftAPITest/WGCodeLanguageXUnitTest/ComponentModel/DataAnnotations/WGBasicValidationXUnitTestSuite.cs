@@ -5,6 +5,9 @@ using Xunit;
 
 namespace WGSystemXUnitTest.ComponentModel.DataAnnotations
 {
+    /// <summary>
+    /// Test suite for the WGBasicValidation implementation of the model validation client interface
+    /// </summary>
     class WGBasicValidationXUnitTestSuite
     {
     }
