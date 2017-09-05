@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WolfGamesSite.Data;
-using WolfGamesSite.Models;
+using WolfGamesSite.DAL.Models;
 using WolfGamesSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;

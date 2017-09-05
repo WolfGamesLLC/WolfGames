@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WolfGamesSite.Models.ManageViewModels
+namespace WolfGamesSite.DAL.Models.ManageViewModels
 {
     public class EnableAuthenticatorViewModel
     {
