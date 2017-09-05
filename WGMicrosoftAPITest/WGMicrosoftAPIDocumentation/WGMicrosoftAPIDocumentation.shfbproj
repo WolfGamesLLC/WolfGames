@@ -93,7 +93,7 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>xcopy /y $(OutDir) $(SolutionDir)\..\WolfGamesSite\WolfGamesSite\Developers\WGLibraries</PostBuildEvent>
+    <PostBuildEvent>if $(Configuration) == Release xcopy /y /e $(OutDir)\Help\* $(SolutionDir)..\WolfGamesSite\WolfGamesSite\Developers\WGLibraries</PostBuildEvent>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 </Project>
