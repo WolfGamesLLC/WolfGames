@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using WolfGamesSite.Models;
 using WolfGamesSite.Models.ManageViewModels;
+using WolfGamesSite.DAL.Models;
 using WolfGamesSite.Services;
 
 namespace WolfGamesSite.Controllers

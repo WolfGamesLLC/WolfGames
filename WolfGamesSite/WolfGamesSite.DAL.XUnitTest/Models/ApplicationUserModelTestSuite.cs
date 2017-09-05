@@ -1,5 +1,5 @@
 using System;
-using WolfGamesSite.Models;
+using WolfGamesSite.DAL.Models;
 using Xunit;
 
 namespace WolfGamesSite.DAL.XUnitTest

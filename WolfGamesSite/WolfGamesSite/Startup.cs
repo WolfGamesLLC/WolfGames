@@ -13,6 +13,7 @@ using WolfGamesSite.Models;
 using WolfGamesSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;
+using WolfGamesSite.DAL.Models;
 
 namespace WolfGamesSite
 {

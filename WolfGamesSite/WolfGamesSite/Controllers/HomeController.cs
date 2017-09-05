@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WolfGamesSite.Models;
+using WolfGamesSite.DAL.Models;
 
 namespace WolfGamesSite.Controllers
 {

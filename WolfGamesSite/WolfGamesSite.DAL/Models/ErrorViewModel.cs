@@ -1,6 +1,6 @@
 using System;
 
-namespace WolfGamesSite.Models
+namespace WolfGamesSite.DAL.Models
 {
     public class ErrorViewModel
     {
