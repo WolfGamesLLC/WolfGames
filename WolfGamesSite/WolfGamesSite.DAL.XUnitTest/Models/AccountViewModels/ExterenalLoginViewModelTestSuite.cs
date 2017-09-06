@@ -5,13 +5,13 @@ using System.Text;
 using WolfGamesSite.DAL.Models.AccountViewModels;
 using Xunit;
 using Xunit.Abstractions;
-using WGCodeLanguageAPI.System.Collections.Generic;
+using WGSystem.Collections.Generic;
 
 namespace WolfGamesSite.DAL.XUnitTest.Models.AccountViewModels
 {
     public class ExterenalLoginViewModelTestSuite
     {
-        private readonly ITestOutputHelper output;
+//        private readonly ITestOutputHelper output;
         public ExternalLoginViewModel externalLoginViewModel { get; set; }
         public WGGenericCollectionsFactory wGGenericCollectionsFactory { get; set; }
 
