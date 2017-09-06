@@ -7,7 +7,7 @@ namespace WGSystem.ComponentModel.DataAnnotations
     /// <summary>
     /// Client side of the bride to model validation objects
     /// </summary>
-    interface IWGValidation
+    public interface IWGValidation
     {
     }
 }

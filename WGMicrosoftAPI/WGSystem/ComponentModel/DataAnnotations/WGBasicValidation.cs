@@ -13,6 +13,17 @@ namespace WGSystem.ComponentModel.DataAnnotations
         /// Implementation associated with this client validation.
         /// Use constructor injection to provide your desired implementation.
         /// </summary>
-        IWGValidationImplementation iWGValidationImplementation { get; set; }
+        IWGValidationImplementation IValidationImplementation { get; set; }
+
+        /// <summary>
+        /// Create an instance of a WGBasicValidation bridge to a third part
+        /// model validation implementation
+        /// </summary>
+        /// <param name="validationImplementation">A concrete implementation of a model validation system</param>
+        public WGBasicValidation(IWGValidationImplementation validationImplementation)
+        {
+            if (validationImplementation == null) throw new ArgumentException();
+            IValidationImplementation = validationImplementation;
+        }
     }
 }

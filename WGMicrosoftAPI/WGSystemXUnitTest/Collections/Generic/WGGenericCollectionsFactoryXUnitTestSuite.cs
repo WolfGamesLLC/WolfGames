@@ -8,6 +8,16 @@ using System.Collections;
 namespace WGSystemXUnitTest.Collections.Generic
 {
     /// <summary>
+    /// The <see cref="WGSystemXUnitTest.Collections.Generic"/> namespace contains classes for 
+    /// testing <see cref="WGSystem.Collections.Generic"/> classes
+    /// </summary>
+
+    [System.Runtime.CompilerServices.CompilerGenerated]
+    class NamespaceDoc
+    {
+    }
+
+    /// <summary>
     /// Test suite for the WGGenericCollectionsFactory 
     /// </summary>
     public class WGGenericCollectionsFactoryXUnitTestSuite

@@ -36,9 +36,12 @@
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
     <SourceCodeBasePath>..\..\WGMicrosoftAPITest\</SourceCodeBasePath>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGMicrosoftAPI.sln" />
-      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystem\WGSystem.csproj" />
-      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystemXUnitTest\WGSystemXUnitTest.csproj" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystem\bin\Release\netcoreapp2.0\WGSystem.dll" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystem\bin\Release\netcoreapp2.0\WGSystem.xml" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystemXUnitTest\bin\Release\netcoreapp2.0\WGSystemXUnitTest.xml" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystemXUnitTest\bin\Release\netcoreapp2.0\WGSystemXUnitTest.dll" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGMicrosoftAPITest\bin\Release\netcoreapp2.0\WGMicrosoftAPITest.dll" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGMicrosoftAPITest\bin\Release\netcoreapp2.0\WGMicrosoftAPITest.xml" />
     </DocumentationSources>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
