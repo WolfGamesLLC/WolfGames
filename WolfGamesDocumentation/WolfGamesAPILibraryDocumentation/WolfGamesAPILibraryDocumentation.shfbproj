@@ -36,9 +36,9 @@
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
     <SourceCodeBasePath>..\..\WGMicrosoftAPITest\</SourceCodeBasePath>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\WGMicrosoftAPITest\WGCodeLanguageAPI\WGSystem.csproj" />
-      <DocumentationSource sourceFile="..\..\WGMicrosoftAPITest\WGCodeLanguageXUnitTest\WGSystemXUnitTest.csproj" />
-      <DocumentationSource sourceFile="..\..\WGMicrosoftAPITest\WGMicrosoftAPITest\WGMicrosoftAPITest.csproj" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGMicrosoftAPI.sln" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystem\WGSystem.csproj" />
+      <DocumentationSource sourceFile="..\..\WGMicrosoftAPI\WGSystemXUnitTest\WGSystemXUnitTest.csproj" />
     </DocumentationSources>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
