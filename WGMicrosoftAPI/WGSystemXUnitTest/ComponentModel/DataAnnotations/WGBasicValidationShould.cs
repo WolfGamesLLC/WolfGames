@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using WGSystem.ComponentModel.DataAnnotations;
+using Moq;
 
 namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
 {
     /// <summary>
     /// Test suite for the <see cref="WGBasicValidation"/> implementation of the model validation client interface
     /// </summary>
-    public class WGBasicValidationShould : IClassFixture<IWGValidationImplementation>
+    public class WGBasicValidationShould
     {
         /// <summary>
         /// Holds the test object
@@ -17,13 +18,13 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         public WGBasicValidation BasicValidation { get; set; }
 
         /// <summary>
-        /// Construct the test suite object and inject an object that implements
+        /// Construct the test suite object and inject a mock object that implements
         /// IWGValidationImplementation
         /// </summary>
-        /// <param name="validationImplementation">The validation implementation to use for testing</param>
-        public WGBasicValidationShould(IWGValidationImplementation validationImplementation)
+        public WGBasicValidationShould()
         {
-            BasicValidation = new WGBasicValidation(validationImplementation);
+            var mock = new Mock<IWGValidationImplementation>();
+            BasicValidation = new WGBasicValidation(mock.Object);
         }
 
         /// <summary>
@@ -31,7 +32,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         /// throws an InvalidTypeException
         /// </summary>
         [Fact]
-        public void ShouldThrowInvalidTypeExceptionWhenConstructedWithNull()
+        public void ThrowInvalidTypeExceptionWhenConstructedWithNull()
         {
             Assert.Throws<ArgumentException>(() => new WGBasicValidation(null));
         }
@@ -40,15 +41,19 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         /// Test that a <see cref="WGBasicValidation"/> object can be created
         /// </summary>
         [Fact]
-        public void ShouldCreateWGBasicValidation()
+        public void CreateWhenPassedAnIWGValidationImplementationObject()
         {
             Assert.NotNull(new WGBasicValidation(new WGAspNetCore2Validation()));
         }
 
+        /// <summary>
+        /// Test that ArgumentNullException is thrown when validation is attempted on a null object
+        /// </summary>
         [Fact]
-        public void ValidationShouldReturnFalseWhenPassedABadModel()
+        public void ReturnFalseWhenPassedNull()
         {
-            Assert.False()
+            Exception ex = Assert.Throws<ArgumentNullException>(() => BasicValidation.TryValidateObject(null));
+            Assert.Equal("The method or operation is not implemented.", ex.Message);
         }
     }
 }

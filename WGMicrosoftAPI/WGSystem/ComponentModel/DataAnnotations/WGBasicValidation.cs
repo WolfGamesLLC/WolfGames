@@ -24,5 +24,14 @@ namespace WGSystem.ComponentModel.DataAnnotations
         {
             IValidationImplementation = validationImplementation ?? throw new ArgumentException();
         }
+
+        /// <summary>
+        /// Pass an object to the concrete implementation of the validation system for validation
+        /// </summary>
+        /// <param name="model">The model to be validated</param>
+        public void TryValidateObject(object model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
