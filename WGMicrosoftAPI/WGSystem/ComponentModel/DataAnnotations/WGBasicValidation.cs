@@ -22,8 +22,7 @@ namespace WGSystem.ComponentModel.DataAnnotations
         /// <param name="validationImplementation">A concrete implementation of a model validation system</param>
         public WGBasicValidation(IWGValidationImplementation validationImplementation)
         {
-            if (validationImplementation == null) throw new ArgumentException();
-            IValidationImplementation = validationImplementation;
+            IValidationImplementation = validationImplementation ?? throw new ArgumentException();
         }
     }
 }

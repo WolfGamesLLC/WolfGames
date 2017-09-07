@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace WGSystemXUnitTest.ComponentModel.DataAnnotations
+namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
 {
     /// <summary>
-    /// The <see cref="WGSystemXUnitTest.ComponentModel.DataAnnotations"/> namespace contains classes for 
+    /// The <see cref="WGSystem.XUnitTest.ComponentModel.DataAnnotations"/> namespace contains classes for 
     /// testing <see cref="WGSystem.ComponentModel.DataAnnotations"/> classes
     /// </summary>
 
@@ -18,7 +18,7 @@ namespace WGSystemXUnitTest.ComponentModel.DataAnnotations
     /// <summary>
     /// Test suite for the WGAspNetCore2Validation implementation of the model validation bridge
     /// </summary>
-    public class WGAspNetCore2ValidationXUnitTestSuite
+    public class WGAspNetCore2ValidationShould
     {
     }
 }

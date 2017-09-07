@@ -5,10 +5,10 @@ using Xunit;
 using WGSystem.Collections.Generic;
 using System.Collections;
 
-namespace WGSystemXUnitTest.Collections.Generic
+namespace WGSystem.XUnitTest.Collections.Generic
 {
     /// <summary>
-    /// The <see cref="WGSystemXUnitTest.Collections.Generic"/> namespace contains classes for 
+    /// The <see cref="WGSystem.XUnitTest.Collections.Generic"/> namespace contains classes for 
     /// testing <see cref="WGSystem.Collections.Generic"/> classes
     /// </summary>
 
@@ -20,7 +20,7 @@ namespace WGSystemXUnitTest.Collections.Generic
     /// <summary>
     /// Test suite for the WGGenericCollectionsFactory 
     /// </summary>
-    public class WGGenericCollectionsFactoryXUnitTestSuite
+    public class WGGenericCollectionsFactoryShould
     {
         /// <summary>
         /// Should create an instance of the WGGenericCollectionsFactory class
