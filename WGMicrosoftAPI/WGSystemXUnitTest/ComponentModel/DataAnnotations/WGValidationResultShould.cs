@@ -34,7 +34,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         /// Test that the object is created when passed a string
         /// </summary>
         [Fact]
-        public void CreateWithStringArgument()
+        public void CreateWithOnlyErrorMessageStringArgument()
         {
             Assert.NotNull(new WGValidationResult(ERROR_MESSAGE));
         }
@@ -75,6 +75,33 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
             string errorMessage = "New Error Message";
             Result.ErrorMessage = errorMessage;
             Assert.Equal(errorMessage, Result.ErrorMessage);
+        }
+
+        /// <summary>
+        /// Test the equal operation with the same object
+        /// </summary>
+        [Fact]
+        public void ReturnEqualWithSameObject()
+        {
+            Assert.Equal(Result, Result);
+        }
+
+        /// <summary>
+        /// Test the equal operation with different objects
+        /// </summary>
+        [Fact]
+        public void ReturnEqualWithDifferentObjectsWithSameValues()
+        {
+            Assert.Equal(Result, new WGValidationResult(ERROR_MESSAGE));
+        }
+
+        /// <summary>
+        /// Test the equal operation with different unequal objects
+        /// </summary>
+        [Fact]
+        public void ReturnNotEqualWithDifferentObjectsOfDifferentValues()
+        {
+            Assert.NotEqual(Result, new WGValidationResult("Hello World"));
         }
     }
 }

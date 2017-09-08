@@ -49,7 +49,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void CreateWhenPassedAnIWGValidationImplementationObject()
         {
-            Assert.NotNull(new WGBasicValidation(new WGAspNetCore2Validation()));
+            Assert.NotNull(new WGBasicValidation(new Mock<IWGValidationImplementation>().Object));
         }
 
         /// <summary>
