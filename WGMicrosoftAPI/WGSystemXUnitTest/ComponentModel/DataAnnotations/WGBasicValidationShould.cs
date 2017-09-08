@@ -18,13 +18,18 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         public WGBasicValidation BasicValidation { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public Mock<IWGValidationImplementation> MockImplementation { get; set; }
+
+        /// <summary>
         /// Construct the test suite object and inject a mock object that implements
         /// IWGValidationImplementation
         /// </summary>
         public WGBasicValidationShould()
         {
-            var mock = new Mock<IWGValidationImplementation>();
-            BasicValidation = new WGBasicValidation(mock.Object);
+            MockImplementation = new Mock<IWGValidationImplementation>();
+            BasicValidation = new WGBasicValidation(MockImplementation.Object);
         }
 
         /// <summary>
@@ -50,10 +55,34 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         /// Test that ArgumentNullException is thrown when validation is attempted on a null object
         /// </summary>
         [Fact]
-        public void ReturnFalseWhenPassedNull()
+        public void ThrowArgumentNullExceptionFromTryValidateObject()
         {
             Exception ex = Assert.Throws<ArgumentNullException>(() => BasicValidation.TryValidateObject(null));
-            Assert.Equal("The method or operation is not implemented.", ex.Message);
+            Assert.Equal("Value cannot be null.", ex.Message);
+        }
+
+        /// <summary>
+        /// Test to verify that the object is passed to the implementation's TryValidatObject
+        /// </summary>
+        [Fact]
+        public void PassObjectToImplementation()
+        {
+            object model = new object();
+            MockImplementation.Setup(val => val.TryValidateObject(model))
+                .Returns(true);
+            Assert.True(BasicValidation.TryValidateObject(model));
+        }
+
+        /// <summary>
+        /// Test to verify that the results can be retrieved from an implementation
+        /// </summary>
+        [Fact]
+        public void GetResultsFromImplementation()
+        {
+            object model = new object();
+            MockImplementation.Setup(val => val.Result)
+                .Returns(new ValidationResult());
+            Assert.True(BasicValidation.TryValidateObject(model));
         }
     }
 }

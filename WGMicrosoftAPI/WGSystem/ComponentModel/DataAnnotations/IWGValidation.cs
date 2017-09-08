@@ -9,5 +9,11 @@ namespace WGSystem.ComponentModel.DataAnnotations
     /// </summary>
     public interface IWGValidation
     {
+        /// <summary>
+        /// Pass an object to the concrete implementation of the validation system for validation
+        /// </summary>
+        /// <param name="model">The model to be validated</param>
+        /// <returns>True if the object is valid</returns>
+        bool TryValidateObject(object model);
     }
 }

@@ -54,6 +54,13 @@ namespace MockTestSuite
             /// </summary>
             /// <returns>an integer</returns>
             int TestReturn();
+
+            /// <summary>
+            /// Function that takes arguments mocked during testing
+            /// </summary>
+            /// <param name="arg">A String object argument</param>
+            /// <returns>A String object</returns>
+            String TestFunction(String arg);
         }
 
         /// <summary>
@@ -129,6 +136,34 @@ namespace MockTestSuite
             MockTestMock.SetupSet(testMock => testMock.TestProperty = 5);
 
             Assert.Equal(5, MockTestMock.Object.TestProperty);
+        }
+
+        /// <summary>
+        /// Test a function called with incorrect arguments
+        /// </summary>
+        [Fact]
+        public void NotReturnExpectedWhenArgumentNotMatched()
+        {
+            String str = "IfMatch";
+            var mock = new Mock<ITestMock>();
+            MockTestMock.Setup(testMock => testMock.TestFunction(str))
+                .Returns(str);
+
+            Assert.NotEqual(str, MockTestMock.Object.TestFunction(""));
+        }
+
+        /// <summary>
+        /// Test a function called with correct arguments
+        /// </summary>
+        [Fact]
+        public void ReturnExpectedWhenArgumentMatched()
+        {
+            String str = "IfMatch";
+            var mock = new Mock<ITestMock>();
+            MockTestMock.Setup(testMock => testMock.TestFunction(str))
+                .Returns(str);
+
+            Assert.Equal(str, MockTestMock.Object.TestFunction(str));
         }
     }
 }
