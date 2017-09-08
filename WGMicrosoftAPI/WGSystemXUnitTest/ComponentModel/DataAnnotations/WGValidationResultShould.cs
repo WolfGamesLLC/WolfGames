@@ -18,6 +18,19 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         private readonly string ERROR_MESSAGE = "Error Message";
 
         /// <summary>
+        /// The test object
+        /// </summary>
+        private IWGValidationResult Result;
+
+        /// <summary>
+        /// Construct the default test object
+        /// </summary>
+        public WGValidationResultShould()
+        {
+            Result = new WGValidationResult(ERROR_MESSAGE);
+        }
+
+        /// <summary>
         /// Test that the object is created when passed a string
         /// </summary>
         [Fact]
@@ -27,12 +40,41 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         }
 
         /// <summary>
-        /// Test that ArgumentNullException is thrown when the object is created with null
+        /// Test that the object is created with null
         /// </summary>
         [Fact]
-        public void ThrowArgumentNullExceptionWhenCreatedWithNull()
+        public void CreateWithNull()
         {
-            Assert.Throws<ArgumentNullException>(() => new WGValidationResult(null));
+            Assert.NotNull(new WGValidationResult(null));
+        }
+
+        /// <summary>
+        /// Test that the object error message is null when created with null
+        /// </summary>
+        [Fact]
+        public void CreateSetErrorMessageNull()
+        {
+            Assert.Null(new WGValidationResult(null).ErrorMessage);
+        }
+
+        /// <summary>
+        /// Test the ErrorMessage get property
+        /// </summary>
+        [Fact]
+        public void ReturnErrorMessage()
+        {
+            Assert.Equal(ERROR_MESSAGE, Result.ErrorMessage);
+        }
+
+        /// <summary>
+        /// Test the ErrorMessage set property
+        /// </summary>
+        [Fact]
+        public void SetErrorMessage()
+        {
+            string errorMessage = "New Error Message";
+            Result.ErrorMessage = errorMessage;
+            Assert.Equal(errorMessage, Result.ErrorMessage);
         }
     }
 }

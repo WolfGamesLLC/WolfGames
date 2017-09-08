@@ -18,7 +18,7 @@ namespace WGSystem.ComponentModel.DataAnnotations
         /// </summary>
         public WGValidationResult(string errorMessage)
         {
-            ErrorMessage = errorMessage ?? throw new ArgumentNullException();
+            ErrorMessage = errorMessage;
         }
     }
 }
