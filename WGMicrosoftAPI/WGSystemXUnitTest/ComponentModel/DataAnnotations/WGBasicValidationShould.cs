@@ -82,7 +82,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         {
             object model = new object();
             List<IWGValidationResult> result = new List<IWGValidationResult>();
-            result.Add(new WGValidationResult());
+            result.Add(new WGValidationResult("Error message"));
 
             MockImplementation.Setup(val => val.Result)
                 .Returns(result);
