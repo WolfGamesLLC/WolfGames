@@ -86,7 +86,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
 
             MockImplementation.Setup(val => val.Result)
                 .Returns(result);
-            Assert.Equal(result, BasicValidation.Result());
+            Assert.Equal(result, BasicValidation.Result);
         }
     }
 }

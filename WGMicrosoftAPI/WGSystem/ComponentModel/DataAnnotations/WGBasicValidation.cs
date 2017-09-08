@@ -41,9 +41,6 @@ namespace WGSystem.ComponentModel.DataAnnotations
         /// Return an enumerable list of results
         /// </summary>
         /// <returns>list of results</returns>
-        public IEnumerable<IWGValidationResult> Result()
-        {
-            return IValidationImplementation.Result;
-        }
+        public IEnumerable<IWGValidationResult> Result { get { return IValidationImplementation.Result; } }
     }
 }
