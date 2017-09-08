@@ -13,7 +13,7 @@ namespace WGSystem.ComponentModel.DataAnnotations
         /// <summary>
         /// Return the results of the Validator.TryValidateObject call
         /// </summary>
-        public IList<ValidationResult> Result { get => throw new NotImplementedException(); }
+        public IEnumerable<IWGValidationResult> Result { get => throw new NotImplementedException(); }
 
         /// <summary>
         /// Setup and call Validator.TryValidateObject

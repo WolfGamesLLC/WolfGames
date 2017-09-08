@@ -15,5 +15,11 @@ namespace WGSystem.ComponentModel.DataAnnotations
         /// <param name="model">The model to be validated</param>
         /// <returns>True if the object is valid</returns>
         bool TryValidateObject(object model);
+
+        /// <summary>
+        /// Return an enumerable list of results
+        /// </summary>
+        /// <returns>list of results</returns>
+        IEnumerable<IWGValidationResult> Result();
     }
 }

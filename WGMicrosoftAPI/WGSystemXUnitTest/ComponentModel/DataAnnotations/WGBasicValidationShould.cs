@@ -4,6 +4,7 @@ using System.Text;
 using Xunit;
 using WGSystem.ComponentModel.DataAnnotations;
 using Moq;
+using System.ComponentModel.DataAnnotations;
 
 namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
 {
@@ -80,9 +81,12 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         public void GetResultsFromImplementation()
         {
             object model = new object();
+            List<IWGValidationResult> result = new List<IWGValidationResult>();
+            result.Add(new WGValidationResult());
+
             MockImplementation.Setup(val => val.Result)
-                .Returns(new ValidationResult());
-            Assert.True(BasicValidation.TryValidateObject(model));
+                .Returns(result);
+            Assert.Equal(result, BasicValidation.Result());
         }
     }
 }

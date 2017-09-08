@@ -20,6 +20,6 @@ namespace WGSystem.ComponentModel.DataAnnotations
         /// <summary>
         /// Return the results of a failed validation
         /// </summary>
-        IList<IWGValidationResult> Result { get; }
+        IEnumerable<IWGValidationResult> Result { get; }
     }
 }

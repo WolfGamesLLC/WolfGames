@@ -36,5 +36,14 @@ namespace WGSystem.ComponentModel.DataAnnotations
 
             return IValidationImplementation.TryValidateObject(model);
         }
+
+        /// <summary>
+        /// Return an enumerable list of results
+        /// </summary>
+        /// <returns>list of results</returns>
+        public IEnumerable<IWGValidationResult> Result()
+        {
+            return IValidationImplementation.Result;
+        }
     }
 }
