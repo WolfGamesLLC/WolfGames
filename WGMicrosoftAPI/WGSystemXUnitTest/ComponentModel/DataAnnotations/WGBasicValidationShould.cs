@@ -40,7 +40,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void ThrowInvalidTypeExceptionWhenConstructedWithNull()
         {
-            Assert.Throws<ArgumentException>(() => new WGBasicValidation(null));
+            Assert.Throws<ArgumentNullException>(() => new WGBasicValidation(null));
         }
 
         /// <summary>
@@ -58,8 +58,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void ThrowArgumentNullExceptionFromTryValidateObject()
         {
-            Exception ex = Assert.Throws<ArgumentNullException>(() => BasicValidation.TryValidateObject(null));
-            Assert.Equal("Value cannot be null.", ex.Message);
+            Assert.Throws<ArgumentNullException>(() => BasicValidation.TryValidateObject(null));
         }
 
         /// <summary>
