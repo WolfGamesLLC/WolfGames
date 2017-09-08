@@ -21,19 +21,23 @@ namespace MockTestSuite
     /// </summary>
     public class MockShould
     {
-        public Mock<TestMock> MockTestMock { get; set; }
+        /// <summary>
+        /// Instance of the ITestMock interface used in all tests
+        /// </summary>
+        public Mock<ITestMock> MockTestMock { get; set; }
+
         /// <summary>
         /// test creating mock in the test fixture
         /// </summary>
         public MockShould()
         {
-           MockTestMock = new Mock<TestMock>();
+           MockTestMock = new Mock<ITestMock>();
         }
 
         /// <summary>
         /// Interfaces mocked in all tests
         /// </summary>
-        public interface TestMock
+        public interface ITestMock
         {
             /// <summary>
             /// Associated class to mock
@@ -86,7 +90,8 @@ namespace MockTestSuite
         /// </summary>
         [Fact]
         public void SetFunctionToReturn5()
-        {     var mock = new Mock<TestMock>();
+        {
+            var mock = new Mock<ITestMock>();
             MockTestMock.Setup(testMock => testMock.TestReturn())
                 .Returns(5);
 

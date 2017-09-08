@@ -23,6 +23,9 @@ namespace XUnitTestSuite
     /// </summary>
     public class Fixture
     {
+        /// <summary>
+        /// Method used to test DI of a test fixture
+        /// </summary>
         public void Method()
         {
             Assert.True(true);
