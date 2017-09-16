@@ -72,25 +72,5 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
             Assert.Equal(expectedNames, res.MemberNames);
             Assert.Equal(expectedSuccess, res.Success);
         }
-
-        /// <summary>
-        /// Test copy of a validation result 
-        /// </summary>
-        [Fact]
-        public void CopyWGValidationResult()
-        {
-            string expectedString = "Expected Text";
-            IList<string> expectedNames = CollectionFactory.CreateList<string>();
-            expectedNames.Add(expectedString);
-            bool expectedSuccess = true;
-
-            var res = ComponentFactory.CreateValidationResult(expectedString, expectedNames, expectedSuccess);
-            res = ComponentFactory.CopyValidationResult(res);
-
-            Assert.IsAssignableFrom<IWGValidationResult>(res);
-            Assert.Equal(expectedString, res.ErrorMessage);
-            Assert.Equal(expectedNames, res.MemberNames);
-            Assert.Equal(expectedSuccess, res.Success);
-        }
     }
 }

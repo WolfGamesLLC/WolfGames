@@ -37,9 +37,5 @@ namespace WGSystem.ComponentModel.DataAnnotations
             return new WGValidationResult(errorMessage, memberNames, success);
         }
 
-        public IWGValidationResult CopyValidationResult(IWGValidationResult res)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
