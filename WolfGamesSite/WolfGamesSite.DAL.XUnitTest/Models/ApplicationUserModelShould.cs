@@ -4,7 +4,7 @@ using Xunit;
 
 namespace WolfGamesSite.DAL.XUnitTest
 {
-    public class ApplicationUserModelTestSuite
+    public class ApplicationUserModelShould
     {
         [Fact]
         public void ShouldCreateAnApplicationUser()

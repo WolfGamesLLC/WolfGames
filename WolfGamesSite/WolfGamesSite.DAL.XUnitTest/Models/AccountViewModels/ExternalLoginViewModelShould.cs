@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+using WolfGamesSite.DAL.Models.AccountViewModels;
+using Xunit;
+using Xunit.Abstractions;
+using WGSystem.Collections.Generic;
+using WGSystem.ComponentModel.DataAnnotations;
+
+namespace WolfGamesSite.DAL.XUnitTest.Models.AccountViewModels
+{
+    /// <summary>
+    /// Test suite for the ExternalLoginViewModel
+    /// </summary>
+    public class ExternalLoginViewModelShould
+    {
+//        private readonly ITestOutputHelper output;
+
+        /// <summary>
+        /// Holds the test object
+        /// </summary>
+        public ExternalLoginViewModel LoginViewModel { get; set; }
+
+        /// <summary>
+        /// Holds the generi collections factory
+        /// </summary>
+        public WGGenericCollectionsFactory CollectionsFactory { get; set; }
+
+        /// <summary>
+        /// Initialize the test environment
+        /// </summary>
+        public ExternalLoginViewModelShould()
+        {
+            LoginViewModel = new ExternalLoginViewModel();
+            CollectionsFactory = new WGGenericCollectionsFactory();
+        }
+
+        /// <summary>
+        /// Create a default object
+        /// </summary>
+        [Fact]
+        public void CreateAnExternalLoginViewModel()
+        {
+            Assert.NotNull(new ExternalLoginViewModel());
+        }
+
+        /// <summary>
+        /// Set the Email property
+        /// </summary>
+        [Fact]
+        public void SetEmail()
+        {
+            string expectedEmail = "some@email.com";
+            LoginViewModel = new ExternalLoginViewModel() { Email = expectedEmail };
+            Assert.Equal(expectedEmail, LoginViewModel.Email);
+        }
+
+        /// <summary>
+        /// Test that a missing email fails validation
+        /// This is an integration test
+        /// </summary>
+        [Fact]
+        public void FailValidationIfEmailIsEmpty()
+        {
+            LoginViewModel = new ExternalLoginViewModel();
+            IWGValidation basicValidation = new WGBasicValidation(new WGAspNetCore2Validation(CollectionsFactory));
+            Assert.False(basicValidation.TryValidateObject(LoginViewModel));
+            IList<IWGValidationResult> validationResults = (IList<IWGValidationResult>)basicValidation.Result;
+            Assert.Equal(1, validationResults.Count);
+            Assert.Equal("The Email field is required.", validationResults[0].ErrorMessage);
+            Assert.Equal("Email", validationResults[0].MemberNames[0]);
+            Assert.Equal(false, validationResults[0].Success);
+        }
+    }
+}

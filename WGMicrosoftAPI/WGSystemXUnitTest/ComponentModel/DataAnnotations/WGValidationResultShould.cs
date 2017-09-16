@@ -117,7 +117,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void ReturnNotEqualWithDifferentMemberNames()
         {
-            var expectedResult = wgValidationResultUnderTest;
+            var expectedResult = wgValidationResultUnderTest.Clone();
             var list = CollectionsFactory.CreateList<string>();
             list.Add("name");
 
@@ -131,8 +131,8 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void ReturnNotEqualWithDifferentSuccessValues()
         {
-            var expectedResult = wgValidationResultUnderTest;
-            expectedResult.Success = false;
+            var expectedResult = wgValidationResultUnderTest.Clone();
+            expectedResult.Success = true;
             Assert.NotEqual(expectedResult, wgValidationResultUnderTest);
         }
 

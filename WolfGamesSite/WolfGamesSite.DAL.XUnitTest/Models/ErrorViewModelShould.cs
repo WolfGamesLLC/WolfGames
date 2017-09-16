@@ -6,11 +6,11 @@ using Xunit;
 
 namespace WolfGamesSite.DAL.XUnitTest.Models
 {
-    public class ErrorViewModelTestSuite
+    public class ErrorViewModelShould
     {
         public ErrorViewModel errorViewModel { get; set; }
 
-        public ErrorViewModelTestSuite()
+        public ErrorViewModelShould()
         {
             errorViewModel = new ErrorViewModel();
         }
