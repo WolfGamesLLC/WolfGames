@@ -8,5 +8,7 @@ namespace WGSystem.ComponentModel.DataAnnotations
     public interface IWGValidationResult
     {
         string ErrorMessage { get; set; }
+        IEnumerable<string> MemberNames { get; set; }
+        bool Success { get; set; }
     }
 }

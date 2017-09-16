@@ -17,9 +17,9 @@ namespace WGSystem.ComponentModel.DataAnnotations
         bool TryValidateObject(object model);
 
         /// <summary>
-        /// Return an enumerable list of results
+        /// Return a collection of results
         /// </summary>
         /// <returns>list of results</returns>
-        IEnumerable<IWGValidationResult> Result { get;  }
+        ICollection<IWGValidationResult> Result { get;  }
     }
 }

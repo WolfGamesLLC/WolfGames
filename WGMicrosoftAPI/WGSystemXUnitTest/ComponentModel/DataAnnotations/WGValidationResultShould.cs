@@ -4,6 +4,7 @@ using System.Text;
 using Xunit;
 using Moq;
 using WGSystem.ComponentModel.DataAnnotations;
+using WGSystem.Collections.Generic;
 
 namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
 {
@@ -20,14 +21,20 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         /// <summary>
         /// The test object
         /// </summary>
-        private IWGValidationResult Result;
+        private WGValidationResult wgValidationResultUnderTest;
+
+        /// <summary>
+        /// Collections factory for access to Generic collections
+        /// </summary>
+        public WGGenericCollectionsFactory CollectionsFactory { get; set; }
 
         /// <summary>
         /// Construct the default test object
         /// </summary>
         public WGValidationResultShould()
         {
-            Result = new WGValidationResult(ERROR_MESSAGE);
+            wgValidationResultUnderTest = new WGValidationResult(ERROR_MESSAGE);
+            CollectionsFactory = new WGGenericCollectionsFactory();
         }
 
         /// <summary>
@@ -63,7 +70,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void ReturnErrorMessage()
         {
-            Assert.Equal(ERROR_MESSAGE, Result.ErrorMessage);
+            Assert.Equal(ERROR_MESSAGE, wgValidationResultUnderTest.ErrorMessage);
         }
 
         /// <summary>
@@ -73,8 +80,8 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         public void SetErrorMessage()
         {
             string errorMessage = "New Error Message";
-            Result.ErrorMessage = errorMessage;
-            Assert.Equal(errorMessage, Result.ErrorMessage);
+            wgValidationResultUnderTest.ErrorMessage = errorMessage;
+            Assert.Equal(errorMessage, wgValidationResultUnderTest.ErrorMessage);
         }
 
         /// <summary>
@@ -83,7 +90,7 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void ReturnEqualWithSameObject()
         {
-            Assert.Equal(Result, Result);
+            Assert.Equal(wgValidationResultUnderTest, wgValidationResultUnderTest);
         }
 
         /// <summary>
@@ -92,16 +99,70 @@ namespace WGSystem.XUnitTest.ComponentModel.DataAnnotations
         [Fact]
         public void ReturnEqualWithDifferentObjectsWithSameValues()
         {
-            Assert.Equal(Result, new WGValidationResult(ERROR_MESSAGE));
+            Assert.Equal(wgValidationResultUnderTest, new WGValidationResult(ERROR_MESSAGE));
         }
 
         /// <summary>
-        /// Test the equal operation with different unequal objects
+        /// Test the equal operation with different error messages
         /// </summary>
         [Fact]
-        public void ReturnNotEqualWithDifferentObjectsOfDifferentValues()
+        public void ReturnNotEqualWithDifferentErrorMessageValues()
         {
-            Assert.NotEqual(Result, new WGValidationResult("Hello World"));
+            Assert.NotEqual(wgValidationResultUnderTest, new WGValidationResult("Hello World"));
+        }
+
+        /// <summary>
+        /// Test the equal operation with different member names
+        /// </summary>
+        [Fact]
+        public void ReturnNotEqualWithDifferentMemberNames()
+        {
+            var expectedResult = wgValidationResultUnderTest;
+            var list = CollectionsFactory.CreateList<string>();
+            list.Add("name");
+
+            expectedResult.MemberNames = list;
+            Assert.NotEqual(expectedResult, wgValidationResultUnderTest);
+        }
+
+        /// <summary>
+        /// Test the equal operation with different Success
+        /// </summary>
+        [Fact]
+        public void ReturnNotEqualWithDifferentSuccessValues()
+        {
+            var expectedResult = wgValidationResultUnderTest;
+            expectedResult.Success = false;
+            Assert.NotEqual(expectedResult, wgValidationResultUnderTest);
+        }
+
+        /// <summary>
+        /// Test the MemberNames property
+        /// </summary>
+        [Fact]
+        public void SetMemberNamesProperty()
+        {
+            IList<string> memberNames = CollectionsFactory.CreateList<string>();
+            memberNames.Add("New member name");
+            wgValidationResultUnderTest.MemberNames = memberNames;
+            Assert.Equal(memberNames, wgValidationResultUnderTest.MemberNames);
+        }
+
+        /// <summary>
+        /// Test the Success property
+        /// </summary>
+        [Fact]
+        public void SetSuccessProperty()
+        {
+            bool success = true;
+            wgValidationResultUnderTest.Success = success;
+            Assert.Equal(success, wgValidationResultUnderTest.Success);
+        }
+
+        [Fact]
+        public void CreateClone()
+        {
+            Assert.NotSame(wgValidationResultUnderTest, wgValidationResultUnderTest.Clone());
         }
     }
 }
