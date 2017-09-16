@@ -36,6 +36,5 @@ namespace WGSystem.ComponentModel.DataAnnotations
         {
             return new WGValidationResult(errorMessage, memberNames, success);
         }
-
     }
 }

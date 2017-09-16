@@ -63,13 +63,18 @@ namespace WolfGamesSite.DAL.XUnitTest.Models.AccountViewModels
         [Fact]
         public void FailValidationIfEmailIsEmpty()
         {
-            LoginViewModel = new ExternalLoginViewModel();
+            // arrange
             IWGValidation basicValidation = new WGBasicValidation(new WGAspNetCore2Validation(CollectionsFactory));
-            Assert.False(basicValidation.TryValidateObject(LoginViewModel));
             IList<IWGValidationResult> validationResults = (IList<IWGValidationResult>)basicValidation.Result;
+            LoginViewModel = new ExternalLoginViewModel();
+
+            // apply
+            Assert.False(basicValidation.TryValidateObject(LoginViewModel));
+
+            // assert
             Assert.Equal(1, validationResults.Count);
             Assert.Equal("The Email field is required.", validationResults[0].ErrorMessage);
-            Assert.Equal("Email", validationResults[0].MemberNames[0]);
+            Assert.Null(validationResults[0].MemberNames);
             Assert.Equal(false, validationResults[0].Success);
         }
     }
