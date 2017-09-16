@@ -1,15 +1,19 @@
 using System;
 using Xunit;
 using WolfGamesSite;
+using Moq;
+using WolfGamesSite.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WolfGamesSite.XUnitTest
 {
-    public class HomeControllerTestSuite
+    public class HomeControllerShould
     {
         [Fact]
-        public void ShouldCreateHomeController()
+        public void IndexReturnsViewResult()
         {
-            Assert.False(true);
+            var result = new HomeController().Index();
+            Assert.IsType<ViewResult>(result);
         }
     }
 }
