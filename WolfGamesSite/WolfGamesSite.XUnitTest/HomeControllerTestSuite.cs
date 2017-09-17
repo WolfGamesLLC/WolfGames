@@ -15,5 +15,12 @@ namespace WolfGamesSite.XUnitTest
             var result = new HomeController().Index();
             Assert.IsType<ViewResult>(result);
         }
+
+        [Fact]
+        public void DevCornerReturnsViewResult()
+        {
+            var result = new HomeController().DevCorner();
+            Assert.IsType<ViewResult>(result);
+        }
     }
 }

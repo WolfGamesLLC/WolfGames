@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using WolfGamesSite.DAL.Models;
 
@@ -22,6 +23,11 @@ namespace WolfGamesSite.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+
+        public object DevCorner()
+        {
             return View();
         }
 
