@@ -10,6 +10,15 @@ using Microsoft.Extensions.Logging;
 
 namespace WGMicrosoftAPITest
 {
+    /// <summary>
+    /// The <see cref="WGMicrosoftAPITest"/> namespace contains classes for 
+    /// an application used for testing <see cref="WGSystem"/> classes
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGenerated]
+    class NamespaceDoc
+    {
+    }
+
     public class Program
     {
         public static void Main(string[] args)

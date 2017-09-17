@@ -13,7 +13,7 @@
     <RootNamespace>WolfGamesSiteDocumentation</RootNamespace>
     <Name>WolfGamesSiteDocumentation</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.6.1</FrameworkVersion>
     <OutputPath>Help\</OutputPath>
     <HtmlHelpName>WolfGamesSiteDocumentation</HtmlHelpName>
     <Language>en-US</Language>
@@ -27,7 +27,8 @@
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\WolfGamesSite\WolfGamesSite.sln" xmlns="" />
+      <DocumentationSource sourceFile="..\..\WolfGamesSite\WolfGamesSite.sln" />
+      <DocumentationSource sourceFile="..\..\WolfGamesSite\WolfGamesSite\WolfGamesSite.csproj" />
     </DocumentationSources>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>

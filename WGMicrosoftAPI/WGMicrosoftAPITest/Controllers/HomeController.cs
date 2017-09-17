@@ -8,6 +8,15 @@ using WGMicrosoftAPITest.Models;
 
 namespace WGMicrosoftAPITest.Controllers
 {
+    /// <summary>
+    /// The <see cref="WGMicrosoftAPITest.Controllers"/> namespace contains controller classes for 
+    /// the application used for testing <see cref="WGSystem"/> classes
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGenerated]
+    class NamespaceDoc
+    {
+    }
+
     public class HomeController : Controller
     {
         public IActionResult Index()

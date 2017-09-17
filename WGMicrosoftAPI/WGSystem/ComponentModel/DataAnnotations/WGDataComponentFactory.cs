@@ -4,6 +4,15 @@ using System.Collections.Generic;
 namespace WGSystem.ComponentModel.DataAnnotations
 {
     /// <summary>
+    /// The <see cref="WGSystem.ComponentModel.DataAnnotations"/> namespace contains  
+    /// class that implement my seam to the C# classes
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGenerated]
+    class NamespaceDoc
+    {
+    }
+
+    /// <summary>
     /// Abstract factory for creation of data annotation components
     /// </summary>
     public class WGDataComponentFactory
