@@ -11,15 +11,6 @@ using Microsoft.Extensions.Logging;
 namespace WolfGamesSite
 {
     /// <summary>
-    /// The <see cref="WolfGamesSite"/> namespace contains the classes for 
-    /// startup of the Wolf Games site
-    /// </summary>
-    [System.Runtime.CompilerServices.CompilerGenerated]
-    class NamespaceDoc
-    {
-    }
-
-    /// <summary>
     /// The main program class of the Wolf Games site - created by the MS template
     /// </summary>
     public class Program
