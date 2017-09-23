@@ -111,7 +111,7 @@ namespace WolfGamesSite.Controllers
         /// <returns>The contact page view</returns>
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = HomeControllerMessages.Contact();
 
             return View();
         }

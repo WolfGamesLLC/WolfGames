@@ -115,5 +115,16 @@ namespace WolfGamesSite.XUnitTest
             Assert.IsType<ViewResult>(Result);
             Assert.Equal(HomeControllerMessages.About(), Result.ViewData["Message"]);
         }
+
+        /// <summary>
+        /// The contact action returns a ViewResult
+        /// </summary>
+        [Fact]
+        public void ContactReturnsViewResultWithAboutMessage()
+        {
+            Result = Controller.Contact() as ViewResult;
+            Assert.IsType<ViewResult>(Result);
+            Assert.Equal(HomeControllerMessages.Contact(), Result.ViewData["Message"]);
+        }
     }
 }
