@@ -82,7 +82,6 @@ namespace WolfGamesSite.XUnitTest
         public HomeControllerShould()
         {
             Controller = new HomeController();
-            ViewResult Result;
         }
 
         /// <summary>
