@@ -7,7 +7,7 @@ namespace WolfGamesSite.DAL.Models.SimpleGameModels
     /// <summary>
     /// Base model for the Marble Motion game
     /// </summary>
-    public class MarbleMotionModel
+    public class MarbleMotion
     {
         /// <summary>
         /// Database generated record key for this table

@@ -1,23 +1,21 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using WolfGamesSite.DAL.Models;
+using System.Text;
+using WolfGamesSite.DAL.Models.SimpleGameModels;
 
-namespace WolfGamesSite.Data
+namespace WolfGamesSite.DAL.Data
 {
     /// <summary>
-    /// The WG site DB context
+    /// DB context for the Marble Motion game
     /// </summary>
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class MarbleMotionDBContext : DbContext
     {
         /// <summary>
-        /// The default constructor for the WG site DB context
+        /// The default constructor for the Marble Motion game DB context
         /// </summary>
         /// <param name="options">The context options to use when construction the context</param>
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public MarbleMotionDBContext(DbContextOptions<MarbleMotionDBContext> options)
             : base(options)
         {
         }
@@ -33,5 +31,10 @@ namespace WolfGamesSite.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        /// <summary>
+        /// The base DB set of the Marble Motion game
+        /// </summary>
+        public DbSet<MarbleMotion> MarbleMotionRecords { get; set; }
     }
 }

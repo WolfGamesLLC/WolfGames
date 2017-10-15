@@ -77,7 +77,7 @@ namespace WolfGamesSite.XUnitTest
         ViewResult Result;
 
         /// <summary>
-        /// The test initializer for the home controller test suite
+        /// The test initializer for the suite
         /// </summary>
         public HomeControllerShould()
         {
