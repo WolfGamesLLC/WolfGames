@@ -56,12 +56,20 @@ namespace WolfGamesSite.API.Controllers
         /// <summary>
         /// The basic create operation
         /// </summary>
-        /// <param name="value">the record to create</param>
+        /// <param name="marble">the record to create</param>
         // POST api/MarbleMotion
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Create([FromBody]MarbleMotion marble)
         {
-            var a = 1;
+            if (marble == null)
+            {
+                return BadRequest();
+            }
+
+            _context.MarbleMotionRecords.Add(marble);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("Get", new { id = marble.Id }, marble);
         }
 
         /// <summary>

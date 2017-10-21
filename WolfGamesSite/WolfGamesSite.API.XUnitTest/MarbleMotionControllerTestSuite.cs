@@ -71,8 +71,9 @@ namespace WolfGamesSite.API.XUnitTest
         [Fact]
         public void PostCreatesMarbleMotionRecord()
         {
-            _controller.Post("wtf");
-            Assert.True(_context.MarbleMotionRecords.Any(x => x == new MarbleMotion { Score = 1 } ));
+            var newMarble = new MarbleMotion { Id = 2, Score = 10, XPosition = 20, ZPosition = 30 };
+            _controller.Create(newMarble);
+            Assert.True(_context.MarbleMotionRecords.Any(x => x == newMarble));
         }
     }
 }
